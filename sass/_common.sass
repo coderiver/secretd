@@ -34,11 +34,11 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+// 	font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -47,20 +47,51 @@
 // p
 // 	+jpg(bla)
 
+html, body
+	font-size: 62.5%
+	height: 100%
 
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
+	font-family: Arial, sans-serif
 	line-height: 1.4
+	background: #F6F8F8
 
+// common blocks
+.out
+	width: 940px
+	margin: 0 auto
+	padding: 40px 0
 
-// common blocks      
+.onleft
+	float: left
+.onright
+	float: right
 
+//fonts
++font(segoeui, segoeui)
++font(seguisb, seguisb)
++font(segoeuib, segoeuib)
++font(segoeuib, segoeuib)
++font(segoeuii, segoeuii)
 
+=sego
+	font-family: 'segoeui', Arial, sans-serif
+=segosb
+	font-family: 'seguisb', Arial, sans-serif
+	font-weight: normal
+=segob
+	font-family: 'segoeuib', Arial, sans-serif
+	font-weight: normal
+=segoi
+	font-family: 'segoeuii', Arial, sans-serif
 
-
-
-
+//ie8
+.ie8
+	.watched__arr
+		i
+			left: -16px
+		&.another-marg
+			padding: 9px 0 4px 0
 
 
 

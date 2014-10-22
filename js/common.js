@@ -1,8 +1,15 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	var wrap = $('.sblock__wrap'),
+		toShow = $('.sblock__hidden');
 
-	console.log($('body').html());
+	wrap.find('.hide').click(function(event) {
+		$(this).closest('.sblock').find(toShow).addClass('is-active');
+		$(this).closest(wrap).hide();
+	});
+
+	toShow.find('.hide').click(function(event) {
+		$(this).parent().removeClass('is-active').next().show();
+	});
+
 });
