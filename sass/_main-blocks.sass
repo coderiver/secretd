@@ -1,0 +1,299 @@
+//search block
+.swrapper
+	width: 940px
+	margin: 0 auto
+	padding: 40px 0
+
+.onleft
+	float: left
+.onright
+	float: right
+
+.sblock
+	margin-bottom: 20px
+	background-color: #fcfaf9
+	border: 1px solid #ebe8e7
+	&.no_bg
+		background: none
+		border: 0
+	&__wrap
+		width: 940px
+		height: 440px
+		padding: 20px 25px
+		box-sizing: border-box
+		+clr
+		&.no_pad
+			padding: 0
+	&__inside, &__hidden
+		margin-bottom: 20px
+		+clr
+		.stitle
+			padding-left: 5px
+			color: #25292D
+			line-height: 28px
+			font-size: 18px
+			+seg_sb
+			&-p
+				font-size: 26px
+		.hide
+			color: #089de8
+			border-bottom: 1px dashed #4f81bd
+			line-height: 1
+			cursor: pointer
+			font-size: 13px
+			+seg_r
+	&__hidden
+		display: none
+		margin-bottom: 0
+		padding: 20px 25px
+		.hide
+			padding-top: 5px
+		&.is-active
+			display: block
+	.item
+		float: left
+		margin-right: 15px
+		width: 300px
+		min-height: 327px
+		border: 1px solid #ebe8e7
+		box-sizing: border-box
+		.is-bold
+			+seg_b
+		&__img
+			display: block
+			position: relative
+			height: 170px
+			overflow: hidden
+			-webkit-background-size: cover
+			-o-background-size: cover
+			background-size: cover
+			img
+				display: block
+				width: 100%
+				height: auto
+		&__text
+			position: relative
+			padding: 35px 20px 17px
+		&__title
+			display: block
+			margin-bottom: 7px
+			text-decoration: none
+			color: #25292d
+			line-height: 18px
+			font-size: 16px
+			+seg_sb
+			&:hover
+				text-decoration: underline
+		&__reviews
+			height: 36px
+			color: #6e7479
+			line-height: 1
+			font-size: 12px
+			+seg_r
+			p
+				padding-bottom: 10px
+		&__mark
+			color: #089de8
+			cursor: pointer
+			&:hover
+				text-decoration: underline
+		.price
+			position: absolute
+			height: 56px
+			top: -28px
+			right: 32px
+			padding: 8px 12px
+			background: #48bf0d
+			color: #fff
+			line-height: 0.9
+			box-sizing: border-box
+			+seg_sb
+			&:after
+				top: 0
+				right: -22px
+			&__val
+				display: block
+				margin-bottom: 5px
+				font-size: 26px
+				+seg_b
+				span
+					font-size: 14px
+					+seg_r
+			&__unit
+				font-size: 11px
+				+seg_i
+		.compare
+			margin: 8px 0 5px
+			+clr
+			&__mark
+				display: inline-block
+				margin-right: 7px
+				vertical-align: bottom
+				&.delete
+					+s(delete)
+					margin-right: 0
+					padding-right: 7px
+					vertical-align: baseline
+					cursor: pointer
+			&__span
+				text-decoration: none
+				color: #089de8
+				border-bottom: 1px dashed #4f81bd
+				line-height: 1
+				cursor: pointer
+				font-size: 14px
+				+seg_r
+
+//watched block
+.watched
+	width: 565px
+	min-height: 327px
+	padding: 30px 20px 22px 25px
+	text-align: center
+	border: 1px solid #ebe8e7
+	box-sizing: border-box
+	&.is-small
+		width: 245px
+		padding: 18px 7px 0 11px
+	p
+		font-size: 16px
+		+seg_r
+	.is-bold
+		+seg_b
+	.withborder
+		padding-top: 20px
+		border-top: 1px solid #e6e5e5
+		span
+			font-size: 18px
+		&.is-small
+			margin-top: 15px
+			padding-top: 10px
+			font-size: 14px
+	&__arr
+		position: relative
+		margin-bottom: 30px
+		padding: 5px 0
+		border: 1px solid #e5e5e5
+		z-index: 1
+		+border-radius(6px)
+		box-sizing: border-box
+		&.another-marg
+			margin-bottom: 5px
+			padding: 6px 0 5px
+			span
+				line-height: 15px
+		span
+			color: #6DAE10
+			line-height: 21px
+			font-size: 16px
+		i
+			position: absolute
+			display: block
+			top: 0
+			left: -13px
+			z-index: 2
+			+s(arr_i)
+			&.is-big
+				top: -1px
+				left: -35px
+				+s(arr_i-big)
+	&__result
+		display: block
+		width: 225px
+		margin: 25px auto 30px
+		padding: 9px 0
+		background: #F6F6F6
+		color: #25292D
+		border: 3px solid #f7313b
+		text-decoration: none
+		box-sizing: border-box-shadow(0 1px 1px #b4aba3)
+		box-sizing: border-box
+		+border-radius(10px)
+		&.is-small
+			margin: 10px auto
+			padding: 0
+		p
+			font-size: 14px
+		span
+			font-size: 16px
+		&:hover
+			background: #f7313b
+			color: #fff
+
+//sbox block
+.sbox
+	position: relative
+	width: 216px
+	min-height: 315px
+	margin-right: 25px
+	background-color: #fcfaf9
+	border: 1px solid #ebe8e7
+	box-sizing: border-box
+	&.last
+		margin-right: 0
+	&:after
+		content: ""
+		position: absolute
+		top: -6px
+		right: -7px
+		cursor: pointer
+		+s(close)
+	&__img
+		display: block
+		height: 200px
+		img
+			width: 100%
+			height: 200px
+	&__text
+		padding: 7px 10px
+		box-sizing: border-box
+		a
+			display: block
+			text-decoration: none
+			color: #0BADFF
+			line-height: 18px
+			font-size: 16px
+			+seg_sb
+			&:hover
+				text-decoration: underline
+		.compare
+			margin-top: 3px
+			padding-left: 1px
+	&__price
+		color: #6dae10
+		line-height: 1.3
+		font-size: 16px
+		+seg_r
+		.is-big, .min
+			display: inline-block
+		.is-big
+			font-size: 32px
+		.min
+			margin-left: 4px
+			line-height: 1.2
+		.is-black
+			color: #25292d
+			font-size: 12px
+		.is-bold
+			+seg_b
+	.compare
+		margin: 5px 0
+		+clr
+		&__mark
+			display: inline-block
+			margin-right: 7px
+			vertical-align: bottom
+			&.delete
+				+s(delete)
+				margin-right: 0
+				padding-right: 7px
+				vertical-align: baseline
+				cursor: pointer
+		&__span
+			text-decoration: none
+			color: #089de8
+			border-bottom: 1px dashed #4f81bd
+			line-height: 1
+			cursor: pointer
+			font-size: 14px
+			+seg_r
