@@ -1,0 +1,444 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>order_snd_2</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="screen" href="css/screen.css" >
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div class="l-layout">
+    <h1 class="title-visibility">Бронирование квартиры</h1>
+    <!-- BEGIN Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="l-container">
+                <ul class="header__info">
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <strong>13 000</strong> полезных отзывов 
+                    </li>
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <strong>900</strong> владельцев квартир 
+                    </li>
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <strong>18</strong> способов оплаты 
+                    </li>
+                </ul>
+                <div class="header__top-btn">
+                    <a href="#" class="btn btn_s btn_blue">Моя бронь</a>
+                    <a href="#" class="btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="l-container">
+                <h2 class="header__logo"><a href="#">dobovo.com</a></h2>
+                <div class="header__cont">
+                    <span class="header__phone">(+38 044) 221-55-11 </span>
+                    <a href="#" class="btn btn_s btn_gray">skype</a>
+                    <a href="#" class="btn btn_s btn_gray">Задать вопрос</a>
+                </div>
+                <div class="header__currency">
+                    Стоимость в:
+                    <div class="currency">
+                        <span class="currency__text js-select">грн ₴</span>
+                        <input type="hidden" value="1">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1"><a href="#">RU</a></li>
+                            <li data-id="2"><a href="#">EN</a></li>
+                            <li data-id="3"><a href="#">UA</a></li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <span class="currency__text js-select">RU</span>
+                        <input type="hidden" value="4">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">RU</li>
+                            <li data-id="2">EN</li>
+                            <li data-id="3">UA</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Поиск квартиры по ID">
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <!-- container -->
+    <div class="container">
+        <!-- BEGIN l-col-1 -->
+        <div class="l-col-1"> 
+            <h1 class="title-l-1">Бронирование квартиры</h1>
+            <div class="data-reser data-reser_grey">
+                <div class="flat-mark data-reser__d data-reser__d_margit">1. Личные данные
+                    <a class="btn btn_s btn_gray btn_arr btn_data-reser" href="#">редактировать</a>
+                </div>
+            </div>
+            <div class="container__table">
+                <table class="table">
+                    <tr>
+                        <td class="table__visitor">Гость:</td>
+                        <td class="table__item">Геннадий Петров</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="table__item">Россия</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="table__item">gennadiy_2000@mail.ru</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="table__item">+7(903) 478-65-73</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="table__item"><span class="table__edit">Редактировать</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="data-reser">
+                <div class="flat-mark data-reser__d">
+                    2. Способ оплаты
+                </div>
+            </div>
+            <div class="method-of">
+                <div class="info-armour method-of__info-armour">
+                    <p class="hour info-armour__hour">
+                        Квартира забронирована для Вас на <strong>24 часа</strong> для внесения предоплаты.
+                        (по истечении этого времени бронь будет анулирована)
+                    </p>
+                    <p class="armor-number info-armour__number">
+                        № брони: <strong>163 517</strong>
+                    </p>
+                    <div class="sum-amount info-armour__sum">
+                        <div class="prepay info-armour__prepay">
+                            <span>Сумма предоплаты:&nbsp;</span> 
+                            <strong>600 грн.</strong>
+                        </div>
+                        <p class="sum-amount__reservation">Бронь действительна еще 23 ч. 59 мин.</p>
+                    </div>
+                    <ul class="specification info-armour__specific">
+                        <li>Предоплата будет вычтена из общей стоимости проживания.</li>
+                        <li>После внесения предоплаты Вы получите контакты владельца квартиры.</li>
+                        <li>Владелец квартиры получит Ваши контактные данные для организации поселения.</li>
+                    </ul>
+                </div>
+                <div class="warning info-armour__warning">
+                    Предоплата не возвращается в случае отмены заказа менее чем за 7 дней до заезда
+                </div>
+            </div>
+            <div class="payment js-tab-group">
+                <ul class="tags payment__tags tab2 js-tab">
+                    <li class="tags__item tab__item is-active"><a href="js-tab1" class="tab__link is-active">Платежной картой</a></li>
+                    <li class="tags__item tab__item"><a href="js-tab2" class="tab__link">Электронные деньги</a></li>
+                    <li class="tags__item tab__item"><a href="js-tab3" class="tab__link">Наличными</a></li>
+                    <li class="tags__item tab__item"><a href="js-tab4" class="tab__link">Без предоплаты</a></li>
+                </ul>
+                <div class="payment__row payment__row_mod tab-cont js-tab-cont2 js-tab1">
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">Visa/MasterCard</span>
+                        <i class="payment__pic_visa"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay payment__pay_pad">Безналичный банковский платеж</span>
+                        <i class="payment__pic_cash"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">PayPal</span>
+                        <i class="payment__pic_pay"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay payment__pay_pad">Форма авторизации платежной карты</span>
+                        <i class="payment__pic_form"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">Portmone.com</span>
+                        <i class="payment__pic_portmone"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">ИнтерКасса</span>
+                        <i class="payment__pic_interkassa"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">PayPal</span>
+                        <i class="payment__pic_pay-pr"></i>
+                    </label> 
+                    <a class="btn btn_s btn_green btn_pad" href="#">Оплатить</a>
+                </div>
+                <div class="payment__row tab-cont js-tab-cont2 js-tab2">
+                    <label class="payment__radio payment__radio_mod">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">WebMoney</span>
+                        <i class="payment__pic_webmoney"></i>
+                    </label>
+                    <label class="payment__radio payment__radio_mod">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay payment__pay_inter">ИнтерКасса</span>
+                        <i class="payment__pic_inter"></i>
+                    </label>
+                    <label class="payment__radio payment__radio_mod">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">PayPal</span>
+                        <i class="payment__pic_qiwi"></i>
+                    </label>
+                    <a class="btn btn_s btn_green btn_pad" href="#">Оплатить</a>
+                </div>
+                <div class="payment__row tab-cont js-tab-cont2 js-tab3">
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">Терминалы</span>
+                        <i class="payment__pic_terminal"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay payment__pay_pad">Наличными в офисе добово</span>
+                        <i class="payment__pic_dobovo"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay payment__pay_pad">Наличный платеж в кассе банка</span>
+                        <i class="payment__pic_nall-cash"></i>
+                    </label>
+                    <label class="payment__radio">
+                        <input type="radio" name="pay">
+                        <span class="payment__pay">Western Union</span>
+                        <i class="payment__pic_western-union"></i>
+                    </label>
+                    <a class="btn btn_s btn_green btn_pad btn_abs" href="#">Оплатить</a>
+                </div>
+                <div class="payment__row payment__field tab-cont js-tab-cont2 js-tab4">
+                    <div class="extend-text extend-text_modd">
+                        <p>Пожалуйста, укажите причину бронирования без предоплаты для владельца квартиры(минимум 20 символов):</p>
+                    </div>
+                    <textarea class="input input__height_mod" type="text" placeholder="Причина"></textarea>
+                    <ul class="specification specification_mod">
+                        <li>Ожидайте звонок от нашего оператора для подтверждения данных</li>
+                        <li>Владелец квартиры на свое усмотрение подтвердит Вашу бронь.</li>
+                        <li>Вы получите контакты владельца квартиры.</li>
+                        <li>Владелец квартиры получит Ваши контактные данные для организации поселения.</li>
+                    </ul>
+                    <a class="btn btn_m btn_yellow btn_yellow_mod" href="#">Отправить запрос</a>
+                </div>
+            </div>
+            <div class="breadcrumbs breadcrumbs_margin" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a itemprop="url" href="#"><span itemprop="title">Главная</span></a>
+                <a itemprop="url" href="#"><span itemprop="title">Квартиры посуточно</span></a>
+                <a itemprop="url" href="#"><span itemprop="title">Киев</span></a>
+                <span itemprop="title">Красноармейская 46, Студио</span>
+            </div>
+        </div>
+       <!-- END l-col-1 -->
+       <!-- BEGIN l-col-2 -->
+       <div class="l-col-2">
+            <div class="details">
+                <h2 class="title-l-1 details__title">Детали заказа</h2>
+                <img class="details__img" src="img/room.png" alt="img">
+                <div class="details-info">
+                    <h2 class="details-info__h">Двухуровневая квартира в самом центре столицы, 3х-комнатная
+                    </h2>
+                    <p class="details-info__ad">ул. Саксаганского, 192</p>
+                    <p class="details-info__date">
+                        <strong>8 мая</strong>(пн) - <strong>11 мая</strong>(чт)
+                    </p>
+                    <div class="details__info-row">
+                        <span class="details__info-title">Длительность:</span>
+                        <span class="details__info-val">3 дня</span>
+                    </div>
+                    <div class="details__info-row">
+                        <span class="details__info-title">Гостей:</span>
+                        <span class="details__info-val">2 чел</span>
+                    </div>
+                    <div class="details__info-row">
+                        <span class="details__info-title">Стоимость:</span>
+                        <span class="details__info-val">320 грн. / сутки</span>
+                    </div>
+                    <div class="details__info__all">
+                        <span class="details__info__t">Всего:</span>
+                        <strong class="details__info__font">2800 грн.</strong>
+                    </div>
+                </div>
+                <div class="details__info__all details__info__all_m">
+                    <span class="details__info__t">Предоплата</span>
+                    <strong class="details__info__font details__info__line">600 грн.</strong>
+                </div>
+            </div>
+       </div>
+       <!-- END l-col-2 -->
+    </div>
+    <!-- END container -->
+</div>
+<footer class="footer">
+    <div class="l-container">
+        <div class="footer__nav">
+            <div class="footer__title">Главная</div>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Партнерство</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Пресса и Добово</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__title">Города</div>
+            <ul>
+                <li><a href="#">Киев</a></li>
+                <li><a href="#">Львов</a></li>
+                <li><a href="#">Одесса</a></li>
+                <li><a href="#">Харьков</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Днепропетровск</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><button class="js-all-city"><span>Все города</span></button></li>
+            </ul>
+        </div>
+        <div class="footer__add">
+            <div class="footer__title">Для владельцев квартир</div>
+            <a class="btn btn_s btn_green btn_add" href="#">Добавить квартиру<i></i></a>
+            <p>Подключение к нашей системе бронирования бесплатное и простое.</p>
+            <p>Собственный сервис по предоставлению услуг он-лайн бронирования квартир без дополнительных затрат и вложений.</p>
+        </div>
+        <div class="footer__right">
+            <div class="search">
+                <input type="text" placeholder="Поиск квартиры по ID">
+                <i></i>
+            </div>
+            <a href="#" class="footer__logo"></a>
+            <p class="footer__copy">© 2010 - 2013 Dobovo.com  /  Все права защищены.</p>
+            <div class="soc">
+                <a href="#" class="soc__fb"></a>
+                <a href="#" class="soc__tw"></a>
+                <a href="#" class="soc__vk"></a>
+                <a href="#" class="soc__od"></a>
+                <a href="#" class="soc__gp"></a>
+            </div>
+            <a href="http://zeema.com/" target="_blanc" class="footer__create-by">Разработано в ZEEMA</a>
+        </div>
+    </div>
+    <div class="city-list js-city-list">
+        <div class="l-container">
+            <ul class="city-list__col">
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END footer  -->
+<a class="chat-link" href="#">
+    <i></i>
+    <span>Консультация</span>
+</a>
+<a class="faq-link js-open-faq" href="#">
+    <span>?</span>Вопросы и ответы
+</a>
+<div class="sticker sticker_gray is-fixed js-faq-sticker">
+    <div class="sticker__title">Вопросы и ответы</div>
+    <button class="btn-del btn-del_dark js-close-sticker"></button>
+    <ul class="sticker__list">
+        <li><a href="#">Что включено в проживание?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+        <li><a href="#">Включены ли налоги в цену?</a></li>
+        <li><a href="#">Отличие квартир онлайн от офлайн?</a></li>
+        <li><a href="#">Могу ли я привезти животное?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+    </ul>
+    <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
+</div>
+<div class="tooltip js-tooltip"><span></span></div>
+<div class="map-detail flat-info-fixed map-detail_big-title">
+    <div class="map-detail__title">
+        Двухуровневая квартира в самом центре столицы, 3х-комнатная
+    </div>
+    <div class="map-detail__left">
+        <div class="address">
+            ул. Саксаганского, 192 <a href="#" class="to-map-link to-map-link_mod"><i></i><span>Карта</span></a>  <em>(~0,2 км от Саксаганского 190)</em>
+        </div>
+        <span class="label-code">KV 2748</span>
+        <span class="label-state">Свободна</span>
+        <span class="label-prepay">без предоплаты</span>
+    </div>
+    <div class="map-detail__right">
+        <div class="price-detail js-order-btn" style="display:none">
+            <span class="price-detail__old dbv_price"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+                <span class="price-detail__val dbv_price">
+                    <span class="dbv_val">320</span>
+                </span>
+                <div class="price-detail__main">
+                    <div class="price-detail__unit">
+                        <strong class="dbv_cur">грн.</strong> / сутки
+                </div>
+                (960 грн. за 3 дня)
+                <a href="#" class="">30 сен - 2 окт, 2 гостя</a>
+            </div>
+        </div>
+        <div class="not-available js-choose-date-btn">
+            <p>Квартира недоступна в выбраные даты</p>
+            <a href="#">Посмотреть доступные даты</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

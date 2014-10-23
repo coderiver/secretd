@@ -1,0 +1,228 @@
+.overlay
+    display: none
+    position: fixed
+    z-index: 10000
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: #000
+    +opacity(.5) 
+.popup
+    display: none
+    position: absolute
+    z-index: 20000
+    width: 940px
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 20px 31px 20px 20px
+    margin: auto 
+    width: 940px
+    background: #fff
+    +border-box
+    +seg_r
+    +box-shadow(0 1px 1px #000)
+    .btn-del
+        position: absolute
+        top: 20px
+        right: 20px
+        background: $black
+        &:hover
+            background: #000
+        &:active
+            margin-top: 1px
+    .slider
+        float: left
+    .price-detail
+        margin: 11px 0 14px
+    .beds
+        margin: 5px 0 2px
+    .attr
+        float: none
+        margin: 6px 0 30px
+    .attr__wrap
+        //background: red 
+        background: url(../img/dot.png) repeat 0 0
+    .attr__item
+        //padding: 5px 10px
+        height: 29px 
+        line-height: 29px
+        padding-top: 0
+        padding-bottom: 0   
+        background: #fff 
+        margin-bottom: 0 
+        &:last-child
+            border-bottom: none 
+    .flat-pricer
+        padding: 0
+        margin-bottom: 9px
+    .btn_green
+        margin-left: 19px
+.popup_map
+    position: fixed
+    height: 545px
+    .btn-del
+        top: 5px
+        right: 5px
+.popup_slider
+    min-height: 560px
+    left: 50%
+    right: auto
+    bottom: auto
+    top: 50%
+    margin: -280px 0 0 -470px
+.slider
+    position: relative
+    width: 580px
+    overflow: hidden
+.popup__main
+    float: right
+    width: 290px
+    .to-map-link
+        margin: 0 5px 
+.slider__preview
+    width: 505px !important
+    margin: 15px 0 0 35px
+    img
+        margin-right: 20px
+.slider__nav
+    position: absolute
+    bottom: 0
+    width: 0px
+    height: 0px
+    border-style: solid
+    background: none
+    &.disabled
+        +opacity(.3)
+        cursor: default
+.slider__prev
+    left: 0
+    border-width: 32px 19px 32px 0
+    border-color: transparent #464541 transparent transparent
+.slider__next
+    right: 0
+    border-width: 32px 0 32px 19px
+    border-color: transparent transparent transparent #464541
+    
+.popup__title
+    width: 90%
+    font-size: 17px
+    color: $blue
+    +seg_sb 
+    span
+        color: $black 
+        +seg_r
+.popup__subtitle
+    font-size: 17px
+    +seg_sb
+    color: #464541 
+    
+.popup__info-label
+    display: block
+    color: #464541 
+    font-size: 15px
+    
+.flat-ricer__row
+    display: inline-block
+    vertical-align: middle
+    .popup__info-label
+        margin-bottom: 3px
+
+.require_mod
+    font-size: 14px
+    li
+        margin-bottom: 10px
+    div,span,strong
+        display: inline-block
+        vertical-align: middle
+    div
+        width: 113px
+    span
+        margin-left: 0
+    strong
+        color: $black
+        font-weight: normal 
+        
+.popup_ask
+    position: fixed
+    padding-right: 15px
+    width: 620px
+    height: 361px
+    .popup__info-label
+        margin-bottom: 6px
+        font-size: 12px
+    .choose
+        width: 146px
+    .input-label
+        width: 140px
+        margin-right: 6px
+    .input-label_width
+        width: 100%
+        margin: 0
+    .flat-pricer
+        margin-bottom: 16px
+    .popup__title
+        width: 100%
+    .address
+        margin: 0 0 5px
+.popup__title_black
+    margin-bottom: 10px
+    color: #464541 
+.popup__left
+    float: left
+    width: 360px 
+    margin-right: 10px
+.popup__right
+    overflow: hidden
+    padding-left: 10px
+    border-left: 1px solid #bfbfbf 
+    .popup__title_black,
+    .popup__info-label
+        margin-bottom: 0
+.input-label
+    display: inline-block
+    margin-bottom: 15px
+    +seg_r
+    font-size: 12px
+    color: #464541 
+    span
+        display: block
+        margin-bottom: 4px
+.input-label_width
+    display: block
+.input
+    padding: 0 9px 
+    width: 100%
+    height: 28px
+    border: 1px solid #e2e3ea
+    +border-radius(2px)
+    background: #fff
+    +border-box
+    color: #464541
+    +box-shadow(inset 0 1px 0 #bfbfbf)
+    +placeholder
+        +seg_i
+        color: #464541
+    &:focus
+        +box-shadow(none)
+        +placeholder
+            color: #ccc
+.input_textarea
+    padding: 9px 
+    height: 93px
+    resize: none
+    
+.popup__btns
+    margin-top: 7px
+    .btn
+        margin-right: 17px
+.btn-cancel
+    background: none
+    color: $blue
+    cursor: pointer
+    border-bottom: 1px dashed  
+    
+.popup__flat-info
+    margin: 25px 0 13px

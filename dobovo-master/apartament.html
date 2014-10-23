@@ -1,0 +1,996 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Apartament</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="screen" href="css/screen.css" >
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<h1 class="title-visibility">Двухуровневая квартира в самом центре столицы, 3х-комнатная</h1>
+<div class="l-layout">
+    <!-- BEGIN Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="l-container">
+                <ul class="header__info">
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <strong>13 000</strong> полезных отзывов 
+                    </li>
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <strong>900</strong> владельцев квартир 
+                    </li>
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <strong>18</strong> способов оплаты 
+                    </li>
+                </ul>
+                <div class="header__top-btn">
+                    <a href="#" class="btn btn_s btn_blue">Моя бронь</a>
+                    <a href="#" class="btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="l-container">
+                <h2 class="header__logo"><a href="#">dobovo.com</a></h2>
+                <div class="header__cont">
+                    <span class="header__phone">(+38 044) 221-55-11 </span>
+                    <a href="#" class="btn btn_s btn_gray">skype</a>
+                    <a href="#" class="btn btn_s btn_gray">Задать вопрос</a>
+                </div>
+                <div class="header__currency">
+                    Стоимость в:
+                    <div class="currency">
+                        <span class="currency__text js-select">грн ₴</span>
+                        <input type="hidden" value="1">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="2">EUR €</li>
+                            <li data-id="3">USD $</li>
+                            <li data-id="4">RUB ₱</li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <span class="currency__text js-select">RU</span>
+                        <input type="hidden" value="4">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1"><a href="#">RU</a></li>
+                            <li data-id="2"><a href="#">EN</a></li>
+                            <li data-id="3"><a href="#">UA</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Поиск квартиры по ID">
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <div class="l-container">
+        <div class="back">
+            <a class="btn btn_gray btn_gray-arr" href="#"><i class="arr-left"></i>Вернуться в каталог</a>
+            <a href="#" class="btn btn_m js-marked-link btn_marked">Отмеченные (1)</a>
+        </div>
+        <div class="wrap js-targe-info">
+            <div class="l-col1">
+                <div class="flat-promo">
+                    <h1 class="title-l-1">
+                        Двухуровневая квартира в самом центре столицы, 3х-комнатная
+                    </h1>
+                    <div class="address">
+                        ул. Саксаганского, 192 <a href="#" class="to-map-link to-map-link_mod"><i></i><span>Карта</span></a>  <em>(~0,2 км от Саксаганского 190)</em>
+                    </div>
+                    <span class="label-code">KV 2748</span>
+                    <span class="label-state">Свободна</span>
+                    <span class="label-prepay">без предоплаты</span>
+                    <div class="flat-promo__meta">
+                        <a class="flat-mark js-to-comments" href="#">
+                            <strong>9,1</strong> 
+                            <span>Превосходно</span> 
+                            <em>на основе </em>
+                            <span class="flat-mark__link">12 отзывов <i></i></span>
+                        </a>
+                        <span>Бронирований:</span> 120
+                        <span>Последний запрос:</span> 9 дней назад
+                    </div>
+                </div>
+            </div>
+            <div class="l-col2">
+                <div class="flat-pricer js-flat-pricer">
+                    <div class="choose js-first-date js-show-calendar">
+                        <input type="text" class="choose__input js-from" value="" placeholder="Заезд" readonly>
+                        <i class="icon-cal"></i>
+                        <div class="js-datepicker js-datepicker-from"></div>
+                    </div>
+                    <div class="choose choose_to js-show-calendar">
+                        <input type="text" class="choose__input js-to" value="" placeholder="Выезд"  readonly>
+                        <i class="icon-cal"></i>
+                        <div class="js-datepicker js-datepicker-to"></div>
+                    </div>
+                    <div class="choose choose_number" data-max-number="9">
+                        <input type="text" class="choose__input" value="1" readonly>
+                        <span class="choose__text js-choose"><span class="js-choose-number">1</span> чел</span>
+                        <button class="choose__plus js-plus"></button>
+                        <button class="choose__minus js-minus"></button>
+                        <ul class="choose__list js-choose-list">
+                            <li data-id="1">1</li>
+                            <li data-id="2">2</li>
+                            <li data-id="3">3</li>
+                            <li data-id="4">4</li>
+                            <li data-id="5">5</li>
+                            <li data-id="6">6</li>
+                            <li data-id="7">7</li>
+                            <li data-id="8">8</li>
+                            <li data-id="9">9</li>
+                        </ul>
+                    </div>
+                    <div class="price-detail">
+                        <span class="price-detail__old dbv_price"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+                        <span class="price-detail__val dbv_price">
+                            <span class="dbv_val">320</span>
+                        </span>
+                        <div class="price-detail__main">
+                            <div class="price-detail__unit">
+                                <strong class="dbv_cur">грн.</strong> / сутки
+                            </div>
+                            (960 грн. за 3 дня)
+                        </div>
+                    </div>
+                    <a class="btn btn_salad js-order-btn" href="#" style="display:none">Забронировать</a>
+                    <a class="btn btn_yellow js-choose-date-btn" href="#">Выбрать даты</a>
+                    <a href="#" class="btn btn_mark js-btn-mark"><i></i>Отметить</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="gallery cycle-slideshow" 
+                data-cycle-fx="scrollHorz" 
+                data-cycle-slides=".gallery__item"
+                data-cycle-timeout="0"
+                data-cycle-prev=".gallery__prev"
+                data-cycle-next=".gallery__next"
+            >
+                <div class="gallery__item">
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/300/270/food" width="300" height="270" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/310/145/food" width="310" height="145" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/310/145/food" width="310" height="145" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/200/115/food" width="203" height="115" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/200/115/food" width="203" height="115" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/200/115/food" width="203" height="115" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/300/270/food" width="300" height="270" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/310/145/food" width="310" height="145" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/310/145/food" width="310" height="145" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/200/115/food" width="203" height="115" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/200/115/food" width="203" height="115" alt="">
+                    </a>
+                    <a href="#" class="gallery__img">
+                        <img src="http://lorempixel.com/200/115/food" width="203" height="115" alt="">
+                    </a>
+                </div>
+                <button class="gallery__nav gallery__prev"><i></i></button>
+                <button class="gallery__nav gallery__next"><i></i></button>
+            </div>
+        </div>
+        <div class="wrap flat-section">
+            <h3 class="title-l-2">Описание и комплектация</h3>
+            <div class="l-col1 l-col1_s">
+                <h4 class="title-l-3">Основные атрибуты</h4>
+                <div class="attr">
+                    <div class="attr__wrap">
+                        <span class="attr__item">Wi-Fi</span>
+                        <span class="attr__item">TV</span>
+                        <span class="attr__item">Кондиционер</span>
+                        <span class="attr__item">Парковка</span>
+                        <span class="attr__item">Ванная</span>
+                        <span class="attr__item is-inactive">Стиральная машина</span>
+                        <span class="attr__item is-inactive">Лифт</span>
+                    </div>
+                </div>
+                <ul class="require">
+                    <li>Максимум человек: <span>5</span></li>
+                    <li>Минимум ночей: <span>3</span></li>
+                    <li>Этаж: <span>3</span>/16</li>
+                    <li>Спальных мест: <span>6</span></li>
+                </ul>
+                <div class="beds">
+                    <i class="icon-bed-two_big"></i>
+                    <i class="icon-bed-one_big"></i>
+                    <i class="icon-bed-two"></i>
+                    <i class="icon-bed-one"></i>
+                    <i class="icon-bed-one"></i>
+                </div>
+                <h4 class="title-l-3">Описание</h4>
+                <div class="extend-text">
+                    <div class="extend-text__main js-extend">
+                        <p>Современные красивые апартаменты типа студио в стиле хай-тек в центре Киева. Вам понравятся уникальные дизайнерские решения для интерьера, стильное оформление в мягких цветах в комбинации с другими интересными идеями делает комнату роскошной и очень современной.</p>
+                        <p>Современные красивые апартаменты типа студио в стиле хай-тек в центре Киева. Вам понравятся уникальные дизайнерские решения для интерьера, стильное оформление в мягких цветах в комбинации с другими интересными идеями делает комнату роскошной и очень современной.</p>
+                        <p>Современные красивые апартаменты типа студио в стиле хай-тек в центре Киева. Вам понравятся уникальные дизайнерские решения для интерьера, стильное оформление в мягких цветах в комбинации с другими интересными идеями делает комнату роскошной и очень современной.</p>
+                    </div>
+                    <span class="extend-text__link js-extend-link">Подробная информация</span>
+                </div>
+                <a class="btn btn_green" href="#">Забронировать</a>
+                <a href="#" class="btn btn_mark"><i></i>Отметить</a>
+            </div>
+            <div class="l-col2 l-col2_b">
+                <div class="owner">
+                    <h4 class="title-l-3 title-l-3_bold">Владелец</h4>
+                    <div class="owner__title">
+                       <a href="#"> Partner Guest House</a> <span>(Киев)</span>
+                    </div>
+                    <ul class="owner__list">
+                        <li><span>Успешные размещения </span><i class="js-with-tooltip" data-info="put any text">?</i> <strong>100%</strong></li>
+                        <li><span>Предоставление квартиры</span> <i class="js-with-tooltip" data-info="put any text">?</i> <strong>100%</strong></li>
+                        <li><span>Всего размещений </span><i class="js-with-tooltip" data-info="put any text">?</i> <strong>100%</strong></li>
+                        <li><span>Квартиры владельца </span><i class="js-with-tooltip" data-info="put any text">?</i> <a href="#">23</a></li>
+                        <li><span>Отзывы по всем квартирам </span><i class="js-with-tooltip" data-info="put any text">?</i> <a href="#">548</a></li>
+                        <li><span>Обновление календаря </span><i class="js-with-tooltip" data-info="put any text">?</i> <strong>Сегодня</strong></li>
+                    </ul>
+                    <a class="btn btn_m btn_gray" href="#">Задать вопрос владельцу</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrap flat-section">
+            <h3 class="title-l-2">Местоположение</h3>
+            <div class="l-col1 l-col1_s">
+                <div class="map">
+                    <iframe class="map__body" width="610" height="270" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?hl=uk&amp;ie=UTF8&amp;ll=40.452687,-3.688005&amp;spn=0.007405,0.016512&amp;t=m&amp;z=17&amp;output=embed"></iframe>
+                    <i class="map__point map__point_big" style="top:100px; left:425px;"></i>
+                </div>
+                <a class="btn btn_green" href="#">Забронировать</a>
+                <a href="#" class="btn btn_mark"><i></i>Отметить</a>
+            </div>
+            <div class="l-col2 l-col2_b">
+                <div class="distance">
+                    <h4 class="title-l-3 title-l-3_bold">Растояние до достопримечательностей</h4>
+                    <ul class="distance__list">
+                        <li><div>Площадь Независимости</div> <span>~1.32 км</span></li>
+                        <li><div>Контрактовая площадь</div> <span>~2.87 км</span></li>
+                        <li><div>Олимпийский </div> <span>~0.60 км</span></li>
+                        <li><div>Арена Сити</div> <span>~0.40 км</span></li>
+                        <li><div>Ж/Д Вокзал</div> <span>~2.00 км</span></li>
+                        <li><div>Аэропорт Жуляны</div> <span>~6.68 км</span></li>
+                        <li><div>Автовокзал</div> <span>~3.61 км</span></li>
+                        <li><div>Киев Экспо Плаза</div> <span>~8.80 км</span></li>
+                        <li><div>МВЦ</div> <span>~5.47 км</span></li>
+                        <li><div>Экспоцентр Украины</div> <span>~7.11 км</span></li>
+                    </ul>
+                    <div class="distance__all">
+                        <a href="#">Просмотреть другие квартиры рядом</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap flat-section">
+            <h3 class="title-l-2">Даты заезда</h3>
+            <div class="l-col1">
+                <p>Показать цены для количества ночей проживания:</p>
+                <div id="dbv_calendar_discounts">
+                    <div data-value="4.5"><span>3 nights</span> -4.5%</div>
+                    <div data-value="10.0"><span>7 nights</span> -10.0%</div>
+                    <div data-value="15.0"><span>10 nights</span> -15.0%</div>
+                    <div data-value="20.0"><span>14 nights</span> -20.0%</div>
+                    <div data-value="20.0"><span>30 nights</span> -20.0%</div>
+                </div>
+            </div>
+            <div class="l-col2">
+                <div class="drop">
+                    <div class="drop__key js-drop-key" data-drop-id="js-drop-list-1">Акции и спецпредложения</div>
+                </div>
+            </div>
+            <div class="drop-actions js-drop-list js-drop-list-1">
+                <ul class="drop-actions__body">
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                    <li><a href="#">30 сен. - 4 окт. (4 ночи) - <strong>396 грн</strong>. <span>509грн.</span></a></li>
+                </ul>
+                <div class="drop-actions__footer">
+                    <span class="drop-actions__show-all js-drop-more">Показать все</span>
+                    <span class="drop-actions__hide js-drop-hide">Свернуть</span>
+                </div>
+            </div>
+            <div class="l-col1">
+
+            <div class="calendars-wrapper">
+                <h4 class="title-l-3">Кликните на желаемые даты заезда и выезда</h4>
+                <p>Стоимость может уменьшаться в зависимости от количества дней и выбраных дат</p>
+                    <div class="dbv_calendar_field">
+                        <div class="dbv_calendar_month">
+                            <div class="calendar-head">
+                                <button class="calendar-prev" onclick="dbv_get_calendar(&quot;prev&quot;)"></button><span id="dbv_calendar_first_month">March 2014</span>
+                            </div>
+                            <div class="dbv_calendar">
+                                <div class="dbv_calendar_weekdays">
+                                    <div class="cell">Mon</div>
+                                    <div class="cell">Tue</div>
+                                    <div class="cell">Wed</div>
+                                    <div class="cell">Thu</div>
+                                    <div class="cell">Fri</div>
+                                    <div class="cell">Sat</div>
+                                    <div class="cell">Sun</div>
+                                </div>
+                                <!-- calendar dates (JS) -->
+                                <div class="dbv_calendar_dates" id="dbv_calendar_month0">
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div date="2014-03-01" class="cell is-last-days"><p href="#"><span>1</span></p></div>
+                                    <div date="2014-03-02" class="cell is-last-days"><p href="#"><span>2</span></p></div>
+                                    <div date="2014-03-03" class="cell is-last-days"><p href="#"><span>3</span></p></div>
+                                    <div date="2014-03-04" class="cell is-last-days"><p href="#"><span>4</span></p></div>
+                                    <div date="2014-03-05" class="cell is-last-days"><p href="#"><span>5</span></p></div>
+                                    <div date="2014-03-06" class="cell is-last-days"><p href="#"><span>6</span></p></div>
+                                    <div date="2014-03-07" class="cell is-last-days"><p href="#"><span>7</span></p></div>
+                                    <div date="2014-03-08" class="cell is-last-days"><p href="#"><span>8</span></p></div>
+                                    <div date="2014-03-09" class="cell is-last-days"><p href="#"><span>9</span></p></div>
+                                    <div date="2014-03-10" class="cell is-last-days"><p href="#"><span>10</span></p></div>
+                                    <div date="2014-03-11" class="cell is-last-days"><p href="#"><span>11</span></p></div>
+                                    <div date="2014-03-12" class="cell is-last-days"><p href="#"><span>12</span></p></div>
+                                    <div date="2014-03-26" class="cell clickable"><p href="#"><span>13</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">464</span><span class="dbv_orig" style="display: none">464.00</span></i></p></div>
+                                    <div date="2014-03-27" class="cell clickable"><p href="#"><span>14</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-28" class="cell clickable"><p href="#"><span>15</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-16" class="cell is-inactive"><p href="#"><span>16</span></p></div>
+                                    <div date="2014-03-17" class="cell is-inactive"><p href="#"><span>17</span></p></div>
+                                    <div date="2014-03-18" class="cell is-inactive"><p href="#"><span>18</span></p></div>
+                                    <div date="2014-03-28" class="cell clickable"><p href="#"><span>15</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-20" class="cell clickable is-today"><p href="#"><span>20</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-21" class="cell clickable"><p href="#"><span>21</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-22" class="cell clickable"><p href="#"><span>22</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-23" class="cell clickable"><p href="#"><span>23</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div date="2014-03-24" class="cell clickable"><p href="#"><span>24</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div date="2014-03-25" class="cell clickable"><p href="#"><span>25</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">464</span><span class="dbv_orig" style="display: none">464.00</span></i></p></div>
+                                    <div date="2014-03-26" class="cell clickable"><p href="#"><span>26</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">464</span><span class="dbv_orig" style="display: none">464.00</span></i></p></div>
+                                    <div date="2014-03-27" class="cell clickable"><p href="#"><span>27</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-28" class="cell clickable"><p href="#"><span>28</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-29" class="cell clickable"><p href="#"><span>29</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-30" class="cell clickable"><p href="#"><span>30</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div date="2014-03-31" class="cell clickable"><p href="#"><span>31</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dbv_calendar_month">
+                            <div class="calendar-head">
+                                <button class="calendar-next" onclick="dbv_get_calendar(&quot;next&quot;)"></button><span id="dbv_calendar_last_month">April 2014</span>
+                            </div>
+                            <div class="dbv_calendar">
+                                <div class="dbv_calendar_weekdays">
+                                    <div class="cell">Mon</div>
+                                    <div class="cell">Tue</div>
+                                    <div class="cell">Wed</div>
+                                    <div class="cell">Thu</div>
+                                    <div class="cell">Fri</div>
+                                    <div class="cell">Sat</div>
+                                    <div class="cell">Sun</div>
+                                </div>
+                                <!-- calendar dates (JS) -->
+                                <div class="dbv_calendar_dates" id="dbv_calendar_month1">
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div date="2014-03-01" class="cell is-last-days"><p href="#"><span>1</span></p></div>
+                                    <div date="2014-03-02" class="cell is-last-days"><p href="#"><span>2</span></p></div>
+                                    <div date="2014-03-03" class="cell is-last-days"><p href="#"><span>3</span></p></div>
+                                    <div date="2014-03-04" class="cell is-last-days"><p href="#"><span>4</span></p></div>
+                                    <div date="2014-03-05" class="cell is-last-days"><p href="#"><span>5</span></p></div>
+                                    <div date="2014-03-06" class="cell is-last-days"><p href="#"><span>6</span></p></div>
+                                    <div date="2014-03-07" class="cell is-last-days"><p href="#"><span>7</span></p></div>
+                                    <div date="2014-03-08" class="cell is-last-days"><p href="#"><span>8</span></p></div>
+                                    <div date="2014-03-09" class="cell is-last-days"><p href="#"><span>9</span></p></div>
+                                    <div date="2014-03-10" class="cell is-last-days"><p href="#"><span>10</span></p></div>
+                                    <div date="2014-03-11" class="cell is-last-days"><p href="#"><span>11</span></p></div>
+                                    <div date="2014-03-12" class="cell is-last-days"><p href="#"><span>12</span></p></div>
+                                    <div date="2014-03-26" class="cell clickable"><p href="#"><span>13</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">464</span><span class="dbv_orig" style="display: none">464.00</span></i></p></div>
+                                    <div date="2014-03-27" class="cell clickable"><p href="#"><span>14</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-28" class="cell clickable"><p href="#"><span>15</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-16" class="cell is-inactive first"><p href="#"><span>16</span></p></div>
+                                    <div date="2014-03-17" class="cell is-inactive js-with-tooltip" data-info="asdfsdf"><p href="#"><span>17</span></p></div>
+                                    <div date="2014-03-18" class="cell is-inactive last"><p href="#"><span>18</span></p></div>
+                                    <div date="2014-03-28" class="cell clickable"><p href="#"><span>15</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-20" class="cell clickable is-today"><p href="#"><span>20</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-21" class="cell is-selected first clickable"><p href="#"><span>21</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-22" class="cell is-selected clickable"><p href="#"><span>22</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-23" class="cell is-selected clickable"><p href="#"><span>23</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div date="2014-03-24" class="cell is-selected last clickable"><p href="#"><span>24</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div date="2014-03-25" class="cell clickable"><p href="#"><span>25</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">464</span><span class="dbv_orig" style="display: none">464.00</span></i></p></div>
+                                    <div date="2014-03-26" class="cell clickable"><p href="#"><span>26</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">464</span><span class="dbv_orig" style="display: none">464.00</span></i></p></div>
+                                    <div date="2014-03-27" class="cell clickable"><p href="#"><span>27</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-28" class="cell clickable"><p href="#"><span>28</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">523</span><span class="dbv_orig" style="display: none">523.00</span></i></p></div>
+                                    <div date="2014-03-29" class="cell clickable"><p href="#"><span>29</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">516</span><span class="dbv_orig" style="display: none">516.00</span></i></p></div>
+                                    <div date="2014-03-30" class="cell clickable"><p href="#"><span>30</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div date="2014-03-31" class="cell clickable"><p href="#"><span>31</span><i class="dbv_price_round"><span class="dbv_cur">UAH</span><span class="dbv_val">442</span><span class="dbv_orig" style="display: none">442.00</span></i></p></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                    <div class="cell is-other-month"></div>
+                                </div>
+                            </div>
+                        </div>
+                    <div style="display: none;" class="dbv_calendar_popup">
+                        <img src="http://192.168.0.216:81/img/loading.gif">
+                    </div>
+                    </div>
+                    <div class="calendar-info">
+                        <span><i class="is-today"></i> - Сегодня</span>
+                        <span><i></i> - Доступные даты</span>
+                        <span><i class="is-selected"></i> - Выбраные даты проживания</span>
+                        <span><i class="is-inactive"></i> - Квартира занята</span>
+                    </div>
+            </div>
+
+            </div>
+            <div class="l-col2">
+                <div class="order">
+                    <div class="order__head">
+                        <h3 class="title-l-2">Детали заказа</h3>
+                        <h4 class="title-l-3">2-х комнатная квартира</h4>
+                        <p>Киев, ул. Саксаганского, 192</p>
+                    </div>
+                    <div class="choose">
+                        <input type="text" class="choose__input" value="" placeholder="Заезд" readonly>
+                        <i class="icon-cal"></i>
+                    </div>
+                    <div class="choose choose_to">
+                        <input type="text" class="choose__input" value="" placeholder="Выезд"  readonly>
+                        <i class="icon-cal"></i>
+                    </div>
+                    <span class="order__change-link">Изменить</span>
+                    <div class="order__info">
+                        <div class="order__info-row">
+                            <span class="order__info-title">Гостей:</span>
+                            <div class="choose choose_number" data-max-number="9">
+                                <input type="text" class="choose__input" value="1" readonly>
+                                <span class="choose__text js-choose"><span class="js-choose-number">1</span> чел</span>
+                                <button class="choose__plus js-plus"></button>
+                                <button class="choose__minus js-minus"></button>
+                                <ul class="choose__list js-choose-list">
+                                    <li data-id="1">1</li>
+                                    <li data-id="2">2</li>
+                                    <li data-id="3">3</li>
+                                    <li data-id="4">4</li>
+                                    <li data-id="5">5</li>
+                                    <li data-id="6">6</li>
+                                    <li data-id="7">7</li>
+                                    <li data-id="8">8</li>
+                                    <li data-id="9">9</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="order__info-row">
+                            <span class="order__info-title">Длительность:</span>
+                           <span class="order__info-val">3 дня</span>
+                        </div>
+                        <div class="order__info-row">
+                            <span class="order__info-title">Стоимость:</span>
+                           <span class="order__info-val">320 грн. / сутки</span>
+                        </div>
+                    </div>
+                    <div class="order__footer">
+                        <div class="order__chat">
+                            <div>Всего</div>
+                            <a href="#" class="to-consult-link"><i></i><span>Консультация</span></a>
+                        </div>
+                        <div class="order__price">
+                            <div class="price-detail">
+                                <span class="price-detail__old dbv_price"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+                                <span class="price-detail__val dbv_price">
+                                    <span class="dbv_val">320 </span><span class="dbv_cur">грн.</span>
+                                </span>
+                            </div>
+                            <a class="btn btn_green" href="#">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap flat-section">
+            <div class="l-col1 l-col1_s">
+                <h3 class="title-l-2 js-comment-target">Отзывы <span class="label-info">Отзывы могут размещать только те, кто останавливался в этой квартире</span></h3>
+                <div class="sorter sorter_multi">
+                    Показывать:
+                    <div class="sorter__list">
+                        <input type="hidden" value="1">
+                        <span class="sorter__btn js-select"><span>Все отзывы</span> (12)</span>
+                        <ul class="sorter__list-main js-select-list">
+                            <li data-id="1">Последние сверху</li>
+                            <li data-id="2">Сначала с высокой оценкой</li>
+                            <li data-id="3">Сначала с низкой оценкой</li>
+                            <li data-id="4">Сначала наиболее полезные</li>
+                        </ul>
+                    </div>
+                    Сортировать:
+                    <div class="sorter__list">
+                        <span class="sorter__btn js-select"><span>Последние сверху</span></span>
+                        <input type="hidden" value="1"> 
+                        <ul class="sorter__list-main js-select-list">
+                            <li data-id="1">Последние сверху</li>
+                            <li data-id="2">Сначала с высокой оценкой</li>
+                            <li data-id="3">Сначала с низкой оценкой</li>
+                            <li data-id="4">Сначала наиболее полезные</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="respond" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                    <div class="respond__top">
+                        <span class="respond__title" itemprop="name">Компания друзей</span>
+                        <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
+                    </div>
+                    <div class="respond__body">
+                        <div class="respond__mark">
+                            <span>оценка</span>
+                            <div>8,3</div>
+                        </div>
+                        <div class="respond__main">
+                            <div class="respond__plus">
+                                <span itemprop="description">Спасибо! Отличный сервис, схожий с европейским! Были приятно удивлены. Будем советовать всем друзьям. Молодцы!
+                                </span>
+                            </div>
+                            <div class="respond__minus">
+                                <span itemprop="description">
+                                Мелкие недочеты, о которых не хочется писать.
+                                </span>
+                            </div>
+                            <span itemprop="author"> Юрий, Россия </span>
+                            <div class="respond__like"><i>5</i><span>Отметить как полезный</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="respond" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                    <div class="respond__top">
+                        <span class="respond__title" itemprop="name">Компания друзей</span>
+                        <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
+                    </div>
+                    <div class="respond__body">
+                        <div class="respond__mark">
+                            <span>оценка</span>
+                            <div>8,3</div>
+                        </div>
+                        <div class="respond__main">
+                            <div class="respond__plus">
+                                <span itemprop="description">Спасибо! Отличный сервис, схожий с европейским! Были приятно удивлены. Будем советовать всем друзьям. Молодцы!
+                                </span>
+                            </div>
+                            <div class="respond__minus">
+                                <span itemprop="description">
+                                Мелкие недочеты, о которых не хочется писать.
+                                </span>
+                            </div>
+                            <span itemprop="author"> Юрий, Россия </span>
+                            <div class="respond__like"><i>5</i><span>Отметить как полезный</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="respond" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                    <div class="respond__top">
+                        <span class="respond__title" itemprop="name">Компания друзей</span>
+                        <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
+                    </div>
+                    <div class="respond__body">
+                        <div class="respond__mark">
+                            <span>оценка</span>
+                            <div>8,3</div>
+                        </div>
+                        <div class="respond__main">
+                            <div class="respond__plus">
+                                <span itemprop="description">Спасибо! Отличный сервис, схожий с европейским! Были приятно удивлены. Будем советовать всем друзьям. Молодцы!
+                                </span>
+                            </div>
+                            <div class="respond__minus">
+                                <span itemprop="description">
+                                Мелкие недочеты, о которых не хочется писать.
+                                </span>
+                            </div>
+                            <span itemprop="author"> Юрий, Россия </span>
+                            <div class="respond__like"><i>5</i><span>Отметить как полезный</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-items more-items_mod more-items_to-left">
+                    <button class="btn btn_gray btn_round btn_gray-arr">Читать все отзывы (12) <i class="arr-right"></i></button>
+                    <a href="#">Отзывы о других квартирах владельца</a>
+                </div>
+                <a class="btn btn_green" href="#">Забронировать</a>
+                <a href="#" class="btn btn_mark"><i></i>Отметить</a>
+            </div>
+            <div class="l-col2">
+                <h3 class="title-l-2 rate-col">Общая оценка жильцов</h3>
+                <div class="rate">
+                    <div class="flat-mark flat-mark_mod" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                        <strong><meta itemprop="ratingValue" content="9,1">9,1</strong> 
+                        <span>Превосходно</span>на основе 
+                        <a href="#" itemprop="reviewCount">12 отзывов</a>
+                    </div>
+                    <div class="rate__body">
+                        <h4 class="title-l-3 title-l-3_bold">Составные показатели оценки:</h4>
+                        <div class="progress">
+                            <span class="progress__text">Чистота</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:71%"></div>
+                            </div>
+                            <span class="progress__val">7.1</span>
+                        </div>
+                        <div class="progress">
+                            <span class="progress__text">Чистота</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:81%"></div>
+                            </div>
+                            <span class="progress__val">8.1</span>
+                        </div>
+                        <div class="progress">
+                            <span class="progress__text">Чистота</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:71%"></div>
+                            </div>
+                            <span class="progress__val">5.1</span>
+                        </div>
+                        <div class="progress">
+                            <span class="progress__text">Чистота</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:51%"></div>
+                            </div>
+                            <span class="progress__val">7.1</span>
+                        </div>
+                        <div class="progress">
+                            <span class="progress__text">Чистота</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:71%"></div>
+                            </div>
+                            <span class="progress__val">7.1</span>
+                        </div>
+                        <div class="progress">
+                            <span class="progress__text">Чистота</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:71%"></div>
+                            </div>
+                            <span class="progress__val">7.1</span>
+                        </div>
+                        <div class="progress">
+                            <span class="progress__text">Соотношение <br>цена/качество</span>
+                            <div class="progress__main">
+                                <div class="progress__line" style="width:71%"></div>
+                            </div>
+                            <span class="progress__val">7.1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="title-l-2">Похожие квартиры в Киеве</h2>
+        <div class="catalog-wrap js-masonry" data-masonry-options='{"columnWidth": 300, "gutter": 20, "itemSelector": ".js-item-masonry" }'>
+            <div class="item item_extend js-item-masonry">
+                <div class="item__img">
+                    <a href="#"><img src="http://lorempixel.com/300/221/food" width="300" height="221" alt=""></a>
+                    <button class="like">Провереный владелец <i></i></button>
+                    <a class="item__comm" href="#">
+                        <span class="item__comm-mark">9,1 <em>Превосходно</em></span>
+                        <em>На основе</em> <span class="item__comm-count">12 отзывов</span> <em>из 22</em>
+                    </a>
+                <div class="item__info">
+                        <span class="item__state">Свободна</span>
+                        <span class="item__opt">Wi-Fi</span>
+                        <span class="item__opt">TV</span>
+                        <span class="item__opt">Кондиционер</span>
+                    </div>
+                </div>
+                <div class="item__main">
+                    <a class="item__title" href="#">
+                        Двухуровневая квартира в самом центре столицы, 3х-комнатная
+                    </a>
+                    <div class="item__address">ул. Саксаганского, 192 
+                        <a href="#" class="to-map-link js-to-map-popup"><i></i><span>Карта</span></a>
+                    </div>
+                    <div class="price-detail">
+                        <span class="price-detail__old dbv_price"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+                        <span class="price-detail__val dbv_price"><span class="dbv_val">320 </span>
+                        </span>
+                        <div class="price-detail__main">
+                            <div class="price-detail__unit">
+                                <strong class="dbv_cur">грн.</strong> / сутки
+                            </div>
+                            (960 грн. за 3 дня) <span>без предоплаты</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn_salad-angle">Подробнее</a>
+                    <a href="#" class="btn btn_gray btn_arr js-btn-mark"><i></i>Отметить</a>
+                </div>
+            </div>
+            <div class="item item_extend js-item-masonry">
+                <div class="item__img">
+                    <a href="#"><img src="http://lorempixel.com/300/221/food" width="300" height="221" alt=""></a>
+                    <button class="like">Провереный владелец <i></i></button>
+                    <a class="item__comm" href="#">
+                        <span class="item__comm-mark">9,1 <em>Превосходно</em></span>
+                        <em>На основе</em> <span class="item__comm-count">12 отзывов</span> <em>из 22</em>
+                    </a>
+                <div class="item__info">
+                        <span class="item__state">Свободна</span>
+                        <span class="item__opt">Wi-Fi</span>
+                        <span class="item__opt">TV</span>
+                        <span class="item__opt">Кондиционер</span>
+                    </div>
+                </div>
+                <div class="item__main">
+                    <a class="item__title" href="#">
+                        Двухуровневая квартира в самом центре столицы, 3х-комнатная
+                    </a>
+                    <div class="item__address">ул. Саксаганского, 192 
+                        <a href="#" class="to-map-link js-to-map-popup"><i></i><span>Карта</span></a>
+                    </div>
+                    <div class="price-detail">
+                        <span class="price-detail__old dbv_price"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+                        <span class="price-detail__val dbv_price">
+                            <span class="dbv_val">320 </span>
+                        </span>
+                        <div class="price-detail__main">
+                            <div class="price-detail__unit">
+                                <strong class="dbv_cur">грн.</strong> / сутки
+                            </div>
+                            (960 грн. за 3 дня) <span>без предоплаты</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn_salad-angle">Подробнее</a>
+                    <a href="#" class="btn btn_gray btn_arr js-btn-mark"><i></i>Отметить</a>
+                </div>
+            </div>
+            <div class="item item_extend js-item-masonry">
+                <div class="item__img">
+                    <a href="#"><img src="http://lorempixel.com/300/221/food" width="300" height="221" alt=""></a>
+                    <button class="like">Провереный владелец <i></i></button>
+                    <a class="item__comm" href="#">
+                        <span class="item__comm-mark">9,1 <em>Превосходно</em></span>
+                        <em>На основе</em> <span class="item__comm-count">12 отзывов</span> <em>из 22</em>
+                    </a>
+                <div class="item__info">
+                        <span class="item__state">Свободна</span>
+                        <span class="item__opt">Wi-Fi</span>
+                        <span class="item__opt">TV</span>
+                        <span class="item__opt">Кондиционер</span>
+                    </div>
+                </div>
+                <div class="item__main">
+                    <a class="item__title" href="#">
+                        Двухуровневая квартира в самом центре столицы, 3х-комнатная
+                    </a>
+                    <div class="item__address">ул. Саксаганского, 192 
+                        <a href="#" class="to-map-link js-to-map-popup"><i></i><span>Карта</span></a>
+                    </div>
+                    <div class="price-detail">
+                        <span class="price-detail__old"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+                        <span class="price-detail__val">
+                            <span class="dbv_val">320 </span>
+                        </span>
+                        <div class="price-detail__main">
+                            <div class="price-detail__unit">
+                                <strong class="dbv_cur">грн.</strong> / сутки
+                            </div>
+                            (960 грн. за 3 дня) <span>без предоплаты</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn_salad-angle">Подробнее</a>
+                    <a href="#" class="btn btn_gray btn_arr js-btn-mark"><i></i>Отметить</a>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" href="#"><span itemprop="title">Главная</span></a>
+            <a itemprop="url" href="#"><span itemprop="title">Квартиры посуточно</span></a>
+            <a itemprop="url" href="#"><span itemprop="title">Киев</span></a>
+            <span itemprop="title">Красноармейская 46, Студио</span>
+        </div>
+    </div>
+    
+</div>
+<footer class="footer">
+    <div class="l-container">
+        <div class="footer__nav">
+            <div class="footer__title">Главная</div>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Партнерство</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Пресса и Добово</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__title">Города</div>
+            <ul>
+                <li><a href="#">Киев</a></li>
+                <li><a href="#">Львов</a></li>
+                <li><a href="#">Одесса</a></li>
+                <li><a href="#">Харьков</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Днепропетровск</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><button class="js-all-city"><span>Все города</span></button></li>
+            </ul>
+        </div>
+        <div class="footer__add">
+            <div class="footer__title">Для владельцев квартир</div>
+            <a class="btn btn_s btn_green btn_add" href="#">Добавить квартиру<i></i></a>
+            <p>Подключение к нашей системе бронирования бесплатное и простое.</p>
+            <p>Собственный сервис по предоставлению услуг он-лайн бронирования квартир без дополнительных затрат и вложений.</p>
+        </div>
+        <div class="footer__right">
+            <div class="search">
+                <input type="text" placeholder="Поиск квартиры по ID">
+                <i></i>
+            </div>
+            <a href="#" class="footer__logo"></a>
+            <p class="footer__copy">© 2010 - 2013 Dobovo.com  /  Все права защищены.</p>
+            <div class="soc">
+                <a href="#" class="soc__fb"></a>
+                <a href="#" class="soc__tw"></a>
+                <a href="#" class="soc__vk"></a>
+                <a href="#" class="soc__od"></a>
+                <a href="#" class="soc__gp"></a>
+            </div>
+            <a href="http://zeema.com/" target="_blanc" class="footer__create-by">Разработано в ZEEMA</a>
+        </div>
+    </div>
+    <div class="city-list js-city-list">
+        <div class="l-container">
+            <ul class="city-list__col">
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END footer  -->
+<a class="chat-link" href="#">
+    <i></i>
+    <span>Консультация</span>
+</a>
+<a class="faq-link js-open-faq" href="#">
+    <span>?</span>Вопросы и ответы
+</a>
+<div class="sticker sticker_gray is-fixed js-faq-sticker">
+    <div class="sticker__title">Вопросы и ответы</div>
+    <button class="btn-del btn-del_dark js-close-sticker"></button>
+    <ul class="sticker__list">
+        <li><a href="#">Что включено в проживание?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+        <li><a href="#">Включены ли налоги в цену?</a></li>
+        <li><a href="#">Отличие квартир онлайн от офлайн?</a></li>
+        <li><a href="#">Могу ли я привезти животное?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+    </ul>
+    <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
+</div>
+<div class="tooltip js-tooltip"><span></span></div>
+<div class="map-detail flat-info-fixed map-detail_big-title">
+    <div class="map-detail__title">
+        Двухуровневая квартира в самом центре столицы, 3х-комнатная
+    </div>
+    <div class="map-detail__left">
+        <div class="address">
+            ул. Саксаганского, 192 <a href="#" class="to-map-link to-map-link_mod"><i></i><span>Карта</span></a>  <em>(~0,2 км от Саксаганского 190)</em>
+        </div>
+        <span class="label-code">KV 2748</span>
+        <span class="label-state">Свободна</span>
+        <span class="label-prepay">без предоплаты</span>
+    </div>
+    <div class="map-detail__right">
+        <div class="price-detail js-order-btn" style="display:none">
+            <span class="price-detail__old dbv_price"><span class="dbv_val">520 </span><span class="dbv_cur">грн.</span></span>
+            <span class="price-detail__val dbv_price">
+                <span class="dbv_val">320 </span>
+            </span>
+            <div class="price-detail__main">
+                <div class="price-detail__unit">
+                    <strong class="dbv_cur">грн.</strong> / сутки
+                </div>
+                (960 грн. за 3 дня)
+                <a href="#" class="">30 сен - 2 окт, 2 гостя</a>
+            </div>
+        </div>
+        <div class="not-available js-choose-date-btn">
+            <p>Квартира недоступна в выбраные даты</p>
+            <a href="#">Посмотреть доступные даты</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

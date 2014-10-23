@@ -1,0 +1,611 @@
+// order_my
+.container
+	overflow: hidden
+	width: 940px
+	margin: 0 auto  
+	
+.l-col-1
+	float: left
+	width: 620px
+	margin-bottom: 10px 
+.title__top-marg
+	margin-top: 5px
+.phone__block
+	margin-right: 20px
+	display: inline-block
+	vertical-align: -3px
+.data-reser  
+	.data-reser__d_margit
+		margin-top: 17px
+	.data-reser__d
+		padding-left: 20px
+		width: 588px
+		height: 52px 
+		line-height: 47px
+		font-size: 21px
+		+seg_sb
+	.data-reser__row
+		color: #000 
+		padding: 17px 0 20px 20px 
+		+seg_sb 
+		font-size: 16px
+
+	.checkbox_mod
+		margin: 0 0 16px 150px
+		span
+			font-size: 13px
+			color: #5c6064 
+
+	.comment__click_mar
+		margin-top: 0
+	.data-reser__armor
+		margin-top: 22px 
+		
+		.data-reser__armor_g
+			margin-left: 27px 
+			color: #8B9094 
+			cursor: pointer
+			border-bottom: 1px dashed #8b9094
+.comment__click
+	margin: 0 0 0 153px
+	color: #4F81BD
+	border-bottom: 1px dashed #5d8ac1
+	cursor: pointer 
+	display: inline-block
+
+.data-reser__item
+	float: left
+	margin-bottom: 17px 
+.data-reser__input
+	position: relative
+	float: right
+	color: #5C6064 
+	font-size: 13px
+	font-family: Arial, sans-serif
+	.input__mod
+		margin: 0 80px 13px 20px 
+		padding-left: 7px
+		width: 388px
+		height: 40px
+		display: inline-block
+		&:focus
+			+box-shadow(0 0 3px 1px #8bcdfb)
+	.select__list_ul
+		position: absolute
+		left: 68px
+		top: 42px
+		width: 300px 
+		z-index: 10 
+		font-size: 14px
+		+seg_r
+		
+	.select__key-mod
+		position: absolute
+		top: 8px
+		right: 90px
+	.select__arr_mod
+		position: absolute
+		top: 40px
+		left: 110px
+		z-index: 11 
+	&.is-active
+		.select__key-mod
+			display: none
+		.input__mod
+			&:focus
+				+box-shadow(none)
+	.input__height
+		padding: 15px
+		height: 120px
+		width: 388px
+		resize: none
+		+placeholder
+			font-size: 13px
+			font-style: italic
+			color: #878a8e
+			font-family: Arial, sans-serif
+			text-align: left
+	&.data-reser__input_sel
+		padding-right: 80px
+		.input__mod
+			width: 100%
+			margin: 0
+		span
+			padding-top: 10px
+			vertical-align: top
+			display: inline-block
+		.btn
+			margin-top: 2px
+		.select__list_ul
+			width: 266px
+		.select
+			margin: 0 20px
+			width: 266px
+			vertical-align: top
+			display: inline-block
+			&:before
+				position: absolute
+				content: ''
+				top: 50%
+				right: 7px
+				margin-top: -11px
+				+s(guest)
+			.select__list_ul
+				left: 0
+			&.is-active .select__input
+				padding: 8px 6px 0
+.input__height_mod
+	padding: 8px
+	width: 560px
+	height: 70px
+	resize: none
+.data-reser__input_c
+	position: relative
+	i
+		position: absolute
+		top: 10px
+		right: 90px
+		cursor: pointer
+		+s(arr5)
+.comment
+	.data-reser__coment
+		+clr
+	&.is-active
+		.data-reser__coment
+			display: block
+		.comment__click
+			display: none
+		.comment__click_mar
+			display: inline-block
+.data-reser_grey
+	.data-reser__d
+		color: #a5aab0 
+		margin-bottom: 2px
+	span
+		color: #d5d7da
+		font-style: italic
+		font-size: 10px 
+		
+.l-col-2
+	margin-top: 45px
+	float: right
+	margin-left: 14px
+	width: 300px
+	background: #dde0e1 
+	border: 1px solid #e6e7e6
+	+border-radius(5px)
+.details 
+	.details__title
+		padding: 15px 0 15px 22px
+		font-size: 21px
+		line-height: 1
+		+seg_sb
+		
+	.details__img
+		display: block
+		
+	.details-info
+		padding-left: 12px
+		background:  #FCFAF9 
+		
+	.details-info__h
+		padding-top: 12px 
+		color: #25292d 
+		font-size: 16px
+		font-weight: normal
+		+seg_sb
+		
+	.details-info__ad
+		padding-top: 8px 
+		font-size: 14px
+		color: #25292D 
+		+seg_r
+		
+	.details-info__date
+		padding: 8px 0 14px
+		color: #25292d 
+		+seg_r
+		
+	.details__info-row
+		padding-bottom: 15px 
+		font-size: 14px
+		+seg_r
+		
+		.details__info-title
+			width: 92px
+			color: #8b9094
+			display: inline-block
+			
+	.details__info-val
+		padding-left: 40px
+		color: #25292D 
+	.details__info__font
+		font-size: 24px
+		font-weight: normal
+		+seg_b
+			
+	.details__info__line
+		vertical-align: -1px 
+
+	.details__info__all
+		padding-bottom: 10px 
+		font-size: 17px
+		color: #25292D 
+		line-height: 1
+		
+		.details__info__t
+			width: 92px
+			margin-right: 40px 
+			display: inline-block
+			+seg_r
+			
+	.details__info__all_m
+		padding: 12px 0 10px 16px
+		+box-shadow(inset 0 1px 0 0 #c1bfbe)
+		
+.btn_mod-green
+	padding: 0 44px
+	&:hover
+		background: #4d8004
+.breadcrumbs_margin
+	margin-top: 30px 
+	display: inline-block
+
+// END order_my 
+
+
+// order_snd_2
+
+.btn__margin
+	margin-right: 10px
+	width: 116px
+.btn_data-reser
+	float: right
+	margin: 10px 2px 0 0
+	text-shadow: 0 0 1px #67717c
+	color: #67717C 
+	+seg_r
+	&:hover
+		background: #DCE6E9 
+.container__table
+	background: #F0F0F0 
+	.table
+		margin: 20px 0 0 47px 
+		display: inline-block
+		.table__visitor
+			font-size: 14px
+			width: 10%
+			color: #8B9094 
+		.table__item
+			padding-left: 12px
+			padding-bottom: 15px
+			color: #25292D 
+			font-size: 14px
+			font-family: Arial, sans-serif
+			.table__edit
+				color: #0badff
+				border-bottom: 1px dashed #4f81bd
+				cursor: pointer 
+				font-family: Arial, sans-serif
+				font-size: 13px 
+.info-armour, .method-of__info-armour
+	padding: 15px 0 0 25px 
+.method-of__info-armour_pad
+	padding-left: 0
+.hour, .info-armour__hour
+	margin-right: 70px 
+	font-size: 15px
+	color: #25292D 
+.hour__margin
+	margin: 22px 0 18px 5px 
+.info-armour__hour_pad
+	padding: 0 0 20px 16px
+	font: normal 18px Arial, sans-serif
+.armor-number, .info-armour__number
+	padding: 15px 0 
+	font-size: 14px
+	color: #000 
+	+seg_sb
+	strong
+		font: bold 18px Arial, sans-serif
+.sum-amount, .info-armour__sum
+	.prepay, .info-armour__prepay
+		position: relative
+		padding: 8px 10px 10px 15px 
+		width: 250px
+		height: 35px
+		color: #25292D 
+		background: #F0F0F0 
+		font-size: 14px  
+		display: inline-block
+		+border-radius(5px)
+		strong
+			color: #6DAE10 
+			font-size: 24px
+			display: inline-block
+			+seg_b
+		span
+			margin-bottom: 6px
+			vertical-align: middle
+			display: inline-block
+.info-armour__sum
+	width: 620px
+.reservation, .sum-amount__reservation
+	padding-left: 18px
+	display: inline-block
+	vertical-align: 2px 
+	color: #25292d
+	font: normal 14px Arial, sans-serif
+.specification, .info-armour__specific
+	margin: 16px 0 20px 12px 
+	font-size: 11px
+	line-height: 1.8 
+	color: #25292D 
+	li
+		list-style-type: disc 
+.specification_mod
+	font-size: 14px
+.specification_mod
+	font: normal 13px Arial, sans-serif
+.warning, .info-armour__warning
+	padding: 9px 0 9px 16px
+	background: #f9f9b7
+	color: #25292D 
+	+border-radius(5px)
+.warning_mod
+	padding-right: 30px
+	font: normal 15px Arial, sans-serif
+.warning__margin
+	margin: 12px 0 0 5px 
+	padding: 9px 0 9px 17px
+.payment
+	margin: 20px 0
+	+clr
+	.tags, .payment__tags
+		.tags__item 
+			width: 150px
+			height: 44px
+			color: #25292d
+			font-size: 14px
+			text-align: center
+			display: inline-block
+			border-left: 1px solid #e6e7e6
+			border-right: 1px solid #e6e7e6
+			background: #dddfe1 
+			+seg_r
+			+border-radius(5px 5px 0 0)
+			+box-shadow(inset 0 -1px 0 #b7b3b1)
+			+background-image(linear-gradient(bottom, #dddfe1 0%, #e8ebec 100%))
+			&.is-active
+				background: #f6f6f6			
+				+background-image(linear-gradient(bottom, #f5f5f5 0%, #fff 100%))
+				+box-shadow(none)
+			&:hover
+				width: 150px
+				border-left: 1px solid #e6e7e6
+				border-right: 1px solid #e6e7e6
+				+box-shadow(none)
+				background: #f6f6f6
+				+background-image(linear-gradient(bottom, #f5f5f5 0%, #fff 100%))
+			a 
+				width: 100%
+				height: 100%
+				line-height: 44px
+				display: inline-block
+.payment__row
+	position: relative
+	padding: 18px 0 0 15px
+	margin-bottom: 85px
+	height: 305px
+	border: 1px solid #e6e7e6
+	border-top: 1px solid #f6f8f8 
+	background: #f5f5f5 
+	+border-radius(0 0 5px 5px)
+	+box-shadow(0 1px 0 #b7b3b1)
+	+background-image(linear-gradient(bottom, #f5f5f5 0%, #f5f5f5 100%))
+	.btn_pad
+		position: absolute
+		left: 22px
+		bottom: 22px
+		padding: 4px 30px 1px 24px
+		font-size: 14px
+		+seg_b
+.payment__row_mod
+	height: 390px
+	margin-bottom: 0
+.payment__field
+	padding: 30px 0 0 32px
+.payment__radio
+	position: relative
+	float: left
+	margin: 8px
+	width: 277px
+	height: 66px
+	cursor: pointer
+	background: #fff
+	+border-radius(5px)
+	+box-shadow(0 1px 1px #b7b3b1)
+	+background-image(linear-gradient(bottom, #f5f5f5 0%, #fff 100%))
+	input
+		position: absolute
+		top: 50%
+		left: 16px 
+		margin-top: -6px
+		opacity: 0 
+		z-index: 2 
+		&:checked + .payment__pay
+			background: #faecc2
+			+background-image(linear-gradient(bottom, #faecc2 0%, #fff 100%))
+			&:after
+				display: block
+	.payment__pay	
+		padding: 24px 0 0 116px 
+		display: block
+		height: 42px
+		font-size: 14px
+		color: #25292D 
+		+border-radius(5px)
+		+seg_r
+		&:before
+			position: absolute
+			top: 50% 
+			left: 15px
+			margin-top: -7.5px
+			display: block
+			content: ""
+			+s(input)
+		&:after
+			position: absolute
+			top: 50% 
+			left: 16px
+			margin-top: -6.5px
+			display: none
+			content: ""
+			+s(switch)
+	.payment__pay_pad
+		padding-top: 15px 
+		padding-bottom: 9px 
+	.payment__pay_inter
+		padding-top: 25px
+	&:hover
+		background: #deedf5
+		+background-image(linear-gradient(bottom, #deedf5 0%, #fff 100%))
+	.payment__pic_visa
+		position: absolute
+		+s(visa)
+		top: 23px
+		left: 37px
+	.payment__pic_cash
+		position: absolute
+		+s(cashless)
+		top: 16px
+		left: 47px
+	.payment__pic_pay
+		position: absolute
+		+s(paypal)
+		top: 24px
+		left: 43px
+	.payment__pic_form
+		position: absolute
+		+s(form)
+		top: 14px
+		left: 49px
+	.payment__pic_portmone
+		position: absolute
+		+s(portmone)
+		top: 22px
+		left: 35px
+	.payment__pic_interkassa
+		position: absolute
+		+s(interkassa)
+		top: 12px
+		left: 45px
+	.payment__pic_pay-pr
+		position: absolute
+		+s(privat)
+		top: 15px
+		left: 55px
+	.payment__pic_webmoney
+		position: absolute
+		top: 15px
+		left: 62px
+		+s(webmoney)
+	.payment__pic_inter
+		position: absolute
+		top: 15px
+		left: 57px
+		+s(inter)
+	.payment__pic_qiwi
+		position: absolute
+		top: 15px
+		left: 61px
+		+s(qiwi)
+	.payment__pic_terminal
+		position: absolute
+		top: 15px
+		left: 51px
+		+s(terminal)
+	.payment__pic_dobovo
+		position: absolute
+		top: 21px
+		left: 36px
+		+s(logo4)
+	.payment__pic_nall-cash
+		position: absolute
+		top: 15px
+		left: 53px
+		+s(nall-cash)
+	.payment__pic_western-union
+		position: absolute
+		top: 25px
+		left: 36px
+		+s(western-union)
+.payment__radio_mod
+	margin-right: 50px 
+.btn_abs
+	bottom: 100px !important
+// END order_snd_2
+
+// begin thank_you
+.row-info
+	min-height: 550px
+.field-info
+	margin-left: 20px
+.specification__top
+	margin-top: 15px
+// END thank_you
+
+//Owner
+.respond__modd
+	float: left
+	width: 620px
+.item__modd
+	float: left
+	margin-right: 18px
+.more-read
+	float: left
+	width: 620px
+	height: 56px
+	background: #e5e8e8 
+	.btn_gray
+		float: right
+		margin: 14px 22px 0 0
+.link__question
+	float: right
+	margin: 23px 22px 0 0 
+	font-size: 12px
+.wrap_bott
+	margin-bottom: 35px
+.no-comments
+	float: left
+	padding: 20px 0 0 25px 
+	color: #8B9094 
+	font-size: 14px
+.title__inline
+	margin-bottom: 0
+	display: inline-block
+.wrap__field
+	min-height: 220px
+	margin-bottom: 10px
+.wrap_bott8
+	margin-bottom: 20px
+.wrap__row
+	margin-top: 22px
+.extend-text_modd
+	padding-right: 20px
+	font-size: 14px
+.title-l-1_grey
+	color: #A1A5A8 
+// End Owner
+
+//Reviews
+.title-l-2_marg
+	margin: 17px 0 18px 
+.item__margin
+	margin: 22px 0 0 
+.btn_yellow_mod 
+	padding: 0 16px 
+	height: 35px
+	font-size: 14px
+	text-transform: uppercase
+	line-height: 35px

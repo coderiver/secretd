@@ -1,0 +1,941 @@
+.back
+    margin: -12px 0 15px
+    padding: 12px 20px 
+    background: #e5e8e8 
+    .btn_marked
+        float: right
+.title-l-1,
+.title-l-2
+    +seg_sb
+    font-weight: normal
+    color: $black 
+    +clr    
+    .label-info
+        float: right
+.title-l-1,
+    font-size: 26px
+    line-height: 1.1
+.title-l-2
+    margin: 17px 0 10px 
+    font-size: 21px
+.title-l-3
+    margin: 5px 0 
+    font-size: 16px
+    +seg_r
+    font-weight: normal
+    color: $black  
+.title-l-3_bold 
+    +seg_b
+
+.flat-promo
+    padding-right: 5px
+    border-right: 1px solid #bfbbb9
+    +box-shadow(1px 0 0 #fff) 
+    .title-l-1
+        width: 90%
+    .label-state
+        margin: 0 11px 0 16px
+.address
+    margin: 3px 0 10px 
+    +seg_r
+    font-size: 14px
+    em
+        color: #4f5357 
+        font-size: 12px
+        +seg_i
+        font-style: normal
+    .to-map-link
+        margin: 0 20px 0 30px
+        
+.flat-promo__meta
+    margin-top: 9px
+    +seg_r
+    font-size: 12px
+    color: $black
+    span
+        color: #8b9094  
+        margin-left: 13px
+.flat-mark
+    display: inline-block
+    padding: 0 12px 
+    background: #fff
+    font-size: 12px
+    color: $black 
+    +box-shadow(0 1px 1px #b7b3b1, inset 0 0 0 #fff)
+    strong,
+    span,
+    i,
+    em
+        display: inline-block
+        vertical-align: middle
+    em
+        font-style: normal
+    strong
+        font-weight: normal
+        +seg_b
+        font-size: 24px
+        color: #0badff
+    span
+        margin: 0 5px 
+        font-size: 14px
+        color: #0badff
+    .flat-mark__link
+        margin: 0 5px 
+        color: #4f81bd
+        font-size: 12px
+        i
+            +s(to-bottom)
+
+.flat-pricer
+    padding: 0 9px
+    .price-detail
+        margin: 11px 0 12px
+    .price-detail__val
+        margin-right: 4px
+    .btn_salad,
+    .btn_gray
+        margin-right: 25px
+    .btn_gray
+        font-size: 13px
+        +seg_sb
+    .btn_salad
+        font-size: 14px
+.choose
+    position: relative
+    margin-right: 8px
+    width: 96px
+    display: inline-block  
+    vertical-align: middle
+    +unselectable
+    &:after
+        display: none
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0px
+        height: 5px
+        width: 100% 
+        background: #fff
+        z-index: 300 
+    i
+        position: absolute   
+        top: 4px
+        right: 10px
+    .icon-cal       
+        +s(cal3) 
+    &.is-active
+        .choose__input
+            border-color: #fff
+            background: #fff
+            +border-radius(5px 5px 0 0)
+            +box-shadow(0 0 7px rgba(0,0,0,.41)) 
+        &:after
+            display: block
+    .ui-datepicker
+        top: 30px
+        +border-radius(0 5px 5px 5px)
+.choose_to
+    .ui-datepicker
+        left: auto
+        right: 0
+        +border-radius(5px 0 5px 5px)
+    .icon-cal    
+        +s(cal4) 
+.choose__input
+    display: block
+    width: 100%
+    padding: 0 21px 0 7px 
+    height: 30px
+    border: 2px solid #c6c1bf
+    +border-radius(5px)
+    background: #fdfbfb
+    +box-shadow(0 1px 0 #fff)
+    +border-box
+    font-size: 16px
+    color: $black 
+    +seg_r
+    -ms-text-overflow: ellipsis
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    +placeholder
+        +seg_r
+    +background-image(linear-gradient(bottom, #fff 0%, #fff 0.54%, #fdfbfb 76.64%, #e5dfdd 100%))
+
+.choose_number
+    width: 73px
+    margin-right: -8px
+    button
+        position: absolute
+        right: 6px
+        z-index: 2
+    .choose__input
+        +hide-text
+.choose__text
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    padding: 0 18px 0 7px 
+    line-height: 30px
+    font-size: 16px
+    +seg_r
+.choose__plus
+    top: 6px
+    +s(arr19)
+.choose__minus
+    bottom: 6px
+    +s(arr20)
+.choose__list
+    display: none
+    position: absolute
+    top: 30px
+    left: 0
+    right: 0
+    z-index: 300
+    background: #fff
+    +seg_r
+    font-size: 16px
+    overflow: hidden
+    +border-radius(0 0 5px 5px)
+    +box-shadow(0 0 7px rgba(0,0,0,.41))
+    li
+        padding: 0 7px 
+        height: 30px
+        line-height: 30px
+        cursor: pointer
+        border-top: 1px solid #cbcccc
+        &:hover
+            background: #eee 
+
+.gallery
+    padding: 5px 0 
+    height: 270px
+    margin: 10px -10px 10px 0
+    overflow: hidden
+.gallery__item
+    float: left
+    margin-top: 5px
+    width: 100%
+.gallery__img
+    float: left
+    display: block
+    margin: 0 10px 10px 0
+    &:hover
+        +box-shadow(0 0 7px 2px #000)
+        img
+            +box-shadow(0 0 0 4px #fff)
+    img
+        display: block
+        
+.gallery__nav
+    position: absolute
+    top: 5px
+    bottom: 5px
+    z-index: 200
+    width: 40px
+    background: rgba(0,0,0,.4) 
+    text-align: center
+    +transition(background .2s linear)
+    &:hover
+        background: rgba(0,0,0,.6) 
+    i
+        display: inline-block
+        width: 0
+        height: 0
+        border-style: solid
+
+.gallery__prev
+    left: 0
+    i
+        border-width: 6px 6px 6px 0
+        border-color: transparent #fff transparent transparent
+        
+.gallery__next
+    right: 10px
+    i
+        border-width: 6px 0 6px 6px
+        border-color: transparent transparent transparent #fff
+
+.flat-section
+    margin-bottom: 10px
+    .btn_green
+        margin-right: 20px
+
+
+.beds
+    i
+        position: relative
+        display: inline-block
+        margin-right: 15px
+        vertical-align: bottom
+        &:first-child
+            &:after
+                display: none 
+        &:after
+            content: ""
+            position: absolute
+            left: -12px
+            top: 14px
+            +s(plus2) 
+.icon-bed-one_big
+    +s(bed4)
+.icon-bed-two_big
+    +s(bed1)
+.icon-bed-two
+    +s(bed2)
+    &:after
+        left: -14px
+.icon-bed-one
+    +s(bed3)
+
+.extend-text
+    position: relative
+    margin-bottom: 17px
+    padding-right: 10px
+    color: #5c6064 
+    font-size: 13px
+.extend-text__main
+    height: 50px
+    overflow: hidden
+    &.is-active
+        height: auto
+    p
+        margin-bottom: 5px
+.extend-text__link
+    color: $blue 
+    display: inline-block
+    cursor: pointer
+    border-bottom: 1px dashed 
+    
+.owner
+    padding: 15px 20px 20px 
+    background: #dddfe1
+    +box-shadow(0 1px 1px #b7b3b1)
+    a
+        color: $blue
+        font-size: 15px
+        +seg_b  
+    .btn_gray
+        font-size: 13px
+        padding: 0 15px 
+        +seg_r
+        color: $black 
+.owner__list
+    margin: 17px 0 11px
+    overflow: hidden
+    li
+        padding-bottom: 6px
+        +clr
+        font-size: 14px
+    i,span
+        float: left
+    i
+        position: relative
+        display: inline-block
+        margin: 1px 0 0 7px
+        color: #6d7071
+        font-size: 12px
+        font-weight: bold
+        line-height: 1.1
+        font-style: normal
+        border-bottom: 1px solid 
+        cursor: pointer
+        +box-shadow(0 1px 0 #abaeaf)
+        &:after
+            content: ""
+            position: absolute
+            right: -103px
+            width: 100px
+            bottom: 3px 
+            height: 1px
+            border-bottom: 1px dotted #53575a 
+    strong,
+    a
+        position: relative
+        z-index: 10
+        float: right
+        padding: 4px 
+        margin-top: -9px
+        +seg_sb
+        font-size: 18px
+        font-weight: normal
+        color: $black  
+        background: #dddfe1 
+    a
+        padding: 0 4px 
+        margin-top: 0
+        top: -3px
+        color: $blue
+        line-height: 1
+        border-bottom: 2px solid #a0b5d0   
+        
+.distance
+    padding: 0 0 0 20px 
+    .title-l-3_bold
+        margin-top: -3px
+        font-size: 15px
+        +seg_sb
+.distance__list
+    margin-top: 11px
+    li
+        overflow: hidden
+        position: relative
+        margin-bottom: 8px
+        padding-left: 18px
+        &:before
+            content: ""
+            position: absolute
+            left: 0
+            top: 6px
+            width: 4px
+            height: 4px
+            +border-radius(50%) 
+            background: #3b4751
+ 
+        div
+            position: relative
+            float: left
+            &:after
+                content: ""
+                position: absolute
+                right: -303px
+                width: 300px
+                bottom: 3px 
+                height: 1px
+                border-bottom: 1px dotted #53575a
+        span
+            float: right
+            position: relative
+            z-index: 2
+            padding: 0 4px 
+            background: #f6f8f8 
+.distance__all
+    padding: 0 10px 
+    height: 26px
+    line-height: 26px
+    background: #e5e8e8
+    a
+        display: inline-block
+        font-size: 12px
+        color: $blue 
+        line-height: 1
+        text-decoration: underline
+
+.sorter_multi
+    .sorter__list
+        padding-right: 44px
+.l-col1
+    .map
+        margin-bottom: 20px
+
+.label-info
+    padding: 5px 8px 
+    font-size: 12px
+    color: $black 
+    background: #f8e7cb 
+    font-family: Arial,sans-serif 
+    +border-radius(4px)
+
+.respond
+    margin-bottom: 10px
+    background: #fff 
+    +clr
+    &:hover
+        .respond__body
+            background: #f8f5f3
+            +box-shadow(0 1px 1px rgba(0,0,0,.21)) 
+.respond__top
+    position: relative
+    z-index: 2 
+    padding: 8px 10px 
+    +clr
+    +box-shadow(0 1px 1px #b7b3b1, inset 0 -1px 0 #fff)
+.respond__title
+    float: left
+    font-size: 16px
+    color: $black
+    +seg_r 
+.respond__date
+    float: right
+    padding: 2px 0 2px 17px
+    border-left: 1px solid #e5ebeb 
+    font-size: 13px
+.respond__mark
+    float: left
+    width: 140px
+    line-height: 1
+    text-align: center
+    span
+        font-size: 11px
+    div
+        font-size: 24px
+        +seg_b
+        color: $black 
+
+.respond__body
+    padding: 17px 0 12px
+    +clr
+.respond__main
+    padding: 0 14px 0 27px
+    overflow: hidden
+    color: #8b9094 
+.respond__plus,
+.respond__minus
+    position: relative
+    &:before
+        content: "" 
+        position: absolute
+        left: -27px
+.respond__plus
+    margin-bottom: 8px
+    padding-bottom: 15px
+    border-bottom: 1px solid #e5ebeb 
+    &:before
+        top: 4px
+        +s(plus)
+.respond__minus
+    margin-bottom: 15px
+    &:before
+        top: 7px
+        +s(minus)
+.respond__like
+    float: right
+    span, i
+        display: inline-block
+    i
+        position: relative
+        margin-right: 27px
+        color: #48bf0d 
+        font-style: normal
+        &:after
+            content: ""
+            position: absolute
+            top: 2px
+            right: -18px
+            +s(like) 
+    span
+        color: $blue 
+        cursor: pointer
+        border-bottom: 1px dashed 
+
+.rate-col
+    margin-top: 55px 
+.rate
+    background: #f7f5f3
+    +box-shadow(0 1px 1px #b7b3b1, inset 0 -1px 0 #fff)
+    .title-l-3
+        margin-bottom: 17px
+.flat-mark_mod
+    display: block
+    position: relative
+    padding: 9px 12px 10px 
+    &:after,
+    &:before
+        content: ""
+        position: absolute
+        width: 0px
+        height: 0px
+        border-style: solid
+    &:after
+        left: 24px
+        bottom: -10px
+        border-width: 10px 8px 0 8px
+        z-index: 2
+        border-color: #fff transparent transparent transparent
+    &:before
+        left: 23px
+        bottom: -12px
+        +opacity(.8)
+        border-width: 12px 9px 0 9px
+        border-color: #b7b3b1 transparent transparent transparent
+.rate__body
+    padding: 10px 20px 
+
+.progress
+    overflow: hidden
+    margin-bottom: 10px
+    font-size: 0
+.progress__text
+    display: inline-block
+    vertical-align: middle
+    margin-right: 2px
+    width: 125px
+    font-size: 14px
+    color: #8b9094 
+    line-height: 1
+.progress__main
+    position: relative
+    margin-right: 5px
+    display: inline-block
+    vertical-align: middle
+    width: 100px
+    height: 12px
+    background: #dfd1c8 
+.progress__line
+    position: absolute
+    top: 0
+    bottom: 0
+    background: #48bf0d 
+.progress__val
+    display: inline-block
+    vertical-align: middle
+    color: #8b9094
+    font-size: 16px
+    +seg_sb
+
+#dbv_calendar_discounts
+    margin-bottom: 12px
+    font-size: 13px
+    margin-top: 6px
+    div
+        display: inline-block
+        margin-right: 12px
+        padding: 4px 7px 
+        font-size: 12px
+        cursor: pointer
+        +border-radius(5px)
+        &.is-active
+            background: #f9f9b7 
+            color: $black
+            span
+                color: $black
+                border-bottom: 1px dashed transparent 
+        span
+            color: $blue 
+            display: inline-block
+            border-bottom: 1px dashed
+.dbv_calendar_field
+    width: 636px
+    padding: 0
+    height: 296px
+    position: relative
+    .dbv_calendar_popup
+        position: absolute
+        top: 100px
+        left: 0
+        padding: 10px
+        text-align: center
+        width: 585px
+        display: none
+.dbv_calendar_field.discounted
+    .dbv_price_round
+        color: #00A209
+.dbv_calendar_month 
+    width: 294px
+    display: inline-block
+    margin: 0 15px 0 0
+.dbv_calendar
+    width: 294px
+    height: 252px
+    font-family: "SegoeUISemibold",Arial,sans-serif
+    .cell
+        width: 41px
+        height: 37px
+        background: #fff
+        float: left
+        margin: 0 1px 1px 0
+        position: relative
+        p
+            color: rgb(92, 96, 100)
+            outline: medium none
+            text-align: center
+            font-size: 16px
+            display: block
+            margin: 0
+            padding: 0
+            width: 100%
+            height: 100%
+            cursor: pointer
+            span
+                position: absolute
+                top: 1px
+                right: 3px
+            i
+                position: absolute
+                color: rgb(130, 133, 136)
+                font-size: 9px
+                top: 2px
+                left: 2px
+                line-height: 9px
+                font-style: normal
+                text-align: left
+                span
+                    top: 23px
+                    left: 1px
+                    display: block
+                .dbv_cur 
+                    top: 14px
+                    font-size: 90%
+                    font-variant: small-caps
+    .cell.is-other-month
+        background: none repeat scroll 0% 0% rgb(190, 195, 195)
+        p
+            color: rgb(153, 155, 158)
+    .cell.is-last-days
+        background: none repeat scroll 0% 0% rgb(223, 222, 222)
+        p
+            color: rgb(153, 155, 158)
+    .cell.is-inactive
+        background: none repeat scroll 0% 0% rgba(238, 186, 175, 0.6)
+    .cell.is-inactive,
+    .cell.is-last-days
+        p
+            cursor: default
+            i
+                display: none
+    .cell.is-selected
+        background: none repeat scroll 0% 0% rgb(249, 249, 183)
+    .cell.is-today
+        p
+            border: 2px solid rgb(255, 126, 0)
+            width: 37px
+            height: 33px
+                
+    .dbv_calendar_weekdays
+        .cell
+            height: 28px
+            line-height: 28px
+            color: rgb(130, 133, 136)
+            font-weight: normal
+            font-size: 14px
+            background: none repeat scroll 0% 0% rgb(252, 252, 252)
+            text-align: center
+    .dbv_calendar_dates
+        width: 100%
+.calendars-wrapper
+    position: relative
+    padding: 5px 17px 9px
+    +border-radius(5px 0 0 5px)
+    background: #f1f1f1
+    +box-shadow(0 1px 1px #b7b3b1)
+    &:after
+        content: ""
+        position: absolute
+        top: 107px
+        right: -10px
+        width: 0px
+        height: 0px
+        border-style: solid
+        border-width: 10px 0 10px 10px
+        border-color: transparent transparent transparent #f2f2f2
+ 
+    p
+        font-size: 11px
+    .wrapper
+        margin-right: -30px
+.calendar-info
+    margin-top: 11px
+    span
+        display: inline-block
+        margin-left: 12px
+        &:first-child
+            margin-left: 0
+    i
+        display: inline-block
+        margin-top: -6px
+        width: 21px
+        height: 21px
+        +border-box
+        vertical-align: middle
+        background: #fff 
+        &.is-today
+            border: 2px solid $orange
+        &.is-selected
+            background: #f9f9b7
+        &.is-inactive
+            background: #eebaaf 
+.calendar-head
+    width: 293px
+    position: relative
+    margin: 7px 15px 5px 0
+    height: 28px 
+    line-height: 28px
+    border: 1px solid #bfbbb9
+    +border-radius(5px)
+    background: #fff
+    color: $black
+    font-size: 16px
+    +seg_sb 
+    text-align: center
+    +border-box
+    text-transform: capitalize
+.calendar-prev
+    position: absolute
+    left: 9px
+    top: 7px
+    +s(arr8)
+    &:hover
+        +s(arr8-h)
+.calendar-next
+    position: absolute
+    right: 9px
+    top: 7px
+    +s(arr9)
+    &:hover
+        +s(arr9-h)
+.calendar
+    float: left
+    margin-right: 15px
+    width: 293px
+    text-align: center
+    table-layout: auto
+    +seg_sb
+    color: $black
+    font-size: 16px
+    background: #fff  
+    th
+        height: 28px
+        width: 41px
+        line-height: 28px
+        color: #828588
+        font-weight: normal
+        font-size: 14px
+        background: #fcfcfc  
+        border-left: 1px solid #f2f2f2 
+        &:first-child
+            border-left: 0
+            border-top: 0
+    td
+        height: 36px
+        width: 41px
+        border-left: 1px solid #f2f2f2 
+        border-top: 1px solid #f2f2f2 
+        &:first-child
+            border-left: 0
+        &.is-other-month
+            background: #bec3c3 
+            a
+                display: none
+        &.is-last-days
+            background: #dfdede  
+            a
+                color: #999b9e 
+                cursor: default
+            i
+                display: none
+        &.is-inactive
+            background: #eebaaf
+            a
+                color: #995a4d
+                cursor: default 
+        &.is-today
+            a
+                border: 3px solid $orange
+                span
+                    top: 1px
+                    right: 1px
+                i
+                    bottom: 0
+        &.is-selected
+            background: #f9f9b7
+            i
+                color: #976319 
+        a
+            display: block
+            position: relative
+            height: 36px
+            width: 41px
+            +border-box
+            span
+                position: absolute
+                top: 4px
+                right: 4px
+            i
+                position: absolute
+                color: #828588 
+                font-size: 9px
+                bottom: 3px
+                right: 0
+                left: 0
+                font-style: normal
+
+.order
+    padding: 5px 20px 15px
+    height: 383px
+    +border-radius(0 5px 5px 0)
+    background: #dddfe1
+    +border-box
+    +box-shadow(0 1px 1px #b7b3b1)
+.order__head
+    margin-bottom: 13px
+    .title-l-2
+        margin-top: 12px
+.order__change-link
+    display: inline-block
+    margin-left: -8px
+    font-size: 11px
+    color: $blue 
+    cursor: pointer
+    border-bottom: 1px dashed 
+.choose__messages
+    margin: 10px 0
+    min-height: 23px
+    div
+        display: none
+        background: white
+        @extend .attr__wrap
+        padding: 2px 5px
+        width: 193px
+.order__info
+    margin-top: 0px
+    font-size: 14px
+    +seg_r
+    color: $black 
+.order__info-val
+    display: inline-block
+    padding-left: 8px
+.order__info-row
+    margin-bottom: 6px
+    .choose_number
+        width: 96px
+.order__info-title
+    display: inline-block
+    vertical-align: middle
+    width: 103px
+    color: #8b9094 
+.order__footer
+    border-top: 1px solid #fff 
+    +clr
+.order__chat
+    display: inline-block
+    vertical-align: middle
+    width: 120px
+    div
+        margin: 15px 0 40px
+.order__price
+    display: inline-block
+    padding-top: 16px
+    margin-right: -15px
+    vertical-align: middle
+    .btn
+        margin-right: 0
+    .price-detail
+        margin-bottom: 14px
+    .price-detail__val
+        font-size: 24px
+        +seg_b
+        span
+            font-size: 16px
+            
+.l-col2
+    .drop
+        margin-top: 12px
+        
+
+
+.flat-info-fixed
+    display: none
+    position: fixed
+    left: 50%
+    top: 0
+    margin-left: -470px
+    width: 940px
+    z-index: 5000
+.map-detail_big-title
+    padding: 12px 9px 
+    .map-detail__right
+        border-left: 0
+    .map-detail__title
+        font-size: 26px  
