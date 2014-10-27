@@ -11,7 +11,7 @@
 
 .sblock
 	margin-bottom: 20px
-	background-color: #fcfaf9
+	background-color: #fcf9f9
 	border: 1px solid #ebe8e7
 	&.no_bg
 		background: none
@@ -42,6 +42,7 @@
 			cursor: pointer
 			font-size: 13px
 			+seg_r
+			+user-select(none)
 	&__hidden
 		display: none
 		margin-bottom: 0
@@ -55,8 +56,6 @@
 		margin-right: 15px
 		width: 300px
 		min-height: 327px
-		border: 1px solid #ebe8e7
-		box-sizing: border-box
 		.is-bold
 			+seg_b
 		&__img
@@ -123,26 +122,26 @@
 				font-size: 11px
 				+seg_i
 		.compare
-			margin: 8px 0 5px
+			margin-top: 10px
 			+clr
 			&__mark
 				display: inline-block
-				margin-right: 7px
-				vertical-align: bottom
+				vertical-align: middle
 				&.delete
-					+s(delete)
-					margin-right: 0
 					padding-right: 7px
 					vertical-align: baseline
 					cursor: pointer
+					+s(delete)
 			&__span
 				text-decoration: none
 				color: #089de8
 				border-bottom: 1px dashed #4f81bd
 				line-height: 1
 				cursor: pointer
-				font-size: 14px
 				+seg_r
+				+user-select(none)
+				&:hover
+					color: #4F81BD
 
 //watched block
 .watched
@@ -231,13 +230,13 @@
 	box-sizing: border-box
 	&.last
 		margin-right: 0
-	&:after
-		content: ""
+	.btn-del
 		position: absolute
+		background: #000
 		top: -6px
 		right: -7px
-		cursor: pointer
-		+s(close)
+		&:hover
+			background: #F31A42
 	&__img
 		display: block
 		height: 200px
@@ -256,9 +255,6 @@
 			+seg_sb
 			&:hover
 				text-decoration: underline
-		.compare
-			margin-top: 3px
-			padding-left: 1px
 	&__price
 		color: #6dae10
 		line-height: 1.3
@@ -277,23 +273,18 @@
 		.is-bold
 			+seg_b
 	.compare
-		margin: 5px 0
+		margin: 8px 0 2px 1px
 		+clr
 		&__mark
 			display: inline-block
-			margin-right: 7px
-			vertical-align: bottom
-			&.delete
-				+s(delete)
-				margin-right: 0
-				padding-right: 7px
-				vertical-align: baseline
-				cursor: pointer
+			vertical-align: middle
 		&__span
 			text-decoration: none
 			color: #089de8
 			border-bottom: 1px dashed #4f81bd
 			line-height: 1
 			cursor: pointer
-			font-size: 14px
 			+seg_r
+			+user-select(none)
+			&:hover
+				color: #4F81BD
