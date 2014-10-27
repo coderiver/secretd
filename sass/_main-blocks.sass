@@ -124,14 +124,19 @@
 		.compare
 			margin-top: 10px
 			+clr
+			&__in
+				position: relative
 			&__mark
 				display: inline-block
 				vertical-align: middle
+				opacity: 1
 				&.delete
 					padding-right: 7px
 					vertical-align: baseline
 					cursor: pointer
 					+s(delete)
+				&.is-active
+					opacity: 0
 			&__link
 				text-decoration: none
 				color: #5c6064
@@ -148,6 +153,14 @@
 						color: #2A77BD
 				&:hover
 					color: #4F81BD
+			.in-compare
+				position: absolute
+				display: none
+				top: 2px
+				left: 0
+				+s(checked)
+				&.is-active
+					display: block
 
 //watched block
 .watched
@@ -281,14 +294,19 @@
 	.compare
 		margin-top: 10px
 		+clr
+		&__in
+			position: relative
 		&__mark
 			display: inline-block
 			vertical-align: middle
+			opacity: 1
 			&.delete
 				padding-right: 7px
 				vertical-align: baseline
 				cursor: pointer
 				+s(delete)
+			&.is-active
+				opacity: 0
 		&__link
 			display: inline-block
 			font-size: 13px
@@ -308,3 +326,11 @@
 			&:hover
 				color: #4F81BD
 				text-decoration: none
+		.in-compare
+			position: absolute
+			display: none
+			top: 2px
+			left: 0
+			+s(checked)
+			&.is-active
+				display: block

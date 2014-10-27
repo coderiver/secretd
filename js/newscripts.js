@@ -9,7 +9,10 @@ $(document).ready(function() {
 
 	$('.js-compare').click(function() {
 		$(this).next().toggleText("К сравнению", "В сравнении");
+		$(this).toggleClass('is-active');
+		$(this).prev().toggleClass('is-active');
 		$(this).next().toggleClass('is-active');
+
 	});
 
 });
