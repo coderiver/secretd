@@ -7,8 +7,9 @@ $(document).ready(function() {
 	  }}
 	);
 
-	$('.compare__span').click(function() {
-		$(this).toggleText("К сравнению", "В сравнении");
+	$('.js-compare').click(function() {
+		$(this).next().toggleText("К сравнению", "В сравнении");
+		$(this).next().toggleClass('is-active');
 	});
 
 });

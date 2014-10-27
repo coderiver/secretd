@@ -132,14 +132,20 @@
 					vertical-align: baseline
 					cursor: pointer
 					+s(delete)
-			&__span
+			&__link
 				text-decoration: none
-				color: #089de8
-				border-bottom: 1px dashed #4f81bd
+				color: #5c6064
+				border-bottom: 1px dashed #5c6064
 				line-height: 1
 				cursor: pointer
 				+seg_r
 				+user-select(none)
+				&.is-active
+					border-bottom: 0
+					text-decoration: underline
+					color: #4F81BD
+					&:hover
+						color: #2A77BD
 				&:hover
 					color: #4F81BD
 
@@ -249,7 +255,7 @@
 		a
 			display: block
 			text-decoration: none
-			color: #0BADFF
+			color: #4f81bd
 			line-height: 18px
 			font-size: 16px
 			+seg_sb
@@ -273,18 +279,32 @@
 		.is-bold
 			+seg_b
 	.compare
-		margin: 8px 0 2px 1px
+		margin-top: 10px
 		+clr
 		&__mark
 			display: inline-block
 			vertical-align: middle
-		&__span
+			&.delete
+				padding-right: 7px
+				vertical-align: baseline
+				cursor: pointer
+				+s(delete)
+		&__link
+			display: inline-block
+			font-size: 13px
 			text-decoration: none
-			color: #089de8
-			border-bottom: 1px dashed #4f81bd
+			color: #5c6064
+			border-bottom: 1px dashed #5c6064
 			line-height: 1
 			cursor: pointer
 			+seg_r
 			+user-select(none)
+			&.is-active
+				border-bottom: 0
+				text-decoration: underline
+				color: #4F81BD
+				&:hover
+					color: #2A77BD
 			&:hover
 				color: #4F81BD
+				text-decoration: none
