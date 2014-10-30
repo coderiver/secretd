@@ -9019,7 +9019,6 @@ $(document).ready(function() {
 		$(this).parent().removeClass('is-active').next().show();
 	});
 
-
 });
 
 

@@ -6,7 +6,8 @@
     <title>Index</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/newscripts.js"></script>
 </head>
 <body class="index-page">
 <h1 class="title-visibility">Онлайн бронирование квартир</h1>
@@ -16,11 +17,11 @@
         <div class="header__top">
             <div class="l-container">
                 <ul class="header__info">
-                    <li class="js-with-tooltip" data-info="Отзывы м">Более <span class=b>13 000</span> полезных отзывов 
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <span class=b>13 000</span> полезных отзывов
                     </li>
-                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <span class=b>900</span> владельцев квартир 
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <span class=b>900</span> владельцев квартир
                     </li>
-                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <span class=b>18</span> способов оплаты 
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <span class=b>18</span> способов оплаты
                     </li>
                 </ul>
                 <div class="header__top-btn">
@@ -150,7 +151,7 @@
                     <i class="select__key select__key-out"></i>
                     <span class="select__input-text">Выезд</span>
                     <div class="js-datepicker js-datepicker-to"></div>
-                </div> 
+                </div>
                 <div class="select select_guest js-sel-key">
                     <input type="text" class="select__input js-sel-text" value="" placeholder="Кол-во гостей" readonly>
                     <i class="select__arr"></i>
@@ -172,6 +173,150 @@
         </div>
     </div>
     <!-- END Steps -->
+    <div class="swrapper">
+    <!--begin sblock-->
+    <div class="sblock">
+        <div class="sblock__hidden">
+            <div class="stitle onleft"><p>Просмотренные квартиры</p></div>
+            <div class="hide onright">Показать</div>
+        </div>
+        <div class="sblock__wrap">
+            <div class="sblock__inside">
+                <div class="stitle onleft">
+                    <p class="stitle-p">Вы смотрели</p>
+                    <p>Вы определились с квартирой? Выберите из уже просмотренных</p>
+                </div>
+                <div class="hide onright">Свернуть</div>
+            </div>
+            <div class="item" href="#">
+                <a href="#" class="item__img">
+                    <img src="img/flat.jpg" alt="">
+                </a>
+                <div class="item__text">
+                    <a class="item__title" href="#">ул. Красноармейская 54, Центр, Киев</a>
+                    <div class="price">
+                        <div class="price__main">
+                            <span class="price__val dbv_price"><span>от </span>100<span> грн</span></span>
+                            <span class="price__unit">в сутки</span>
+                        </div>
+                    </div>
+                    <div class="item__reviews">
+                        <p>Оценка по <span class="is-bold">11</span> отзывам: <span class="item__mark is-bold">Отлично 8,9</span></p>
+                        <p>Последний запрос: 5 дней назад</p>
+                    </div>
+                    <div class="compare">
+                        <div class="compare__in onleft">
+                            <span class="in-compare"></span>
+                            <input class="compare__mark js-compare" type="checkbox">
+                            <a href="#" class="compare__link">К сравнению</a>
+                        </div>
+                        <div class="compare__in onright">
+                            <i class="compare__mark delete"></i>
+                            <span class="compare__link">Удалить</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="watched onright">
+                <div class="watched__arr"><i></i><span>Вы посмотрели всего одну квартиру</span></div>
+                <p>Повторите поиск, чтобы найти подходящие квартиры</p>
+                <a href="#" class="watched__result">
+                    <p><span class="is-bold">Киев</span> 19 июл - 22 июл</p>
+                    <p>785 квартир</p>
+                </a>
+                <p class="withborder">На нашем сайте более <span class="is-bold">7 200</span> реальных квартир. Уверены, вы подберете подходящую квартиру.</p>
+            </div>
+        </div>
+    </div>
+    <!--end sblock-->
+    <!-- begin sblock  -->
+    <div class="sblock">
+        <div class="sblock__hidden">
+            <div class="stitle onleft"><p>Просмотренные квартиры</p></div>
+            <div class="hide onright">Показать</div>
+        </div>
+        <div class="sblock__wrap">
+            <div class="sblock__inside">
+                <div class="stitle onleft">
+                    <p class="stitle-p">Вы смотрели</p>
+                    <p>Вы определились с квартирой? Выберите из уже просмотренных</p>
+                </div>
+                <div class="hide onright">Свернуть</div>
+            </div>
+            <div class="item" href="#">
+                <a href="#" class="item__img">
+                    <img src="img/flat.jpg" alt="">
+                </a>
+                <div class="item__text">
+                    <a class="item__title" href="#">ул. Красноармейская 54, Центр, Киев</a>
+                    <div class="price">
+                        <div class="price__main">
+                            <span class="price__val dbv_price"><span>от </span>100<span> грн</span></span>
+                            <span class="price__unit">в сутки</span>
+                        </div>
+                    </div>
+                    <div class="item__reviews">
+                        <p>Оценка по <span class="is-bold">11</span> отзывам: <span class="item__mark is-bold">Отлично 8,9</span></p>
+                        <p>Последний запрос: 5 дней назад</p>
+                    </div>
+                    <div class="compare">
+                        <div class="compare__in onleft">
+                            <span class="in-compare"></span>
+                            <input class="compare__mark js-compare" type="checkbox">
+                            <a href="#" class="compare__link">К сравнению</a>
+                        </div>
+                        <div class="compare__in onright">
+                            <i class="compare__mark delete"></i>
+                            <span class="compare__link">Удалить</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" href="#">
+                <a href="#" class="item__img">
+                    <img src="img/flat.jpg" alt="">
+                </a>
+                <div class="item__text">
+                    <a class="item__title" href="#">ул. Красноармейская 54, Центр, Киев</a>
+                    <div class="price">
+                        <div class="price__main">
+                            <span class="price__val dbv_price"><span>от </span>100<span> грн</span></span>
+                            <span class="price__unit">в сутки</span>
+                        </div>
+                    </div>
+                    <div class="item__reviews">
+                        <p>Оценка по <span class="is-bold">11</span> отзывам: <span class="item__mark is-bold">Отлично 8,9</span></p>
+                    </div>
+                    <div class="compare">
+                        <div class="compare__in onleft">
+                            <span class="in-compare"></span>
+                            <input class="compare__mark js-compare" type="checkbox">
+                            <a href="#" class="compare__link">К сравнению</a>
+                        </div>
+                        <div class="compare__in onright">
+                            <i class="compare__mark delete"></i>
+                            <span class="compare__link">Удалить</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="watched is-small onright">
+                <div class="watched__arr another-marg"><i class="is-big"></i><span>Вы просмотрели всего две квартиры</span></div>
+                <p>Повторите поиск, чтобы найти подходящие квартиры</p>
+                <a href="#" class="watched__result is-small">
+                    <p><span class="is-bold">Киев</span> 19 июл - 22 июл</p>
+                    <p>785 квартир</p>
+                </a>
+                <a href="#" class="watched__result is-small">
+                    <p><span class="is-bold">Ивано-Франковск</span></p>
+                    <p>19 июл - 22 июл 785 квартир</p>
+                </a>
+                <p class="withborder is-small">На нашем сайте более 7 200 реальных квартир. Уверены, вы подберете подходящую квартиру.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end sblock -->
+    </div>
     <div class="section">
         <div class="l-container js-masonry" data-masonry-options='{"columnWidth": 300, "gutter": 20, "itemSelector": ".js-item-masonry" }'>
             <div class="item js-item-masonry" href="#">
@@ -191,7 +336,7 @@
                 </div>
                 <div class="reviews__block">
                     <span class="item__reviews">Оценка по <span>11</span> отзывам:</span>
-                    <span class="item__mark">Отлично 8,9</span> 
+                    <span class="item__mark">Отлично 8,9</span>
                 </div>
             </div>
             <div class="item item_height item-banner js-item-masonry" href="#">
@@ -263,7 +408,7 @@
                 </div>
                 <div class="reviews__block">
                     <span class="item__reviews">Оценка по <span>11</span> отзывам:</span>
-                    <span class="item__mark">Отлично 8,9</span> 
+                    <span class="item__mark">Отлично 8,9</span>
                 </div>
             </div>
             <div class="item js-item-masonry" href="#">
@@ -421,7 +566,7 @@
                 </div>
                 <div class="reviews__block">
                    <span class="item__reviews">Оценка по <span>11</span> отзывам:</span>
-                    <span class="item__mark">Отлично 8,9</span> 
+                    <span class="item__mark">Отлично 8,9</span>
                 </div>
             </div>
             <div class="item js-item-masonry" href="#">
@@ -819,7 +964,7 @@
                 </div>
             </div>
         </div>
-       
+
     </div>
 </div>
 <footer class="footer">
