@@ -1,12 +1,92 @@
+//stuff in re-use
+.yellow-block
+	background: #F9F9B7
+	padding: 20px 0 20px 25px
+	font-size: 15px
+	color: #25292D
+	box-sizing: border-box
+	+clr
+	.is-grey
+		margin-right: 10px
+		font-family: Arial, sans-serif
+		font-size: 15px
+		color: #8B9094
+	.is-bold
+		font-weight: bold
+		font-size: 18px
+		line-height: 1.2
+
+.soc__buttons
+	margin-top: 7px
+	+clr
+	a
+		display: block
+		float: left
+		margin: 0 20px 5px 0
+	.fb_soc
+		+s(fb_soc-s)
+	.g_soc
+		+s(g_soc-s)
+	.vk_soc
+		+s(vk_soc-s)
+	.ok_soc
+		+s(ok_soc-s)
+
 //reset_password
+.header
+	&.margin-b
+		margin-bottom: 20px
+
 .newpass
-	margin: 44px 0 65px 0
-	&__in
-		.is-bold
-			+seg_b
-		.is-block
-			display: block
+	margin: 40px 0 65px 0
+	span
+		font-size: 18px
+	.is-bold
+		+seg_b
+	.newpass__in
+		margin-bottom: 14px
+		+clr
+	.text-right
+		width: 85px
+		text-align: right
+		margin-right: 15px
+	.newpass__span
+		display: block
+		padding-top: 7px
+	.input
+		width: 250px
+		height: 40px
+	.label
+		display: block
+		margin: 15px 0
+		line-height: 1
 		span
-			font-size: 18px
-		.input
-			width: 250px
+			margin-left: 14px
+			font-size: 14px
+			vertical-align: top
+	.btn_green
+		width: 248px
+		padding: 0
+		font-size: 14px
+	.no-change
+		margin-left: 14px
+		text-decoration: underline
+		font-size: 14px
+		color: #4f81bd
+		+seg_sb
+
+
+//account_activation
+.activate
+	padding-bottom: 45px
+	.title-l-1
+		margin-bottom: 17px
+	.yellow-block
+		margin-bottom: 25px
+	.soc__buttons
+		margin: 30px 0 20px 0
+		padding-bottom: 30px
+		border-bottom: 1px solid #e2e3ea
+	.newpass
+		margin-top: 25px
+		padding-left: 105px

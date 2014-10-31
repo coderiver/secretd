@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>reset_password</title>
+    <title>account_activation</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -66,29 +66,78 @@
     </header>
     <!-- END Header -->
     <!-- container -->
-    <div class="container">
-        <h1 class="title-l-1">Новый пароль для входа в личный кабинет</h1>
-        <div class="newpass">
-            <div class="newpass__in">
-                <div class="onleft text-right">
-                    <span>Ваш email</span>
+    <div class="container activate">
+        <div class="l-col-1 onleft">
+            <h1 class="title-l-1">Активация вашего аккаунта</h1>
+            <div class="yellow-block">
+                <div class="onleft is-grey">
+                    <p>Личные данные:</p>
+                    <p>Количество заказов:</p>
                 </div>
                 <div class="onleft">
-                     <span class="is-bold">customer@rambler.ru</span>
+                    <p>Геннадий Петров, Россия</p>
+                    <p class="is-bold">10</p>
                 </div>
             </div>
-            <div class="newpass__in">
-                <div class="onleft text-right">
-                    <span class="newpass__span">Пароль</span>
+            <h2 class="title-l-2">Активировать с помощью социальных сетей</h2>
+            <div class="soc__buttons">
+               <a class="fb_soc" href="#"></a>
+               <a class="g_soc" href="#"></a>
+               <a class="vk_soc" href="#"></a>
+               <a class="ok_soc" href="#"></a>
+            </div>
+            <h2 class="title-l-2">Или с помощью e-mail</h2>
+            <div class="newpass">
+                <div class="newpass__in">
+                    <div class="onleft text-right">
+                        <span>Ваш email</span>
+                    </div>
+                    <div class="onleft">
+                         <span class="is-bold">customer@rambler.ru</span>
+                    </div>
                 </div>
-                <div class="onleft">
-                    <input class="input" type="text">
-                    <label class="label"><input type="checkbox"><span>Показать пароль</span></label>
-                    <a class="btn btn_green" href="#">Изменить пароль</a>
-                    <a class="no-change" href="#">Не нужно менять пароль</a>
+                <div class="newpass__in">
+                    <div class="onleft text-right">
+                        <span class="newpass__span">Пароль</span>
+                    </div>
+                    <div class="onleft">
+                        <input class="input" type="text">
+                        <label class="label"><input type="checkbox"><span>Показать пароль</span></label>
+                        <a class="btn btn_green" href="#">Активировать аккаунт</a>
+                    </div>
                 </div>
             </div>
         </div>
+       <div class="l-col-2">
+            <div class="details">
+                <h2 class="title-l-1 details__title">Детали последнего заказа</h2>
+                <img class="details__img" src="img/room.png" alt="img">
+                <div class="details-info">
+                    <h2 class="details-info__h">Двухуровневая квартира в самом центре столицы, 3х-комнатная
+                    </h2>
+                    <p class="details-info__ad">ул. Саксаганского, 192</p>
+                    <p class="details-info__date">
+                        <strong>8 мая</strong>(пн) - <strong>11 мая</strong>(чт)
+                    </p>
+                    <div class="details__info-row">
+                        <span class="details__info-title">Длительность:</span>
+                        <span class="details__info-val">3 дня</span>
+                    </div>
+                    <div class="details__info-row">
+                        <span class="details__info-title">Гостей:</span>
+                        <span class="details__info-val">2 чел</span>
+                    </div>
+                    <div class="details__info-row">
+                        <span class="details__info-title">Стоимость:</span>
+                        <span class="details__info-val">320 грн. / сутки</span>
+                    </div>
+                    <div class="details__info__all">
+                        <span class="details__info__t">Всего:</span>
+                        <strong class="details__info__font">2800 грн.</strong>
+                    </div>
+                </div>
+            </div>
+       </div>
     </div>
     <!-- END container -->
 </div>
@@ -133,13 +182,6 @@
             </div>
             <a href="#" class="footer__logo"></a>
             <p class="footer__copy">© 2010 - 2013 Dobovo.com  /  Все права защищены.</p>
-            <div class="soc">
-                <a href="#" class="soc__fb"></a>
-                <a href="#" class="soc__tw"></a>
-                <a href="#" class="soc__vk"></a>
-                <a href="#" class="soc__od"></a>
-                <a href="#" class="soc__gp"></a>
-            </div>
             <a href="http://zeema.com/" target="_blanc" class="footer__create-by">Разработано в ZEEMA</a>
         </div>
     </div>
