@@ -32,6 +32,103 @@
 	.ok_soc
 		+s(ok_soc-s)
 
+.acc
+	display: none
+	position: absolute
+	top: 42px
+	left: -90px
+	width: 345px
+	font-size: 15px
+	background: #FFF
+	line-height: 1.4
+	z-index: 2
+	+box-shadow(0 0 5px rgba(10,5,6,.39))
+	+seg_r
+	&:before
+		content: " "
+		position: absolute
+		top: -13px
+		left: 50%
+		margin-left: -8px
+		+s(acc_arr)
+	&.is-active
+		display: block
+	.acc__top
+		padding: 12px 15px 15px 15px
+		background: #f2f2f2
+		line-height: 28px
+		+border-box
+	.acc__name
+		margin-top: 5px
+		font-size: 22px
+		+clr
+		img
+			margin-right: 17px
+		p
+			margin-top: 6px
+	.acc__bottom
+		padding: 13px
+		+border-box
+		p
+			font-size: 14px
+		label
+			display: block
+			margin-top: 20px
+			font-size: 0
+			span
+				margin-left: 5px
+				font-size: 15px
+		.input
+			display: inline-block
+			width: 258px
+			height: 35px
+			margin-left: 10px
+			&:focus
+				box-shadow: 0 0 3px 1px #8bcdfb
+		.btn
+			width: 100%
+			margin-top: 15px
+			padding: 0
+			font-size: 14px
+
+//dashboard dropdown menu
+.panel
+	position: absolute
+	display: none
+	top: 44px
+	left: -109px
+	min-width: 260px
+	background: #fff
+	box-shadow: 0 1px 2px #b2b2b2
+	z-index: 5
+	+border-radius(8px 0 8px 8px)
+	+border-box
+	&.is-active
+		display: block
+	a
+		display: block
+		padding: 13px 25px
+		color: #4F81BD
+		border-bottom: 1px solid #dfdfdf
+		line-height: 1
+		&:hover
+			text-decoration: underline
+		&.is-last
+			background: #ECECEC
+			border-bottom: 0
+			+border-radius(0 0 8px 8px)
+	i
+		display: inline-block
+		margin-left: 7px
+		vertical-align: middle
+		+s(exit)
+	.notification
+		background: #f21a41
+		color: #fff
+		padding: 4px 7px
+		margin-left: 10px
+		+border-radius(50%)
+
 //reset_password
 .header
 	&.margin-b
@@ -90,3 +187,203 @@
 	.newpass
 		margin-top: 25px
 		padding-left: 105px
+
+//client_entrance & client
+.header__top
+	&.with-bg
+		background: #F8F5F3
+	.header__top-btn
+		&.registered
+			position: relative
+			+clr
+			span
+				display: inline-block
+				vertical-align: middle
+			.btn
+				margin-top: 10px
+	.header__top-menu
+		height: 44px
+		border-right: 1px solid #ded7d3
+		border-left: 1px solid #ded7d3
+		margin-right: 11px
+		padding: 0 20px 0 15px
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-left: 2px
+			+s(arr22)
+	.header__top-img
+		position: relative
+		margin: 4px 17px 0 0
+		line-height: 1
+		span
+			position: absolute
+			display: block
+			top: -2px
+			right: -10px
+			padding: 4px 7px
+			background: #f21a41
+			color: #FFF
+			line-height: 1
+			+border-radius(50%)
+
+.profile
+	+clr
+	.l-col3
+		margin-right: 23px
+	.profile__right
+		width: 678px
+	.title-l-2
+		padding-left: 10px
+	.profile__photo
+		height: 220px
+		margin: 17px 0 10px 0
+		text-align: center
+		background: #DFE2E3
+		+seg_r
+		p
+			padding-top: 18px
+			font-size: 16px
+		.no-photo
+			display: block
+			margin: 18px auto 0
+			+s(profile)
+		img
+			width: 100%
+			height: 100%
+	.profile__name
+		position: relative
+		padding: 6px 0
+		text-align: center
+		font-size: 16px
+		background: #0BADFF
+		color: #fff
+		+seg_r
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 16px 0 16px 8px
+			border-color: transparent transparent transparent #f6f8f8
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 16px 8px 16px 0
+			border-color: transparent #f6f8f8 transparent transparent
+	.profile__about
+		padding: 10px 0 0 20px
+		font-size: 18px
+		+border-box
+		+seg_r
+	.profile__contact
+		margin: 10px 0
+		background: #f6f6f6
+		border: 1px solid #c5c9c9
+		font-size: 14px
+		line-height: 1
+		+seg_r
+		a
+			color: #4F81BD
+	.profile__contact-item
+		padding: 13px 7px 10px 13px
+		border-bottom: 1px solid #c5c9c9
+		+clr
+		&.is-last
+			border-bottom: 0
+		.is-hidden
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: #C6C9CA
+	.profile__contact-inner
+		+clr
+		span
+			max-width: 120px
+	.profile__confirmed
+		margin-top: 3px
+		color: #83c723
+		border-bottom: 1px dashed #83c723
+	.check_ico
+		margin-bottom: 3px
+		+s(confirmed)
+	.mail_ico
+		margin: 3px 10px 0 0
+		+s(mail)
+	.phone_ico
+		margin-right: 10px
+		+s(phone)
+	.fb_ico
+		margin: -2px 10px 0 0
+		+s(fb_i)
+	.bubble_ico
+		margin: 5px 10px 0 0
+		+s(bubble)
+	.btn_arr
+		margin-top: 2px
+		padding: 0 23px 0 20px
+		color: #25292D
+		font-size: 15px
+		+border-radius(15px)
+		+seg_sb
+		i
+			+s(arr16)
+	.flat-mark
+		width: 100%
+		margin-top: 17px
+		padding: 12px 0 12px 17px
+		font-size: 16px
+		+border-box
+		+seg_r
+		&.no-shadow
+			padding: 20px
+			font-size: 14px
+			box-shadow: none
+		&.s-margin
+			margin-top: 1px
+			font-family: Arial, sans-serif
+
+.respond
+	&.profile
+		margin: 30px 0
+		&:hover
+			.respond__body
+				background: #FFF
+				box-shadow: none
+		.respond__title
+			a
+				text-decoration: underline
+				color: #4F81BD
+		.respond__body
+			padding: 17px 20px 12px
+		.respond__recom
+			float: right
+			margin-right: 10px
+			padding-top: 2px
+			font-family: Arial, sans-serif
+			color: #6DAE10
+			i
+				display: inline-block
+				margin-right: 10px
+				+s(arr7-green)
+	&.with-bg
+		margin-top: 10px
+		.respond__top
+			background: #f6f6f6
+		.respond__body
+			border: 1px solid #edecec
+			border-top-width: 0
+			+border-box

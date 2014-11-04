@@ -9019,6 +9019,47 @@ $(document).ready(function() {
 		$(this).parent().removeClass('is-active').next().show();
 	});
 
+	$.fn.extend({
+	  toggleText: function (a, b){
+	    if (this.text() == a){ this.text(b); }
+	    else { this.text(a) }
+	  }}
+	);
+
+	$('.js-compare').click(function() {
+		$(this).next().toggleText("К сравнению", "В сравнении");
+		$(this).toggleClass('is-active');
+		$(this).prev().toggleClass('is-active');
+		$(this).next().toggleClass('is-active');
+
+	});
+
+	//client_first_entrance
+	$('.js-acc').click(function(event) {
+		$(this).parent().find('.acc').toggleClass('is-active');
+		return false;
+	});
+
+	$('.acc').click(function(event) {
+		return false;
+	});
+
+	$('html, body').click(function(event) {
+		if($('.acc').hasClass('is-active')){
+			$('.acc').removeClass('is-active');
+		}
+		if($('.panel').hasClass('is-active')){
+			$('.panel').removeClass('is-active');
+		}
+	});
+
+	//dashboard dropdown menu
+	$('.js-dropdown').click(function(event) {
+		$(this).parents().find('.panel').addClass('is-active');
+		return false;
+	});
+
+
 });
 
 
