@@ -18,6 +18,7 @@
 	&.no_bg
 		background: none
 		border: 0
+		+clr
 		.sblock__wrap
 			height: auto
 	.sblock__wrap
@@ -134,13 +135,15 @@
 				display: inline-block
 				vertical-align: middle
 				opacity: 1
+				visibility: visible
 				&.delete
 					padding-right: 7px
 					vertical-align: baseline
 					cursor: pointer
-					+s(delete)
+					+s(pic-del)
 				&.is-active
 					opacity: 0
+					visibility: hidden
 			.compare__link
 				text-decoration: none
 				color: #5c6064
@@ -304,13 +307,15 @@
 			display: inline-block
 			vertical-align: middle
 			opacity: 1
+			visibility: visible
 			&.delete
 				padding-right: 7px
 				vertical-align: baseline
 				cursor: pointer
-				+s(delete)
+				+s(pic-del)
 			&.is-active
 				opacity: 0
+				visibility: hidden
 		.compare__link
 			display: inline-block
 			font-size: 13px

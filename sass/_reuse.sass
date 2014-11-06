@@ -1,0 +1,140 @@
+//stuff in re-use
+.yellow-block
+	background: #F9F9B7
+	padding: 20px 0 20px 25px
+	font-size: 15px
+	color: #25292D
+	box-sizing: border-box
+	+clr
+	.is-grey
+		margin-right: 10px
+		font-family: Arial, sans-serif
+		font-size: 15px
+		color: #8B9094
+	.is-bold
+		font-weight: bold
+		font-size: 18px
+		line-height: 1.2
+
+.soc__buttons
+	margin-top: 7px
+	+clr
+	a
+		display: block
+		float: left
+		margin: 0 20px 5px 0
+	.fb_soc
+		+s(fb_soc-s)
+	.g_soc
+		+s(g_soc-s)
+	.vk_soc
+		+s(vk_soc-s)
+	.ok_soc
+		+s(ok_soc-s)
+
+.acc
+	display: none
+	position: absolute
+	top: 42px
+	left: -90px
+	width: 345px
+	font-size: 15px
+	background: #FFF
+	line-height: 1.4
+	z-index: 2
+	+box-shadow(0 0 5px rgba(10,5,6,.39))
+	+seg_r
+	&:before
+		content: " "
+		position: absolute
+		top: -13px
+		left: 50%
+		margin-left: -8px
+		+s(acc_arr)
+	&.is-active
+		display: block
+	.acc__top
+		padding: 12px 15px 15px 15px
+		background: #f2f2f2
+		line-height: 28px
+		+border-box
+	.acc__name
+		margin-top: 5px
+		font-size: 22px
+		+clr
+		img
+			margin-right: 17px
+		p
+			margin-top: 6px
+	.acc__bottom
+		padding: 13px
+		+border-box
+		p
+			font-size: 14px
+		label
+			display: block
+			margin-top: 20px
+			font-size: 0
+			span
+				margin-left: 5px
+				font-size: 15px
+		.input
+			display: inline-block
+			width: 258px
+			height: 35px
+			margin-left: 10px
+			&:focus
+				box-shadow: 0 0 3px 1px #8bcdfb
+		.btn
+			width: 100%
+			margin-top: 15px
+			padding: 0
+			font-size: 14px
+
+.notification
+	background: #f21a41
+	color: #fff
+	padding: 4px 7px
+	z-index: 1
+	+border-radius(50%)
+
+.more-about
+	margin-top: 15px
+	font-size: 14px
+	text-align: right
+	+seg_r
+
+.impetus
+	padding: 15px 13px 15px 20px
+	font-size: 18px
+	background: #EBF5DD
+	color: #548E00
+	line-height: 28px
+	+clr
+	span
+		display: block
+		margin-top: 2px
+		padding: 5px
+		background: #6dae10
+		cursor: pointer
+		+border-radius(50%)
+		&:after
+			content: ""
+			display: block
+			margin: 0 auto
+			+s(pic-del)
+
+.link-blue
+	color: #4F81BD
+	text-decoration: underline
+
+.fill
+	position: absolute
+	display: block
+	top: 0
+	left: 0
+	right: 25px
+	bottom: 0
+	background: #d5efb0
+	z-index: 1
+	+background-image(linear-gradient(bottom, #d2eeab 0%, #e9f7d7 100%))

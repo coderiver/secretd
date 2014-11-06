@@ -1,0 +1,293 @@
+//dashboard dropdown menu
+.panel
+	position: absolute
+	display: none
+	top: 44px
+	left: -109px
+	min-width: 260px
+	background: #fff
+	box-shadow: 0 1px 2px #b2b2b2
+	z-index: 5
+	+border-radius(8px 0 8px 8px)
+	+border-box
+	&.is-active
+		display: block
+	a
+		display: block
+		padding: 13px 25px
+		color: #4F81BD
+		border-bottom: 1px solid #dfdfdf
+		line-height: 1
+		&:hover
+			text-decoration: underline
+		&.is-last
+			background: #ECECEC
+			border-bottom: 0
+			+border-radius(0 0 8px 8px)
+	i
+		display: inline-block
+		margin-left: 7px
+		vertical-align: middle
+		+s(exit)
+	.notification
+		margin-left: 10px
+
+//dashboard
+.profile
+	.profile__ttl
+		.title-l-1
+			display: inline-block
+			margin-right: 10px
+		a
+			text-decoration: underline
+			font-size: 16px
+			color: #4F81BD
+			+seg_sb
+
+.dashboard__menu
+	margin-top: 12px
+	text-align: justify
+	font-size: 0.1px
+	&:after
+		content: " "
+		width: 100%
+		display: inline-block
+	li
+		display: inline-block
+		position: relative
+		background-color: #e7eaeb
+		+box-shadow(0 1px 1px #b7b3b1)
+		+background-image(linear-gradient(bottom, #dddfe1 0%, #e8ebec 100%))
+		+border-radius(5px 5px 0 0)
+		&.is-active
+			background-color: #F5F5F5
+			border-left: 1px solid #e6e7e6
+			+box-shadow(0 -1px 1px #b7b3b1)
+			+background-image(linear-gradient(bottom, #f5f5f5 0%, #fff 100%))
+	a
+		display: inherit
+		padding: 15px 22px
+		font-size: 15px
+	.notification
+		position: absolute
+		top: -9px
+		right: 3px
+		padding: 2px 7px
+		font-size: 14px
+
+.dashboard
+	margin-bottom: 24px
+	padding: 13px 15px
+	background: #f6f6f6
+	border-left: 1px solid #e6e7e6
+	border-right: 1px solid #e6e7e6
+	+border-radius(0 0 5px 5px)
+	+box-shadow(0 1px 1px #b7b3b1)
+	+background-image(linear-gradient(bottom, #f5f5f5 0%, #f5f5f5 100%))
+	+border-box
+	+clr
+	.impetus
+		margin-bottom: 15px
+	.title-l-2
+		padding-left: 0
+		margin-bottom: 0
+	.details__field
+		width: 100%
+		float: none
+		margin-top: 20px
+		+border-box
+		+clr
+		.details__title, .details-info_left
+			width: 425px
+			+border-box
+		.details-info_left
+			padding: 20px 0 20px 20px
+			&:before
+				top: 20px
+				bottom: 30px
+		.details-info__h
+			display: block
+			margin-bottom: 17px
+			font-size: 20px
+	.details-info_right
+		padding: 20px 15px 15px 12px
+		.btn_gray
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 0
+				right: -9px
+	.details__map
+		position: relative
+		display: inline-block
+		margin-left: 20px
+		font-size: 12px
+		color: #8B8D90
+		border-bottom: 1px dashed #8b8d90
+		&:before
+			content: ""
+			position: absolute
+			top: -1px
+			left: -13px
+			+s(to-map)
+	.details__prepay
+		margin-top: 10px
+		font-size: 16px
+		+seg_r
+		+clr
+		.is-green
+			font-size: 24px
+			color: #6DAE10
+			+seg_b
+	.details__book
+		padding: 9px 15px
+		background: #DDE0E1
+		margin-left: 10px
+		p
+			margin-bottom: 5px
+		.is-small
+			font-size: 14px
+		.is-large
+			margin-left: 7px
+			margin-right: 5px
+			font-size: 34px
+			&:first-child
+				margin-left: 0
+	.status
+		width: 253px
+		padding-left: 12px
+		+border-box
+	.btn_green
+		margin: 17px 0 20px 0
+	.comment__click
+		margin: 0
+	.all-apartment
+		margin: 20px 0 17px 0
+	.respond.profile
+		margin: 18px 0 10px 0
+	.respond.with-bg
+		margin-top: 15px
+		padding: 0 20px
+		.respond__top
+			background: #fffeef
+		.respond__body
+			padding-left: 13px
+			background: #fffeef
+		&:hover
+			.respond__body
+				background: #fffeef
+	.respond__main
+		color: #424242
+	.respond__mark
+		width: 112px
+	.sblock.no_bg
+		width: 100%
+	.stitle
+		padding-left: 0
+		p
+			font-size: 14px
+		.stitle-p
+			font-size: 21px
+	.sclear
+		position: relative
+		margin: 7px 13px 0 0
+		font-size: 14px
+		color: #4F81BD
+		border-bottom: 1px dashed #4F81BD
+		line-height: 1.2
+		+seg_r
+		i
+			position: absolute
+			top: -1px
+			left: -20px
+			+s(trash)
+	.sbox
+		margin: 0 10px 20px 0
+	.watched.is-small
+		width: 216px
+		min-height: 319px
+		padding: 18px 7px 0 0
+		background: #FCFAF9
+		p
+			padding: 0 10px
+			font-size: 14px
+	.watched__arr.another-marg
+		padding: 7.5px 0
+		span
+			font-size: 14px
+	.watched__result.is-small
+		position: relative
+		width: 186px
+		margin: 15px auto 12px
+		padding: 5px 0
+		&:after
+			content: " "
+			position: absolute
+			display: block
+			width: 180px
+			height: 1px
+			margin-top: 23px
+			background: #e6e5e5
+		&.is-first
+			&:after
+				display: none
+	.select_city
+		width: 190px
+	.select_date, .select_guest
+		width: 100px
+		.select__input
+			background: #fff
+			+background-image(linear-gradient(to top, #ffffff 0%,#ffffff 0.54%,#fdfbfb 91.53%,#e5dfdd 100%))
+	.filter
+		margin: 18px 0 38px
+		.btn_big
+			margin-left: 8px
+
+.travel
+	margin: 20px 0 25px
+	text-align: center
+	background: #FFF
+	font-size: 14px
+	+clr
+	.travel__item
+		width: 25%
+	.travel__header
+		padding: 9px 0
+		+box-shadow(0 1px 1px #b7b3b1, inset 0 -50px 0 #fff)
+	.travel__body
+		position: relative
+		padding: 25px 0
+		border-right: 1px solid #e0dedd
+		border-bottom: 1px solid #e0dedd
+		+border-box
+		.panel
+			top: 100%
+			left: 50%
+			min-width: 168px
+			margin-left: -84px
+			border-radius: 0 0 8px 8px
+	.travel__number
+		width: 102px
+		height: 102px
+		margin: 0 auto 25px
+		font-size: 60px
+		color: #F72540
+		background: #E0E0E0
+		+border-radius(50%)
+		+seg_l
+		span
+			display: inline-block
+			line-height: 95px
+	.city
+		position: relative
+		text-decoration: none
+		border-bottom: 1px dashed #4f81bd
+		&:after
+			content: " "
+			position: absolute
+			top: 6px
+			right: -12px
+			border-style: solid
+			border-width: 7px 3.5px 0px 3.5px
+			border-color: #4f81bd transparent transparent transparent

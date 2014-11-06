@@ -9055,8 +9055,12 @@ $(document).ready(function() {
 
 	//dashboard dropdown menu
 	$('.js-dropdown').click(function(event) {
-		$(this).parents().find('.panel').addClass('is-active');
+		$(this).parent().find('.panel').toggleClass('is-active');
 		return false;
+	});
+
+	$('.impetus > span').click(function(event) {
+		$(this).parent().slideUp('350');
 	});
 
 

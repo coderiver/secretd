@@ -1,133 +1,14 @@
-//stuff in re-use
-.yellow-block
-	background: #F9F9B7
-	padding: 20px 0 20px 25px
-	font-size: 15px
-	color: #25292D
-	box-sizing: border-box
-	+clr
-	.is-grey
-		margin-right: 10px
-		font-family: Arial, sans-serif
-		font-size: 15px
-		color: #8B9094
-	.is-bold
-		font-weight: bold
-		font-size: 18px
-		line-height: 1.2
-
-.soc__buttons
-	margin-top: 7px
-	+clr
-	a
-		display: block
-		float: left
-		margin: 0 20px 5px 0
-	.fb_soc
-		+s(fb_soc-s)
-	.g_soc
-		+s(g_soc-s)
-	.vk_soc
-		+s(vk_soc-s)
-	.ok_soc
-		+s(ok_soc-s)
-
-.acc
-	display: none
-	position: absolute
-	top: 42px
-	left: -90px
-	width: 345px
-	font-size: 15px
-	background: #FFF
-	line-height: 1.4
-	z-index: 2
-	+box-shadow(0 0 5px rgba(10,5,6,.39))
-	+seg_r
-	&:before
-		content: " "
-		position: absolute
-		top: -13px
-		left: 50%
-		margin-left: -8px
-		+s(acc_arr)
-	&.is-active
-		display: block
-	.acc__top
-		padding: 12px 15px 15px 15px
-		background: #f2f2f2
-		line-height: 28px
-		+border-box
-	.acc__name
-		margin-top: 5px
-		font-size: 22px
-		+clr
-		img
-			margin-right: 17px
-		p
-			margin-top: 6px
-	.acc__bottom
-		padding: 13px
-		+border-box
-		p
-			font-size: 14px
-		label
-			display: block
-			margin-top: 20px
-			font-size: 0
-			span
-				margin-left: 5px
-				font-size: 15px
-		.input
-			display: inline-block
-			width: 258px
-			height: 35px
-			margin-left: 10px
-			&:focus
-				box-shadow: 0 0 3px 1px #8bcdfb
-		.btn
-			width: 100%
-			margin-top: 15px
-			padding: 0
-			font-size: 14px
-
-//dashboard dropdown menu
-.panel
-	position: absolute
-	display: none
-	top: 44px
-	left: -109px
-	min-width: 260px
-	background: #fff
-	box-shadow: 0 1px 2px #b2b2b2
-	z-index: 5
-	+border-radius(8px 0 8px 8px)
-	+border-box
-	&.is-active
-		display: block
-	a
-		display: block
-		padding: 13px 25px
-		color: #4F81BD
-		border-bottom: 1px solid #dfdfdf
-		line-height: 1
-		&:hover
-			text-decoration: underline
-		&.is-last
-			background: #ECECEC
-			border-bottom: 0
-			+border-radius(0 0 8px 8px)
-	i
-		display: inline-block
-		margin-left: 7px
-		vertical-align: middle
-		+s(exit)
-	.notification
-		background: #f21a41
-		color: #fff
-		padding: 4px 7px
-		margin-left: 10px
-		+border-radius(50%)
+//order_new
+.logfast
+	margin-top: 10px
+	padding: 20px
+	background: #f9f9b7
+	color: #000
+	span
+		color: #089DE8
+		border-bottom: 1px dashed #089de8
+		cursor: pointer
+		font-size: 14px
 
 //reset_password
 .header
@@ -172,7 +53,6 @@
 		color: #4f81bd
 		+seg_sb
 
-
 //account_activation
 .activate
 	padding-bottom: 45px
@@ -216,26 +96,21 @@
 		position: relative
 		margin: 4px 17px 0 0
 		line-height: 1
-		span
+		.notification
 			position: absolute
-			display: block
 			top: -2px
 			right: -10px
-			padding: 4px 7px
-			background: #f21a41
-			color: #FFF
-			line-height: 1
-			+border-radius(50%)
 
 .profile
 	+clr
 	.l-col3
-		margin-right: 23px
+		margin-right: 20px
 	.profile__right
 		width: 678px
 	.title-l-2
 		padding-left: 10px
 	.profile__photo
+		position: relative
 		height: 220px
 		margin: 17px 0 10px 0
 		text-align: center
@@ -244,21 +119,68 @@
 		p
 			padding-top: 18px
 			font-size: 16px
+		img
+			width: 100%
+			height: 100%
 		.no-photo
 			display: block
 			margin: 18px auto 0
 			+s(profile)
-		img
-			width: 100%
-			height: 100%
+		.load-photo
+			display: block
+			margin: 12px auto 0
+			+s(load_photo)
+	.profile__upload
+		input
+			+opacity(0)
+			visibility: hidden
+		.btn_blue
+			width: 190px
+			font-size: 16px
+			background-color: #779dcb
+			cursor: pointer
+			+border-box
+	.profile__change
+		position: absolute
+		display: block
+		width: 100%
+		padding: 7px 0
+		font-size: 18px
+		color: #FFF
+		background: rgba(255, 255, 255, 0.33)
+		line-height: 1
+		+seg_sb
+		span, i
+			display: inline-block
+			vertical-align: middle
+		&.ontop
+			top: 0
+		&.onbottom
+			bottom: 0
+		.delete
+			width: 26px
+			height: 26px
+			margin-right: 10px
+			background: rgba(196, 196, 196, 0.33)
+			+border-radius(50%)
+		.photo_ico
+			margin-right: 10px
+			+s(camera)
+		.delete_ico
+			display: block
+			margin: 6.5px auto 0
+			+s(delete-big)
 	.profile__name
 		position: relative
+		display: block
 		padding: 6px 0
 		text-align: center
 		font-size: 16px
 		background: #0BADFF
 		color: #fff
 		+seg_r
+		&.underline
+			text-decoration: underline
 		&:before
 			content: ""
 			position: absolute
@@ -294,11 +216,14 @@
 		a
 			color: #4F81BD
 	.profile__contact-item
+		position: relative
 		padding: 13px 7px 10px 13px
 		border-bottom: 1px solid #c5c9c9
 		+clr
 		&.is-last
 			border-bottom: 0
+		&.percent
+			padding: 13px 0
 		.is-hidden
 			position: relative
 			&:after
@@ -312,11 +237,26 @@
 	.profile__contact-inner
 		+clr
 		span
-			max-width: 120px
+			max-width: 105px
+		&.recommend
+			span
+				max-width: 130px
+			.bubble_ico
+				margin: 1px 10px 0 0
+		&.percent
+			position: relative
+			text-align: center
+			font-size: 16px
+			line-height: 17px
+			z-index: 2
+			.is-small
+				font-size: 11px
 	.profile__confirmed
 		margin-top: 3px
 		color: #83c723
 		border-bottom: 1px dashed #83c723
+		&.to-do
+			color: #4F81BD
 	.check_ico
 		margin-bottom: 3px
 		+s(confirmed)
@@ -332,6 +272,15 @@
 	.bubble_ico
 		margin: 5px 10px 0 0
 		+s(bubble)
+	.person_ico
+		margin: 5px 10px 0 0
+		+s(person)
+	.ask_ico
+		margin: 7px 12px 0 0
+		+s(ask)
+	.arr_ico
+		margin: 3px 3px 0 0
+		+s(arr23)
 	.btn_arr
 		margin-top: 2px
 		padding: 0 23px 0 20px
@@ -363,12 +312,9 @@
 			.respond__body
 				background: #FFF
 				box-shadow: none
-		.respond__title
-			a
-				text-decoration: underline
-				color: #4F81BD
 		.respond__body
 			padding: 17px 20px 12px
+			font-size: 14px
 		.respond__recom
 			float: right
 			margin-right: 10px
@@ -386,4 +332,28 @@
 		.respond__body
 			border: 1px solid #edecec
 			border-top-width: 0
+			font-size: 14px
 			+border-box
+	&.message
+		margin-top: 18px
+		font-size: 14px
+		&:hover
+			.respond__body
+				background: #FFF
+				box-shadow: none
+		.respond__top
+			background-color: #ffdb99
+			+box-shadow(0 1px 0 rgba(229,131,59,.75))
+			.is-bold
+				color: #25292D
+				+seg_b
+			.respond__date
+				border-left: 0
+		.respond__body
+			padding: 17px 60px 12px 20px
+	&.review
+		margin-top: 18px
+		&:hover
+			.respond__body
+				background: #FFF
+				box-shadow: none
