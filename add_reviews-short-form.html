@@ -1,0 +1,426 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Add reviews short form</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="screen" href="css/screen.css" >
+    <script src="js/scripts.js"></script>
+    <script src="js/src/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+<div class="l-layout">
+    <!-- BEGIN Header -->
+    <header class="header">
+        <div class="header__top with-bg">
+            <div class="l-container">
+                <ul class="header__info">
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <strong>13 000</strong> полезных отзывов
+                    </li>
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <strong>900</strong> владельцев квартир
+                    </li>
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <strong>18</strong> способов оплаты
+                    </li>
+                </ul>
+                <div class="header__top-btn registered">
+                    <a href="#" class="onleft header__top-menu js-dropdown">
+                        <div class="onleft header__top-img ">
+                            <img src="img/irina.png" alt="irina">
+                            <span class="notification">2</span>
+                        </div>
+                        <span>Ирина</span>
+                        <i></i>
+                    </a>
+                    <a href="#" class="onleft btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
+                    <ul class="panel">
+                        <li><a href="#">Панель управления</a></li>
+                        <li><a href="#">Мои бронирования</a></li>
+                        <li><a href="#">Мой профиль</a></li>
+                        <li><a href="#">Отзывы<span class="notification">1</span></a></li>
+                        <li><a href="#">Сообщения<span class="notification">1</span></a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a class="is-last" href="#">Выйти<i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="l-container">
+                <h1 class="header__logo"><a href="#">dobovo.com</a></h1>
+                <div class="header__cont">
+                    <span class="header__phone">(+38 044) 221-55-11 </span>
+                    <a href="#" class="btn btn_s btn_gray">skype</a>
+                    <a href="#" class="btn btn_s btn_gray">Задать вопрос</a>
+                </div>
+                <div class="header__currency">
+                    Стоимость в:
+                    <div class="currency">
+                        <span class="currency__text js-select">грн ₴</span>
+                        <input type="hidden" value="1">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">грн ₴</li>
+                            <li data-id="2">EUR €</li>
+                            <li data-id="3">USD $</li>
+                            <li data-id="4">RUB ₱</li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <span class="currency__text js-select">RU</span>
+                        <input type="hidden" value="4">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">RU</li>
+                            <li data-id="2">EN</li>
+                            <li data-id="3">UA</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Поиск квартиры по ID">
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <div class="container profile">
+        <ul class="dashboard__menu">
+            <li><a href="#">Панель управления</a></li>
+            <li><a href="#">Мои бронирования</a></li>
+            <li><a href="#">Мой профиль</a></li>
+            <li class="is-active"><a href="#">Отзывы</a><span class="notification">1</span></li>
+            <li><a href="#">Сообщение</a><span class="notification">1</span></li>
+            <li><a href="#">Программа лояльности</a></li>
+        </ul>
+        <div class="dashboard">
+            <div class="profile__ttl addrev">
+                <h1 class="title-l-1 onleft">Оставьте отзыв о квартире</h1>
+                <a class="onright btn btn_m btn_gray btn_arr" href="#"><i></i>Вернуться ко всем отзывам</a>
+            </div>
+            <div class="addreviews">
+                <div class="data-reser data-reser__coll">
+                    <div class="details details__field">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_grey text-col-green"><span>Статус: </span>Проживание завершено</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left">
+                            <a class="details-info__h details-info__h_blue" href="#">Киев, ул. Саксаганского, 192</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                            <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <p class="details__info-title margin_bott">Контактное лицо</p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flat-mark flat-mark_top">
+                   1. Общая оценка квартиры<span>обязательный ответ на вопрос</span>
+                </div>
+                <div class="addreviews__item">
+                    <p class="addreviews__ttl ">Как вы оцениваете квартиру по следующим критериям?</p>
+                    <div class="addreviews__table">
+                        <div class="table__row">
+                            <p class="table__name onleft">Персонал:</p>
+                            <div class="onleft table__stars">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star star_empty"></i>
+                            </div>
+                            <p class="onleft mark-good">Хорошо</p>
+                        </div>
+                        <div class="table__row">
+                            <p class="table__name onleft">Услуги и удобства:</p>
+                            <div class="onleft table__stars">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                            </div>
+                            <p class="onleft mark-ok">Средне</p>
+                        </div>
+                        <div class="table__row">
+                            <p class="table__name onleft">Чистота квартиры:</p>
+                            <div class="onleft table__stars">
+                                <i class="star"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                            </div>
+                            <p class="onleft mark-bad">Плохо</p>
+                        </div>
+                        <div class="table__row">
+                            <p class="table__name onleft">Комфорт:</p>
+                            <div class="onleft table__stars">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                            </div>
+                            <p class="onleft mark-excellent">Отлично</p>
+                        </div>
+                        <div class="table__row">
+                            <p class="table__name onleft">Соотношение цена / качество:</p>
+                            <div class="onleft table__stars">
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                            </div>
+                            <p class="onleft">Выберите нужное количество звезд для оценки</p>
+                        </div>
+                        <div class="table__row">
+                            <p class="table__name onleft">Месторасположение:</p>
+                            <div class="onleft table__stars">
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                                <i class="star star_empty"></i>
+                            </div>
+                            <p class="onleft">Выберите нужное количество звезд для оценки</p>
+                        </div>
+                    </div>
+                    <p class="addreviews__ttl">Как вы оцениваете квартиру по следующим критериям?</p>
+                    <label class="addreviews__expect">
+                        <input value="yes" name="expect" type="radio">
+                        <span>Точно, как в действительности</span>
+                    </label>
+                    <label class="addreviews__expect">
+                        <input value="no" name="expect" type="radio">
+                        <span>Не совпадает с действительностью</span>
+                    </label>
+                </div>
+                <a href="#" class="addreviews__ask js-ask">Показать все вопросы</a>
+                <div class="hidden">
+                    <div class="flat-mark flat-mark_top">
+                       2. Преимущества и недостатки во время проживания в квартире
+                    </div>
+                    <div class="addreviews__item">
+                        <p class="addreviews__ttl yes-no"><span class="yes">+</span> Что вам <strong>понравилось</strong> больше всего?</p>
+                        <textarea class="textarea" placeholder="Например, мне очень понравилась мебель в квартире..."></textarea>
+                        <p class="addreviews__ttl yes-no"><span class="no">-</span> Что вам <strong>не понравилось</strong> больше всего?</p>
+                        <textarea class="textarea" placeholder="Например, мне очень понравилась мебель в квартире..."></textarea>
+                        <p class="addreviews__ttl">Порекомендовали бы вы эту квартиру?</p>
+                        <label class="addreviews__expect">
+                            <input value="yes" name="recommend" type="radio">
+                            <span>Да, я порекомендовал бы</span>
+                        </label>
+                        <label class="addreviews__expect">
+                            <input value="no" name="recommend" type="radio">
+                            <span>Нет, не рекомендовал бы</span>
+                        </label>
+                    </div>
+                     <div class="flat-mark flat-mark_top">
+                       3. Преимущества и недостатки во время проживания в квартире
+                    </div>
+                    <div class="addreviews__item">
+                        <p class="addreviews__ttl">Что заставило вас остановить свой выбор на этой квартире?</p>
+                        <label class="addreviews__expect">
+                            <input value="price" name="why" type="radio">
+                            <span>Цена</span>
+                        </label>
+                        <label class="addreviews__expect">
+                            <input value="place" name="why" type="radio">
+                            <span>Местоположение</span>
+                        </label>
+                        <p class="addreviews__ttl">Какова была цель вашего пребывания?</p>
+                        <label class="addreviews__expect">
+                            <input value="price" name="reason" type="radio">
+                            <span>Туризм</span>
+                        </label>
+                        <label class="addreviews__expect">
+                            <input value="place" name="reason" type="radio">
+                            <span>Работа</span>
+                        </label>
+                        <p class="addreviews__ttl">В каком статусе вы останавливались в квартире?</p>
+                        <label class="addreviews__expect">
+                            <input value="price" name="who" type="radio">
+                            <span>Индивидуальный путешественник</span>
+                        </label>
+                        <label class="addreviews__expect">
+                            <input value="place" name="who" type="radio">
+                            <span>Молодая пара</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="addreviews__item">
+                    <p class="addreviews__ttl with-border">Как показать информацию об авторе этого отзыва?</p>
+                    <label class="addreviews__expect">
+                        <input value="price" name="author" type="radio">
+                        <span>Ирина</span>
+                    </label>
+                    <label class="addreviews__expect">
+                        <input value="place" name="author" type="radio">
+                        <span>Аноним</span>
+                    </label>
+                    <button class="btn btn_green" type="submit">Отправить отзыв</button>
+                    <p>Вся информация по вашему бронированию есть у принимающей стороны,<br> которая может связаться с вами по поводу данного отзываa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="l-container">
+        <div class="footer__nav">
+            <div class="footer__title">Главная</div>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Партнерство</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Пресса и Добово</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__title">Города</div>
+            <ul>
+                <li><a href="#">Киев</a></li>
+                <li><a href="#">Львов</a></li>
+                <li><a href="#">Одесса</a></li>
+                <li><a href="#">Харьков</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Днепропетровск</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><button class="js-all-city"><span>Все города</span></button></li>
+            </ul>
+        </div>
+        <div class="footer__add">
+            <div class="footer__title">Для владельцев квартир</div>
+            <a class="btn btn_s btn_green btn_add" href="#">Добавить квартиру<i></i></a>
+            <p>Подключение к нашей системе бронирования бесплатное и простое.</p>
+            <p>Собственный сервис по предоставлению услуг он-лайн бронирования квартир без дополнительных затрат и вложений.</p>
+        </div>
+        <div class="footer__right">
+            <div class="search">
+                <input type="text" placeholder="Поиск квартиры по ID">
+                <i></i>
+            </div>
+            <a href="#" class="footer__logo"></a>
+            <p class="footer__copy">© 2010 - 2013 Dobovo.com  /  Все права защищены.</p>
+            <div class="soc">
+                <a href="#" class="soc__fb"></a>
+                <a href="#" class="soc__tw"></a>
+                <a href="#" class="soc__vk"></a>
+                <a href="#" class="soc__od"></a>
+                <a href="#" class="soc__gp"></a>
+            </div>
+            <a href="http://zeema.com/" target="_blanc" class="footer__create-by">Разработано в ZEEMA</a>
+        </div>
+    </div>
+    <div class="city-list js-city-list">
+        <div class="l-container">
+            <ul class="city-list__col">
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END footer -->
+<a class="chat-link" href="#">
+    <i></i>
+    <span>Консультация</span>
+</a>
+<a class="faq-link js-open-faq" href="#">
+    <span>?</span>Вопросы и ответы
+</a>
+<div class="sticker sticker_gray is-fixed js-faq-sticker">
+    <div class="sticker__title">Вопросы и ответы</div>
+    <button class="btn-del btn-del_dark js-close-sticker"></button>
+    <ul class="sticker__list">
+        <li><a href="#">Что включено в проживание?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+        <li><a href="#">Включены ли налоги в цену?</a></li>
+        <li><a href="#">Отличие квартир онлайн от офлайн?</a></li>
+        <li><a href="#">Могу ли я привезти животное?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+    </ul>
+    <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
+</div>
+<div class="tooltip js-tooltip"><span></span></div>
+</body>
+</html>

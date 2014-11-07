@@ -138,3 +138,20 @@
 	background: #d5efb0
 	z-index: 1
 	+background-image(linear-gradient(bottom, #d2eeab 0%, #e9f7d7 100%))
+
+.textarea
+	width: 550px
+	height: 90px
+	padding: 15px
+	background-color: #fff
+	border: 1px solid #e2e3ea
+	resize: none
+	+seg_i
+	+border-radius(2px)
+	+border-box
+	+box-shadow(inset 0px 1px 0 0px rgba(0,0,0,.2))
+
+.hidden
+	display: none
+	&.is-not
+		display: block

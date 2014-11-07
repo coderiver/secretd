@@ -9063,6 +9063,11 @@ $(document).ready(function() {
 		$(this).parent().slideUp('350');
 	});
 
+	$('.js-ask').click(function(event) {
+		$(this).parent().find('.hidden').toggleClass('is-not');
+		$(this).toggleText("Показать все вопросы", "Скрыть все вопросы");
+		return false;
+	});
 
 });
 

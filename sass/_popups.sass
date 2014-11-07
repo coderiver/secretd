@@ -350,13 +350,41 @@
     height: 300px
     padding: 26px
     +border-box
-    +box-shadow(0 0 5px rgba(10,5,6,.39))
     &.approve
         height: 260px
         .title-l-3
             margin: 9px 0
         .btn_green
             width: 307px
+    &.email
+        height: 280px
+        .title-l-3
+            margin: 8px 0
+    &.mobile
+        width: 910px
+        height: 180px
+        padding: 16px 0 26px 30px
+        background: #ebf5dd
+        p
+            font-size: 16px
+            +seg_r
+        .mobile__in
+            margin-top: 14px
+            +clr
+            .onleft
+                margin-right: 10px
+            .mobile__p
+                margin-top: 8px
+        .title-l-3_bold
+            font-size: 16px
+            color: #25292D
+        .input
+            width: 215px
+            height: 38px
+        .btn_green
+            width: 215px
+        .btn-del
+            background: #6DAE10
     p
         font-size: 14px
         color: #424242
@@ -372,9 +400,10 @@
     .input
         width: 305px
         &.code
-            width: 97px
+            width: 106px
             height: 38px !important
             margin-left: 10px
+            padding: 0
             text-align: center
             font-size: 21px
             color: #9d9d9d
