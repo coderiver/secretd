@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Add reviews</title>
+    <title>My bookings empty</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -83,207 +83,76 @@
         </div>
     </header>
     <!-- END Header -->
-    <div class="container profile">
+    <div class="container profile bookings">
         <ul class="dashboard__menu">
             <li><a href="#">Панель управления</a></li>
-            <li><a href="#">Мои бронирования</a></li>
+            <li class="is-active"><a href="#">Мои бронирования</a></li>
             <li><a href="#">Мой профиль</a></li>
-            <li class="is-active"><a href="#">Отзывы</a><span class="notification">1</span></li>
-            <li><a href="#">Сообщение</a><span class="notification">1</span></li>
+            <li><a href="#">Отзывы</a><span class="notification">1</span></li>
+            <li><a href="#">Сообщение</a></li>
             <li><a href="#">Программа лояльности</a></li>
         </ul>
-        <div class="dashboard">
-            <div class="dashboard__ttl addrev">
-                <h1 class="title-l-1 onleft">Оставьте отзыв о квартире</h1>
-                <a class="onright btn btn_m btn_gray btn_arr" href="#"><i></i>Вернуться ко всем отзывам</a>
+        <div class="dashboard bookings">
+            <div class="impetus">
+                <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a>, чтобы произвести благоприятное впечатление и стать желанным гостем</p>
+                <span class="onright"></span>
             </div>
-            <div class="addreviews">
-                <div class="data-reser data-reser__coll">
-                    <div class="details details__field">
-                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
-                        <p class="status status_grey text-col-green"><span>Статус: </span>Проживание завершено</p>
-                        <div class="details__img">
-                            <img alt="img" src="img/room.png">
-                            <div class="details__rev">
-                                <p class="is-bold">9,1</p>
-                                <p>12 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="details-info details-info_left">
-                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
-                            <span>ул. Саксаганского, 192</span>
-                            <a class="details__map" href="#">Карта</a>
-                            <p class="details-info__date">
-                                <strong>8 мая</strong>
-                                (пн) -
-                                <strong>11 мая</strong>
-                                (чт)
-                            </p>
-                            <div class="details__info-row">
-                                <span class="details__info-title">Длительность:</span>
-                                <span class="details__info-val">3 дня</span>
-                            </div>
-                            <div class="details__info-row">
-                                <span class="details__info-title">Гостей:</span>
-                                <span class="details__info-val">2 чел</span>
-                            </div>
-                            <div class="details__info-row">
-                                <span class="details__info-title">Стоимость:</span>
-                                <span class="details__info-val">320 грн. / сутки</span>
-                            </div>
-                            <div class="details__info__all">
-                                <span class="details__info__t">Всего:</span>
-                                <strong class="details__info__font">2800 грн.</strong>
-                            </div>
-                        </div>
-                        <div class="details-info_right">
-                            <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
-                            <p class="title-l-1 margin_bott">Капитал Сервис
-                                <span class="title-l-1_grey margin_bott">(Киев)</span>
-                            </p>
-                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
-                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
-                        </div>
-                    </div>
+            <h1 class="title-l-1">Мои бронирования</h1>
+            <div class="no-info">
+                <p class="onleft">Если вы бронировали квартиры по другим email, вы можете прикрепить их к этому кабинету</p>
+                <a class="onright btn btn_s btn_gray js-dropdown" href="#">Добавить другие брони<i></i></a>
+                <ul class="panel">
+                    <li><a href="#">Киев</a></li>
+                    <li><a href="#">Харьков</a></li>
+                    <li><a href="#">Одесса</a></li>
+                    <li><a href="#">Полтава</a></li>
+                </ul>
+            </div>
+            <h2 class="title-l-2">У вас пока нет забронированых квартир. Начните путешествие прямо сейчас</h2>
+            <div class="filter js-calendars-wrapper">
+                <div class="select select_city js-sel-key">
+                    <input class="select__input js-sel-text" value="Киев" readonly>
+                    <i class="select__arr"></i>
+                    <i class="select__key"></i>
+                    <input type="hidden" class="js-sel-input" value="">
+                    <ul class="select__list js-sel-list">
+                        <li data-id="1">Киев</li>
+                        <li data-id="2">Одесса</li>
+                        <li data-id="3">Львов</li>
+                        <li data-id="4">Донецк</li>
+                    </ul>
                 </div>
-                <div class="flat-mark flat-mark_top">
-                   1. Общая оценка квартиры<span>обязательный ответ на вопрос</span>
+                <div class="select select_date js-show-calendar">
+                    <input class="select__input js-from" type="text" value="" readonly>
+                    <i class="select__arr"></i>
+                    <i class="select__key"></i>
+                    <span class="select__input-text">Заезд 7 мая</span>
+                    <div class="js-datepicker js-datepicker-from"></div>
                 </div>
-                <div class="addreviews__item">
-                    <p class="addreviews__ttl ">Как вы оцениваете квартиру по следующим критериям?</p>
-                    <div class="addreviews__table">
-                        <div class="table__row">
-                            <p class="table__name onleft">Персонал:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft mark-good">Хорошо</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Услуги и удобства:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft mark-ok">Средне</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Чистота квартиры:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft mark-bad">Плохо</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Комфорт:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                            </div>
-                            <p class="onleft mark-excellent">Отлично</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Соотношение цена / качество:</p>
-                            <div class="onleft table__stars">
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft">Выберите нужное количество звезд для оценки</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Месторасположение:</p>
-                            <div class="onleft table__stars">
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft">Выберите нужное количество звезд для оценки</p>
-                        </div>
-                    </div>
-                    <p class="addreviews__ttl">Как вы оцениваете квартиру по следующим критериям?</p>
-                    <label class="addreviews__expect">
-                        <input value="yes" name="expect" type="radio">
-                        <span>Точно, как в действительности</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="no" name="expect" type="radio">
-                        <span>Не совпадает с действительностью</span>
-                    </label>
+                <div class="select select_date js-show-calendar">
+                    <input type="text" class="select__input js-to" value="" readonly>
+                    <i class="select__arr"></i>
+                    <i class="select__key select__key-out"></i>
+                    <span class="select__input-text">Выезд 8 мая</span>
+                    <div class="js-datepicker js-datepicker-to"></div>
                 </div>
-                <div class="flat-mark flat-mark_top">
-                   2. Преимущества и недостатки во время проживания в квартире
+                <div class="select select_guest js-sel-key">
+                    <input type="text" class="select__input js-sel-text" value="" placeholder="1 гость" readonly>
+                    <i class="select__arr"></i>
+                    <i class="select__key"></i>
+                    <ul class="select__list js-sel-list">
+                        <li data-id="1">1</li>
+                        <li data-id="2">2</li>
+                        <li data-id="3">3</li>
+                        <li data-id="4">4</li>
+                        <li data-id="5">5</li>
+                        <li data-id="6">6</li>
+                        <li data-id="7">7</li>
+                        <li data-id="8">8</li>
+                        <li data-id="9">9</li>
+                    </ul>
                 </div>
-                <div class="addreviews__item">
-                    <p class="addreviews__ttl yes-no"><span class="yes">+</span> Что вам <strong>понравилось</strong> больше всего?</p>
-                    <textarea class="textarea" placeholder="Например, мне очень понравилась мебель в квартире..."></textarea>
-                    <p class="addreviews__ttl yes-no"><span class="no">-</span> Что вам <strong>не понравилось</strong> больше всего?</p>
-                    <textarea class="textarea" placeholder="Например, мне очень понравилась мебель в квартире..."></textarea>
-                    <p class="addreviews__ttl">Порекомендовали бы вы эту квартиру?</p>
-                    <label class="addreviews__expect">
-                        <input value="yes" name="recommend" type="radio">
-                        <span>Да, я порекомендовал бы</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="no" name="recommend" type="radio">
-                        <span>Нет, не рекомендовал бы</span>
-                    </label>
-                </div>
-                 <div class="flat-mark flat-mark_top">
-                   3. Преимущества и недостатки во время проживания в квартире
-                </div>
-                <div class="addreviews__item">
-                    <p class="addreviews__ttl">Что заставило вас остановить свой выбор на этой квартире?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="why" type="radio">
-                        <span>Цена</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="why" type="radio">
-                        <span>Местоположение</span>
-                    </label>
-                    <p class="addreviews__ttl">Какова была цель вашего пребывания?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="reason" type="radio">
-                        <span>Туризм</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="reason" type="radio">
-                        <span>Работа</span>
-                    </label>
-                    <p class="addreviews__ttl">В каком статусе вы останавливались в квартире?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="who" type="radio">
-                        <span>Индивидуальный путешественник</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="who" type="radio">
-                        <span>Молодая пара</span>
-                    </label>
-                    <p class="addreviews__ttl with-border">Как показать информацию об авторе этого отзыва?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="author" type="radio">
-                        <span>Ирина</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="author" type="radio">
-                        <span>Аноним</span>
-                    </label>
-                    <button class="btn btn_green" type="submit">Отправить отзыв</button>
-                    <p>Вся информация по вашему бронированию есть у принимающей стороны,<br> которая может связаться с вами по поводу данного отзываa</p>
-                </div>
+                <button type="submit" class="btn btn_big btn_red">Найти</button>
             </div>
         </div>
     </div>

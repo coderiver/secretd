@@ -1,6 +1,6 @@
 .btn
     display: inline-block
-    padding: 0 12px 
+    padding: 0 12px
     height: 33px
     text-align: center
     +border-radius(5px)
@@ -17,13 +17,13 @@
 .btn_fluid
     display: block
 .btn_s
-    padding: 0 10px 
+    padding: 0 10px
     height: 25px
     line-height: 26px
     font-size: 10px
     +seg_b
 .btn_m
-    padding: 0 10px 
+    padding: 0 10px
     height: 30px
     line-height: 30px
     font-size: 13px
@@ -67,7 +67,7 @@
     +border-radius(5px 0 0 5px)
     text-transform: capitalize
     &:after
-        content: "" 
+        content: ""
         position: absolute
         right: -12px
         top: 0
@@ -76,7 +76,7 @@
         &:after
             +s(arr13)
             height: 25px
-            
+
 .btn_salad-angle
     position: relative
     height: 27px
@@ -91,7 +91,7 @@
     +box-shadow(0 1px 1px rgba(70,115,6,.34), inset 0 0 0 1px rgba(171,230,85,.27))
     +background-image(linear-gradient(bottom, #219900 0%, #2bbd00 100%))
     &:after
-        content: "" 
+        content: ""
         position: absolute
         right: -17px
         top: -1px
@@ -99,15 +99,15 @@
     &:hover
         border: 1px solid #457105
         background: #416d03
-        +box-shadow(0 1px 1px rgba(70,115,6,.34), inset 0 0 7px rgba(170, 230, 84, 0.8)) 
+        +box-shadow(0 1px 1px rgba(70,115,6,.34), inset 0 0 7px rgba(170, 230, 84, 0.8))
         +background-image(linear-gradient(bottom, #416d03 0%, #5d9311 100%))
         &:after
             +s(arr14-h)
     span
         position: relative
         z-index: 2
-.btn_add 
-    padding: 0 5px 0 10px 
+.btn_add
+    padding: 0 5px 0 10px
     i
         display: inline-block
         margin: -2px 0 0 4px
@@ -132,29 +132,29 @@
     background: #f28113
     +box-shadow(0 1px 0 #a35304)
     &:hover
-        background: #dc7510 
+        background: #dc7510
 
 .btn_blue
     background: #0badff
     +box-shadow(0 1px 0 #0784c4)
     &:hover
         background: #0c93e9
-        
+
 .btn_gray
-    color: $black 
+    color: $black
     background: #e1e1e1
     +box-shadow(0 1px 1px #b7b3b1)
     +background-image(linear-gradient(bottom, #f5f5f5 0%, #fff 100%))
     &:hover
-        color: #424548 
+        color: #424548
         background: #e1e1e1
         +background-image(linear-gradient(bottom, #e1e1e1 0%, #ededed 100%))
     &.is-active
-        background: #f1bd8b 
-        color: #000 
+        background: #f1bd8b
+        color: #000
         +background-image(linear-gradient(top, #f9c999 0%, #f1bd8b 100%))
         &:hover
-            color: #000 
+            color: #000
             background: #f9c999
             +background-image(linear-gradient(bottom, #f9c999 0%, #f1bd8b 100%))
 
@@ -164,10 +164,10 @@
     i
         display: inline-block
         vertical-align: middle
-        margin-right: 5px 
+        margin-right: 5px
         +s(arr1)
     &:hover
-        color: #838689 
+        color: #838689
 
 .btn_red
     color: #fff
@@ -179,7 +179,7 @@
         +background-image(linear-gradient(bottom, #f91841 0%, #fd4d36 49.37%, #ff9b9b 100%))
 .btn_gray-arr
     font-size: 15px
-    padding: 0 14px 
+    padding: 0 14px
     height: 30px
     line-height: 30px
     +border-radius(15px)
@@ -196,7 +196,7 @@
         +s(arr17)
 .btn_mark
     height: 30px
-    padding: 0 10px 0 7px 
+    padding: 0 10px 0 7px
     line-height: 30px
     font-size: 13px
     +seg_sb
@@ -208,7 +208,7 @@
     +box-shadow(0 1px 1px #b7b3b1)
     +background-image(linear-gradient(bottom, #f5f5f5 0%, #fff 100%))
     &:hover
-        color: #424548 
+        color: #424548
         background: #e1e1e1
         +background-image(linear-gradient(bottom, #e1e1e1 0%, #ededed 100%))
     i
@@ -217,17 +217,17 @@
         vertical-align: middle
         +s(arr1)
     &.is-active
-        background: #f1bd8b 
-        color: #000 
+        background: #f1bd8b
+        color: #000
         +background-image(linear-gradient(top, #f9c999 0%, #f1bd8b 100%))
         &:hover
-            color: #000 
+            color: #000
             background: #f9c999
             +background-image(linear-gradient(bottom, #f9c999 0%, #f1bd8b 100%))
-            
+
 .btn_marked
-    background: #f1bd8b 
-    color: #000 
+    background: #f1bd8b
+    color: #000
     +background-image(linear-gradient(top, #f9c999 0%, #f1bd8b 100%))
     &:hover
         background: #f9c999
@@ -236,13 +236,13 @@
 .filter
     position: relative
     z-index: 3
-    padding: 10px 
+    padding: 10px
     background: $black
-    +border-radius(15px) 
+    +border-radius(15px)
     +clr
     .select
         float: left
-        margin-left: 10px  
+        margin-left: 10px
         &:first-child
             margin-left: 0
     .btn_big
@@ -256,22 +256,22 @@
             display: block
         .select__input
             padding: 0 37px 0 7px
-            border: 3px solid #f31a42 
+            border: 3px solid #f31a42
             background: #fff
             +background-image(linear-gradient(bottom, #fff 0%, #fff 0.54%, #fdfbfb 76.64%, #e5dfdd 100%))
             +placeholder
-                color: $black 
-            + .select__arr 
+                color: $black
+            + .select__arr
                 display: block
 .select_city
     width: 300px
     .select__input
         padding: 0 30px 0 10px
         &:focus
-            padding: 0 27px 0 7px 
+            padding: 0 27px 0 7px
     &.is-active
         .select__input
-            padding: 0 27px 0 7px 
+            padding: 0 27px 0 7px
 .select_date
     width: 150px
     .select__key
@@ -292,14 +292,14 @@
     .select__input
         padding: 0 30px 0 10px
         &:focus
-            padding: 0 27px 0 7px 
+            padding: 0 27px 0 7px
 .select__input
     display: block
     width: 100%
     height: 40px
     +border-box
     +seg_r
-    color: $black 
+    color: $black
     font-size: 16px
     +border-radius(5px)
     background: #fbf9f9
@@ -312,13 +312,13 @@
         color: #656b70
     +background-image(linear-gradient(top, #fbf9f9 0%, #fbf9f9 0.54%, #f7f5f5 23.66%, #e5dfdd 88.7%, #bcb8b6 100%))
     &:focus
-        border: 3px solid #f31a42 
+        border: 3px solid #f31a42
         background: #fff
         +background-image(linear-gradient(bottom, #fff 0%, #fff 0.54%, #fdfbfb 76.64%, #e5dfdd 100%))
         +placeholder
-            color: $black 
-        // + .select__arr 
-        //     display: block 
+            color: $black
+        // + .select__arr
+        //     display: block
 
 .select__arr
     display: none
@@ -348,18 +348,18 @@
     overflow-y: auto
     +box-shadow(0 1px 2px #b2b2b2)
     li
-        padding: 0 10px 
+        padding: 0 10px
         height: 24px
         cursor: pointer
         border-top: 1px solid #e7e2df
-        color: $black  
+        color: $black
         line-height: 24px
         font-size: 14px
         &:first-child
             border-top: 0
         &:hover
             background: $orange
-            color: #fff  
+            color: #fff
             border-color: $orange
     span
         +seg_sb
@@ -418,18 +418,18 @@
 .item
     position: relative
     //float: left
-    margin: 0 0 20px 0 
+    margin: 0 0 20px 0
     width: 300px
     height: 270px
     background: #fcf9f9
     +border-box
     +box-shadow(0 1px 1px #b7b3b1, inset 0 -1px 0 #fff)
-    overflow: hidden    
+    overflow: hidden
     //+transition(box-shadow .1s linear)
     .btn_green,
     .btn_salad-angle
         margin-right: 20px
-    .btn_gray 
+    .btn_gray
         font-size: 13px
         height: 25px
         line-height: 25px
@@ -437,7 +437,7 @@
         text-transform: none
     &:hover
         +border-radius(3px)
-        background: #fff 
+        background: #fff
         +box-shadow(0 0 0 3px #c1cedd, 0 0 6px rgba(49,45,43,.5), inset 0 -1px 0 #fff)
 .item_height
     height: 560px
@@ -447,7 +447,7 @@
     width: 620px
 .item__img
     display: block
-    position: relative 
+    position: relative
     height: 170px
     overflow: hidden
     background-size: cover
@@ -458,7 +458,7 @@
         height: auto
 .item__main
     position: relative
-    padding: 7px 20px 
+    padding: 7px 20px
     .price
         top: -28px
         right: 32px
@@ -466,11 +466,11 @@
     display: block
     color: #656b70
     font-size: 12px
-    +seg_i 
+    +seg_i
 .item__title
     display: block
-    margin: 11px 0 6px 
-    color: $black 
+    margin: 11px 0 6px
+    color: $black
     font-size: 16px
     height: 36px
     overflow: hidden
@@ -478,7 +478,7 @@
     font-weight: normal
     line-height: 1.12
 .item__reviews
-    color: #6e7479 
+    color: #6e7479
     font-size: 12px
     +seg_r
     span
@@ -487,7 +487,7 @@
     +seg_b
     font-weight: normal
     color: #089de8
-    font-size: 12px 
+    font-size: 12px
     cursor: pointer
     z-index: 100
     &:hover
@@ -497,8 +497,8 @@
     position: absolute
     height: 56px
     +border-box
-    background: #48bf0d 
-    color: #fff 
+    background: #48bf0d
+    color: #fff
     line-height: 0.9
     +seg_sb
     &:after
@@ -513,14 +513,14 @@
         border-color: transparent transparent transparent #48bf0d
         +smooth-triangle
 .price__old
-    position: relative 
+    position: relative
     display: block
     z-index: 1
     padding-left: 10px
     height: 19px
     line-height: 19px
     font-size: 12px
-    background: #2b4824 
+    background: #2b4824
     text-decoration: line-through
     &:after
         content: ""
@@ -535,7 +535,7 @@
         +smooth-triangle
 .price__main
     padding-left: 10px
-    
+
 .price__val
     display: block
     font-size: 24px
@@ -563,7 +563,7 @@
         line-height: 14px
         padding: 1px 5px
     .price__old
-        color: #656b70 
+        color: #656b70
         background: #fff
         &:after
             display: none
@@ -590,7 +590,7 @@
     left: 0
     padding: 20px
     +clr
-    color: #fff 
+    color: #fff
     line-height: 1
     a
         color: #fff
@@ -607,7 +607,7 @@
     font-size: 28px
     +seg_sb
     border-bottom: 2px solid
-.item-banner__stat 
+.item-banner__stat
     display: block
     width: 260px
     height: 20px
@@ -638,11 +638,11 @@
         +seg_b
         font-size: 24px
 .defin
-    background: #0badff 
+    background: #0badff
     color: #fff
     +box-shadow(0 1px 1px #b7b3b1)
     &:hover
-        background: #0badff 
+        background: #0badff
         +border-radius(0)
         +box-shadow(0 1px 1px #b7b3b1)
 .defin__title
@@ -652,7 +652,7 @@
     font-size: 36px
     +seg_l
     font-weight: normal
-    border-bottom: 1px solid #0891d6  
+    border-bottom: 1px solid #0891d6
     +box-shadow(0 1px 0 #4fc4ff)
 .defin__list
     padding: 17px 30px
@@ -669,11 +669,11 @@
             position: absolute
             left: -20px
             top: 5px
-            +s(arr7) 
+            +s(arr7)
     dd
         margin-bottom: 26px
         font-size: 12px
-        +seg_i 
+        +seg_i
     strong
         font-weight: normal
         +seg_i
@@ -684,8 +684,8 @@
     font-weight: bold
     font-size: 12px
     color: #fff
-    border-bottom: 2px solid  
-    
+    border-bottom: 2px solid
+
 .load-more
     display: block
     margin: 0 auto 13px
@@ -698,23 +698,23 @@
         background: #008df1
     &:active
         position: relative
-        top: 1px 
+        top: 1px
         +box-shadow(inset 0 -1px 0 #0087cc)
-        
+
     span
         display: inline-block
         font-size: 16px
         +seg_r
-        color: #fff 
+        color: #fff
         font-weight: normal
         text-transform: uppercase
-        border-bottom: 1px dashed #fff 
+        border-bottom: 1px dashed #fff
 
 .title-link
     margin-bottom: 8px
     font-size: 30px
     +seg_l
-    color: $black 
+    color: $black
     font-weight: normal
     text-transform: uppercase
     +clr
@@ -723,7 +723,7 @@
     .btn
         float: right
         font-size: 14px
-        
+
 .link-all
     position: relative
     display: inline-block
@@ -750,7 +750,7 @@
         margin-top: -3.5px
         +s(arr6)
     &:hover
-        background: #a29790 
+        background: #a29790
         &:before
             border-color: transparent transparent transparent #a29790
     &:active
@@ -776,7 +776,7 @@
         display: inline-block
         position: relative
         padding-left: 28px
-        color: #3c4752 
+        color: #3c4752
         font-size: 14px
         &:before
             content: ""
@@ -795,8 +795,8 @@
             position: absolute
             top: 6px
             left: 4px
-            +s(arr10) 
- 
+            +s(arr10)
+
 .btn-del
     position: relative
     display: inline-block
@@ -805,33 +805,33 @@
     +border-radius(50%)
     +unselectable
     vertical-align: middle
-    background: #bac0c0 
+    background: #bac0c0
     cursor: pointer
     &:after
-        content: "" 
+        content: ""
         position: absolute
         top: 50%
         left: 50%
-        margin: -5px 0 0 -5px 
+        margin: -5px 0 0 -5px
         +s(del)
     &:hover
-        background: #f31a42 
+        background: #f31a42
     &:active
         top: 1px
 .btn-del_dark
-    background: #464541 
-    
+    background: #464541
+
 .breadcrumbs
     margin-bottom: 32px
     +seg_i
     a,span
         display: inline-block
     span
-        color: #a4a8ac  
+        color: #a4a8ac
     a
         position: relative
         margin-right: 21px
-        color: #656b70 
+        color: #656b70
         text-decoration: underline
         &:hover
             text-decoration: none
@@ -839,13 +839,13 @@
             content: ""
             position: absolute
             top: 5px
-            right: -16px 
+            right: -16px
             +s(arr15)
 
 .to-map-link
     display: inline-block
     position: relative
-    color: #8b8d90 
+    color: #8b8d90
     &:hover
         i
             +s(to-map-h)
@@ -856,13 +856,13 @@
         display: inline-block
         +s(to-map)
     span
-        border-bottom: 1px dashed 
+        border-bottom: 1px dashed
 .to-map-link_mod
     i
         +s(to-map2)
     span
         border-bottom: 0
-        color: $black 
+        color: $black
 
 .drop
     position: relative
@@ -870,7 +870,7 @@
     &:hover
         .drop__key
             background: #e98a3e
-            color: #fff 
+            color: #fff
             +box-shadow(0 1px 0 #c76515)
             &:before
                 top: 50%
@@ -884,7 +884,7 @@
             .drop__key
                 color: #874c14
                 &:before
-                    +s(arr18) 
+                    +s(arr18)
                     margin-top: -6px
         .drop__key
             background: #f7f5f3
@@ -896,7 +896,7 @@
                 +box-shadow(0 0 7px rgba(0,0,0,.41))
         .drop__main
             display: block
-.drop__key   
+.drop__key
     position: relative
     height: 40px
     line-height: 40px
@@ -913,7 +913,7 @@
     &:before
         content: ""
         position: absolute
-        top: 50% 
+        top: 50%
         left: 22px
         margin-top: -6px
         +s(arr18)
@@ -924,7 +924,7 @@
         left: 0
         right: 0
         bottom: -2px
-        height: 12px 
+        height: 12px
         background: #f7f5f3
         z-index: 301
 .drop__main,
@@ -955,7 +955,7 @@
         +border-box
         font-size: 12px
         span
-            color: #838689 
+            color: #838689
             text-decoration: line-through
     a
         color: $blue
@@ -966,11 +966,11 @@
     margin-bottom: 20px
 .drop__body,
 .drop-actions__body
-    height: 70px 
+    height: 70px
     overflow: hidden
 .drop__footer,
 .drop-actions__footer
-    padding: 1px 15px 4px 
+    padding: 1px 15px 4px
     background: #fff
     font-size: 12px
     +clr
@@ -979,13 +979,13 @@
     float: left
     color: $blue
     cursor: pointer
-    border-bottom: 1px dashed 
+    border-bottom: 1px dashed
 .drop__hide,
 .drop-actions__hide
     float: right
     color: $gray
     cursor: pointer
-    border-bottom: 1px dashed 
+    border-bottom: 1px dashed
 .faq-link,
 .chat-link
     position: fixed
@@ -1012,7 +1012,7 @@
     border: 1px solid #e0a46b
     background: #6dad0f
     +box-shadow(inset 0 0 0 1px rgba(250,201,154,.27))
-    background: #f1bd8b 
+    background: #f1bd8b
     +background-image(linear-gradient(top, #f9c999 0%, #f1bd8b 100%))
     &:hover
         background: #f9c999
@@ -1025,7 +1025,7 @@
     i
         +s(to-chat)
         +rotate(90)
-        margin-left: 5px 
+        margin-left: 5px
 .faq-link
     right: -124px
     top: 413px
@@ -1035,7 +1035,7 @@
     +box-shadow(inset 0 0 0 1px rgba(222,222,222,.27))
     +background-image(linear-gradient(top, #efefef 0%, #d9d9d9 99.49%, #d9d9d9 100%))
     &:hover
-        background: #efefef 
+        background: #efefef
     &:active
         right: -125px
     span
@@ -1050,24 +1050,41 @@
     padding-top: 10px
     cursor: default
     z-index: 100
+    &.client
+        span
+            max-width: 280px
+            padding: 33px 18px 33px 33px
+            font-size: 14px
+            +border-radius(0)
+            +seg_r
+            &:before, &:after
+                left: 50%
+                margin-left: -5px
+        .btn-del
+            position: absolute
+            top: 9px
+            right: 10px
+            background: #464541
+            &:hover
+                background: #f31a42
     span
         display: inline-block
         position: relative
         font-size: 12px
-        padding: 10px 
+        padding: 10px
         max-width: 250px
         background: #fff
         line-height: 1.2
         +seg_i
         color: #8a8e91
         +border-radius(5px)
-        +box-shadow(0 0 7px rgba(0,0,0,.41)) 
+        +box-shadow(0 0 7px rgba(0,0,0,.41))
         &:before,
         &:after
             content: ""
             position: absolute
             width: 0
-            height: 0 
+            height: 0
             border-style: solid
         &:before
             top: -6px
@@ -1077,28 +1094,28 @@
             border-color: transparent transparent #fff transparent
         &:after
             top: -7px
-            left: 19px 
+            left: 19px
             border-width: 0 6px 7px 6px
             border-color: transparent transparent #ccc transparent
-            
+
 .not-available
     padding: 5px 10px 7px
-    background: #f9f9b7 
+    background: #f9f9b7
     font-size: 14px
     +seg_r
-    color: $black 
+    color: $black
     a
-        color: $blue 
+        color: $blue
         font-family: Arial,sans-serif
-        font-size: 12px 
-        border-bottom: 1px dashed 
+        font-size: 12px
+        border-bottom: 1px dashed
 
 .sticker
     position: relative
     padding: 18px 5px 1px 20px
-    background: #f9f9b7 
+    background: #f9f9b7
     &:hover
-        background: #f9f9b7 
+        background: #f9f9b7
         +box-shadow(0 1px 1px #b7b3b1, inset 0 -1px 0 white)
         +border-radius(0)
     .btn-del
@@ -1122,15 +1139,15 @@
     &.is-visible
         right: 0
 .sticker_gray
-    background: #dedede 
-    &:hover 
-        background: #dedede 
+    background: #dedede
+    &:hover
+        background: #dedede
         +box-shadow(none)
 .sticker__title
     margin-bottom: 22px
     color: $black
     +seg_sb
-    font-size: 16px 
+    font-size: 16px
 .sticker__list
     height: 240px
     margin-bottom: 30px
@@ -1138,7 +1155,7 @@
     li
         margin-bottom: 11px
     a
-        color: $blue 
+        color: $blue
         font-size: 16px
         &:hover
             text-decoration: underline
@@ -1150,4 +1167,4 @@
     font-weight: bold
     border-bottom: 1px solid
     &:hover
-        border-bottom: 1px solid transparent 
+        border-bottom: 1px solid transparent

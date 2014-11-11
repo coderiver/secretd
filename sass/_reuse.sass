@@ -127,6 +127,10 @@
 .link-blue
 	color: #4F81BD
 	text-decoration: underline
+	&.is-small
+		font-size: 14px
+		color: #1877A7
+		+seg_r
 
 .fill
 	position: absolute
@@ -155,3 +159,25 @@
 	display: none
 	&.is-not
 		display: block
+
+.choice
+	padding: 15px 0 0
+	background: #FFF
+	text-align: center
+	font-size: 17px
+	+border-radius(4px)
+	+box-shadow(0 1px 1px #b7b3b1, inset 0 0 0 #fff)
+
+.btn_dark_grey
+	background: #8D8D8D
+	+box-shadow(0 1px 0 #4e4e4e)
+	&:hover
+		background: lighten(#8D8D8D, 10%)
+
+.no-info
+	margin-top: 25px
+	padding: 20px 0 20px 28px
+	font-size: 16px
+	background: #e5e8e9
+	line-height: 1
+	+seg_r

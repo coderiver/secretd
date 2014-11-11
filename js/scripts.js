@@ -8881,6 +8881,16 @@ $(document).ready(function() {
                     top: top
                 });
             }
+            if ($(this).parent().hasClass("profile__contact-item")) {
+               tooltip.addClass('client');
+               tooltip.css({
+                   left: left-100,
+                   top: top
+               });
+               tooltip.find('span').prepend('<button class="btn-del tooltip-close"></button>');
+            } else {
+            	tooltip.removeClass('client');
+            }
 
             //console.log(position);
             tooltip.fadeIn("fast");
@@ -8889,6 +8899,10 @@ $(document).ready(function() {
             tooltip.hide()
         }
     );
+
+    $(".tooltip > span").on('click','.btn-del', function(){
+        $(this).parent().parent().hide();
+    });
 
     $(".js-to-map-popup").click(function(){
         $(".js-popup-map").show();
