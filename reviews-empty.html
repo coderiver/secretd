@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>My bookings empty</title>
+    <title>Reviews empty</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -86,83 +86,42 @@
     <div class="container profile bookings">
         <ul class="dashboard__menu">
             <li><a href="#">Панель управления</a></li>
-            <li class="is-active"><a href="#">Мои бронирования</a></li>
+            <li><a href="#">Мои бронирования</a></li>
             <li><a href="#">Мой профиль</a></li>
-            <li><a href="#">Отзывы</a><span class="notification">1</span></li>
+            <li class="is-active"><a href="#">Отзывы</a><span class="notification">1</span></li>
             <li><a href="#">Сообщение</a></li>
             <li><a href="#">Программа лояльности</a></li>
         </ul>
-        <div class="dashboard bookings">
+        <div class="dashboard no-marginb">
             <div class="impetus">
-                <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a>, чтобы произвести благоприятное впечатление и стать желанным гостем</p>
-                <span class="onright to-close"></span>
-            </div>
-            <h1 class="title-l-1">Мои бронирования</h1>
-            <div class="no-info">
-                <p class="onleft">Если вы бронировали квартиры по другим email, вы можете прикрепить их к этому кабинету</p>
-                <div class="onright">
-                    <a class="btn btn_s btn_gray js-dropdown" href="#">Добавить другие брони<i></i></a>
-                    <div class="panel with-id">
-                        <form>
-                           <p class="is-semibold">ID брони и код</p>
-                           <label class="panel__label">
-                               <span>ID брони:</span>
-                               <input type="text">
-                           </label>
-                           <label class="panel__label">
-                               <span>Код:</span>
-                               <input type="text">
-                           </label>
-                           <button type="submit" class="btn btn_green btn_pad" href="#">Добавить</button>
-                       </form>
+                <div class="impetus__in onleft">
+                    <p class="impetus__ttl">Оставьте отзыв о квартирах, поделитесь своим впечатлением:</p>
+                    <div class="impetus__img onleft"><img alt="img" src="img/room.png"></div>
+                    <div class="impetus__text">
+                        <a class="link-blue is-big" href="#">Двухуровневая квартира в самом центре столицы, 3х-комнатная</a>
+                        <p>ул. Саксаганского, 192 <a class="details__map" href="#">Карта</a></p>
+                        <p><a class="link-blue" href="#">Бронь: №234</a>, с <span class="is-bold">1 авг 2014</span> по <span class="is-bold">3 авг 2014</span></p>
+                        <button class="btn btn_green" type="button">Оставить отзыв</button>
                     </div>
                 </div>
+                <span class="onright to-close"></span>
             </div>
-            <h2 class="title-l-2">У вас пока нет забронированых квартир. Начните путешествие прямо сейчас</h2>
-            <div class="filter js-calendars-wrapper">
-                <div class="select select_city js-sel-key">
-                    <input class="select__input js-sel-text" value="Киев" readonly>
-                    <i class="select__arr"></i>
-                    <i class="select__key"></i>
-                    <input type="hidden" class="js-sel-input" value="">
-                    <ul class="select__list js-sel-list">
-                        <li data-id="1">Киев</li>
-                        <li data-id="2">Одесса</li>
-                        <li data-id="3">Львов</li>
-                        <li data-id="4">Донецк</li>
-                    </ul>
+        </div>
+        <div class="dashboard feedback">
+            <h1 class="title-l-1">Отзывы</h1>
+            <div class="js-tabs">
+                <ul class="dashboard__menu inside">
+                    <li class="js-tab is-active"><a href="#">Мои отзывы о квартирах</a></li>
+                    <li class="js-tab"><a href="#">Отзывы обо мне</a></li>
+                </ul>
+                <div class="js-tabcontent">
+                   <div class="no-info">
+                        <p>Вы не оставляли пока ни одного отзыва</p>
+                   </div>
+                    <div class="no-info">
+                        <p>Вы не оставляли пока ни одного отзыва</p>
+                   </div>
                 </div>
-                <div class="select select_date js-show-calendar">
-                    <input class="select__input js-from" type="text" value="" readonly>
-                    <i class="select__arr"></i>
-                    <i class="select__key"></i>
-                    <span class="select__input-text">Заезд 7 мая</span>
-                    <div class="js-datepicker js-datepicker-from"></div>
-                </div>
-                <div class="select select_date js-show-calendar">
-                    <input type="text" class="select__input js-to" value="" readonly>
-                    <i class="select__arr"></i>
-                    <i class="select__key select__key-out"></i>
-                    <span class="select__input-text">Выезд 8 мая</span>
-                    <div class="js-datepicker js-datepicker-to"></div>
-                </div>
-                <div class="select select_guest js-sel-key">
-                    <input type="text" class="select__input js-sel-text" value="" placeholder="1 гость" readonly>
-                    <i class="select__arr"></i>
-                    <i class="select__key"></i>
-                    <ul class="select__list js-sel-list">
-                        <li data-id="1">1</li>
-                        <li data-id="2">2</li>
-                        <li data-id="3">3</li>
-                        <li data-id="4">4</li>
-                        <li data-id="5">5</li>
-                        <li data-id="6">6</li>
-                        <li data-id="7">7</li>
-                        <li data-id="8">8</li>
-                        <li data-id="9">9</li>
-                    </ul>
-                </div>
-                <button type="submit" class="btn btn_big btn_red">Найти</button>
             </div>
         </div>
     </div>

@@ -13,11 +13,11 @@
         padding-left: 28px
         font-size: 13px
         font-family: Arial,sans-serif
-        color: #747475 
+        color: #747475
         i
             position: absolute
             top: 50%
-            margin-top: -9px 
+            margin-top: -9px
             left: 0
             +s(pic-i)
 .order-details
@@ -26,7 +26,7 @@
     padding-top: 15px
     color: #25292D
     .click
-        color: #4F81BD 
+        color: #4F81BD
         text-decoration: underline
         &:hover
             text-decoration: none
@@ -37,7 +37,7 @@
         font-size: 14px
     .order__text
         padding-left: 10px
-        font-size: 16px 
+        font-size: 16px
         +seg_r
 .data-reser__input_ord
     float: none
@@ -48,14 +48,14 @@
         padding: 7px 11px
         margin-left: 10px
         height: 40px
-        color: #9D9D9D 
+        color: #9D9D9D
         font-size: 21px
         font-family: Arial,sans-serif
 .input__w-125
     width: 101px
 .input__w-92
     width: 68px
-    
+
 //current_booking
 
 .title-aut
@@ -63,7 +63,7 @@
     padding: 10px 15px
     font-size: 16px
     vertical-align: middle
-    background: #DDE0E1 
+    background: #DDE0E1
     +border-radius(5px)
     +seg_r
     .comment__click
@@ -76,12 +76,12 @@
     margin: 25px 0 0
     width: 939px
     min-height: 250px
-    background: #FCFAF9 
+    background: #FCFAF9
     box-shadow: 0 1px 1px #B7B3B1
     .details__title
         float: left
         width: 645px
-        background: #DDE0E1 
+        background: #DDE0E1
         +border-radius(5px 0 0 0)
         span
             font-size: 14px
@@ -90,7 +90,7 @@
     .details-info_left
         position: relative
         float: left
-        padding: 15px 0 12px 20px 
+        padding: 15px 0 12px 20px
         width: 348px
         line-height: 1
         &:before
@@ -100,12 +100,12 @@
             bottom: 15px
             right: 0
             width: 1px
-            background: #DDE0E1 
+            background: #DDE0E1
     .details-info__h
         padding: 0
     .comment__click
         margin-left: 25px
-        vertical-align: text-top 
+        vertical-align: text-top
     .btn_green, .btn_yellow
         margin: 8px 0 15px 0
         width: 134px
@@ -117,7 +117,7 @@
     padding-left: 25px
     width: 247px
     height: 51px
-    color: #25292D 
+    color: #25292D
     line-height: 50px
     font-size: 17px
     display: inline-bloc
@@ -127,13 +127,18 @@
         color: #25292D
         +seg_r
 .status_yellow
-    background: #F9F9B7 
+    background: #F9F9B7
 .status_grey
     background: #EDEDED
-.text-col-green 
-    color: #6DAE10 
+.status_booked
+    background: #6DAE10
+    color: #fff
+.status_clear
+    +clr
+.text-col-green
+    color: #6DAE10
 .text-col-red
-    color: #F31A42 
+    color: #F31A42
 .details-info__h_blue
     color: #4F81BD !important
 .margin_bott
@@ -143,10 +148,10 @@
     padding: 15px 15px 15px 25px
     font-size: 16px
     line-height: 1
-    color: #25292D 
-    +seg_r 
+    color: #25292D
+    +seg_r
     .all-apartments
-        color: #4F81BD 
+        color: #4F81BD
         display: block
         text-decoration: underline
         &:hover
@@ -164,7 +169,7 @@
         +seg_r
 .all-apartment
     margin: 22px 0
-    color: #4F81BD 
+    color: #4F81BD
     display: block
     text-decoration: underline
     font: 13px normal Arial,sans-serif
@@ -177,7 +182,7 @@
     height: 56px
     line-height: 56px
     text-align: center
-    background: #E5E8E8 
+    background: #E5E8E8
     .btn
         font-size: 14px
         +border-radius(20px)
@@ -194,11 +199,11 @@
     width: 138px
     border: 1px solid #c9c9c9
     li
-        padding-left: 10px 
+        padding-left: 10px
         height: 29px
         line-height: 29px
         font-size: 12px
-        color: #25292D 
+        color: #25292D
         white-space: initial
         border-top: 1px solid #c9c9c9
         +seg_r
@@ -206,11 +211,11 @@
             height: 190px
             border-top: none
         &:nth-child(-n+5)
-            background: #F8F5F3 
+            background: #F8F5F3
     .btn_gray
         position: relative
         margin-top: 7px
-        padding: 0 20px 0 30px 
+        padding: 0 20px 0 30px
         height: 30px
         line-height: 30px
         +border-radius(20px)
@@ -222,7 +227,7 @@
 .comparison-ul__block
     float: left
     width: 160px
-    border: none 
+    border: none
     li
         padding: 0 9px
         border-top: 1px solid #c9c9c9 !important
@@ -230,7 +235,7 @@
         font-size: 14px
         text-align: center
         &:first-child
-            text-align: left 
+            text-align: left
         &:last-child
             border: none !important
     .comparison-ul__cost
@@ -238,7 +243,7 @@
         +seg_sb
     .btn_salad
         margin-top: 5px
-        padding: 0 10px 
+        padding: 0 10px
 .comparison-ul__top
     position: relative
     .details-info__h
@@ -249,10 +254,10 @@
     right: 1px
     width: 20px
     height: 20px
-    background: #464541 
+    background: #464541
     +border-radius(50%)
     a
-        margin: 5px 0 0 5px 
+        margin: 5px 0 0 5px
         display: block
         +s(pic-del)
 .comparison-ul__pic
@@ -262,9 +267,9 @@
         display: block
 .comparison-ul__btn
     margin-left: -1px
-    height: 48px !important 
+    height: 48px !important
     background: #E1E4E4
-    border-left: 1px solid #E1E4E4 
+    border-left: 1px solid #E1E4E4
     border-right: 1px solid #E1E4E4 !important
     +border-radius( 0 0 3px 3px)
 .comparison-ul__del
@@ -321,9 +326,225 @@
     bottom: 0
     right: 0
     width: 40px
-    background: linear-gradient(to left, #ffffff, rgba(225, 225, 225, 0)) 
+    background: linear-gradient(to left, #ffffff, rgba(225, 225, 225, 0))
 .gallery__button_next > .disabled + .gallery__lgb
     display: none
 .disabled
     opacity: 0
-    
+
+
+// my booking new pages
+.dashboard
+    &.bookings
+        padding: 32px 15px 20px
+        .select_city
+            width: 260px
+        .select_date, .select_guest
+            width: 150px
+            .select__input
+                background: #fff
+                +background-image(linear-gradient(to top, #ffffff 0%,#ffffff 0.54%,#fdfbfb 91.53%,#e5dfdd 100%))
+        .filter
+            margin: 20px 0 0
+            z-index: 1
+            .btn_big
+                margin-left: 10px
+        .title-l-2
+            padding-left: 14px
+            font-size: 20px
+            +seg_r
+        .no-info
+            position: relative
+            padding: 10px 15px 10px 20px
+            background: #E8EBEC
+            font-size: 14px
+            +border-box
+            +clr
+            &.no-b-pad
+                padding-bottom: 0
+            p
+                padding-top: 5px
+            .panel
+                top: 36px
+                left: 0
+                +border-radius(0 0 5px 5px)
+                +box-shadow(0 1px 2px #b2b2b2)
+                a
+                    padding: 6px 10px
+                    color: #25292D
+                    &:hover
+                        text-decoration: none
+                        background: #FF7E00
+                &.with-id
+                    width: 193px
+                    min-width: 100px
+                    top: 33px
+                    left: 77%
+                    padding: 10px 7px 7px
+                    z-index: 2
+                    +border-box
+                    input
+                        width: 108px
+                        height: 30px
+                        display: inline-block
+                        padding: 0 10px
+                        vertical-align: middle
+                        border: 1px solid #e2e3ea
+                        +box-shadow(inset 0 1px 0 #bfbfbf)
+                        +border-box
+                    .panel__label
+                        display: block
+                        margin: 10px 0
+                        +clr
+                        span
+                            display: inline-block
+                            width: 65px
+                    .btn_green
+                        width: 100%
+                        margin: 0
+                    .is-semibold
+                        +seg_sb
+            .btn
+                position: relative
+                padding: 0 23.5px
+                z-index: 3
+                i
+                    display: inline-block
+                    margin-left: 7px
+                    vertical-align: 1px
+                    border-style: solid
+                    border-width: 5px 3px 0px 3px
+                    border-color: #000000 transparent transparent transparent
+            .no-info-label
+                +user-select(none)
+                span
+                    vertical-align: bottom
+            .checkbox
+                margin-right: 17px
+                vertical-align: middle
+        .filter-status
+            position: relative
+            margin-left: 26px
+            padding: 4px 15px 18px 4px
+            &.is-open
+                background: #fff
+                +border-radius(5px 5px 0 0)
+        .link-blue
+            &.js-dropdown
+                position: relative
+                &:after
+                    content: " "
+                    position: absolute
+                    top: 9px
+                    right: -10px
+                    border-style: solid
+                    border-width: 6px 3.5px 0px 3.5px
+                    border-color: #4f81bd transparent transparent transparent
+        .booking__ttl
+            padding: 30px 10px 10px
+        .details__field
+            &.is-last
+                margin-bottom: 0
+            .details__title
+                width: 615px
+            .status
+                width: 285px
+            .details__img img
+                width: 227px
+            .details__rev
+                bottom: 4px
+            .details-info_left
+                width: 371px
+                &.s-pad
+                    padding-bottom: 13px
+            .no-info
+                margin: 0 17px 10px
+                padding: 12px 15px 12px 20px
+        .details__info-wrap
+            +clr
+        .details__info-row
+            &.policy
+                padding: 0 5px 0 0
+                line-height: 1.3
+                +border-box
+                .is-bold
+                    +seg_b
+                p
+                    &:first-child
+                        margin-bottom: 15px
+            &.with-border
+                margin-right: 70px
+                padding-top: 18px
+                border-top: 1px solid #DDE0E1
+                a
+                    margin-left: 0
+                .details__info-title
+                    width: 125px
+                .details__info-val
+                    padding-left: 7px
+            &.links
+                padding-bottom: 8px
+                .link-blue
+                    margin-left: 40px
+                    &:first-child
+                        margin-left: 0
+            &.is-last
+                padding-bottom: 0
+            .btn_green
+                margin: 0
+        .details__info__all
+            padding-bottom: 18px
+        .details__prepay
+            margin-top: 0
+            font-size: 0
+            p
+                font-size: 16px
+            .link-blue
+                font-size: 14px
+                &.is-gray
+                    margin-left: 40px
+            &.status_yellow
+                padding: 12px 10px 13px 13px
+                margin: 0 70px 15px 0
+                p
+                    font-size: 14px
+                    line-height: 1.4
+                    +seg_r
+                .is-bold
+                    font-size: 18px
+                    +seg_b
+                .is-small
+                    font-size: 14px
+            &.val
+                margin: 0 58px 0 0
+                span, a
+                    display: inline-block
+                    font-size: 14px
+                    vertical-align: middle
+                    &:first-child
+                        width: 84px
+                        margin-right: 18px
+                        text-align: right
+                .is-bold
+                    font-size: 24px
+                .link-blue
+                    margin-left: 9px
+                    text-decoration: none
+            &.s-pad
+                padding: 6px 10px
+        .details__book
+            width: 206px
+            margin: 0 25px 0 17px
+            padding: 4px 10px
+            text-align: center
+        .status_clear
+            padding-left: 8px
+            p
+                +seg_r
+            .is-waiting
+                max-width: 210px
+                padding: 8px 0 0 5px
+                line-height: 1
+                +border-box
+            .is-semibold
+                +seg_sb

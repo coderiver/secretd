@@ -1,0 +1,723 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>My bookings new</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="screen" href="css/screen.css" >
+    <script src="js/scripts.js"></script>
+    <script src="js/src/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+<div class="l-layout">
+    <!-- BEGIN Header -->
+    <header class="header">
+        <div class="header__top with-bg">
+            <div class="l-container">
+                <ul class="header__info">
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <strong>13 000</strong> полезных отзывов
+                    </li>
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <strong>900</strong> владельцев квартир
+                    </li>
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <strong>18</strong> способов оплаты
+                    </li>
+                </ul>
+                <div class="header__top-btn registered">
+                    <a href="#" class="onleft header__top-menu js-dropdown">
+                        <div class="onleft header__top-img ">
+                            <img src="img/irina.png" alt="irina">
+                            <span class="notification">2</span>
+                        </div>
+                        <span>Ирина</span>
+                        <i></i>
+                    </a>
+                    <a href="#" class="onleft btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
+                    <ul class="panel">
+                        <li><a href="#">Панель управления</a></li>
+                        <li><a href="#">Мои бронирования</a></li>
+                        <li><a href="#">Мой профиль</a></li>
+                        <li><a href="#">Отзывы<span class="notification">1</span></a></li>
+                        <li><a href="#">Сообщения<span class="notification">1</span></a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a class="is-last" href="#">Выйти<i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="l-container">
+                <h1 class="header__logo"><a href="#">dobovo.com</a></h1>
+                <div class="header__cont">
+                    <span class="header__phone">(+38 044) 221-55-11 </span>
+                    <a href="#" class="btn btn_s btn_gray">skype</a>
+                    <a href="#" class="btn btn_s btn_gray">Задать вопрос</a>
+                </div>
+                <div class="header__currency">
+                    Стоимость в:
+                    <div class="currency">
+                        <span class="currency__text js-select">грн ₴</span>
+                        <input type="hidden" value="1">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">грн ₴</li>
+                            <li data-id="2">EUR €</li>
+                            <li data-id="3">USD $</li>
+                            <li data-id="4">RUB ₱</li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <span class="currency__text js-select">RU</span>
+                        <input type="hidden" value="4">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">RU</li>
+                            <li data-id="2">EN</li>
+                            <li data-id="3">UA</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Поиск квартиры по ID">
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <div class="container profile bookings">
+        <ul class="dashboard__menu">
+            <li><a href="#">Панель управления</a></li>
+            <li class="is-active"><a href="#">Мои бронирования</a></li>
+            <li><a href="#">Мой профиль</a></li>
+            <li><a href="#">Отзывы</a><span class="notification">1</span></li>
+            <li><a href="#">Сообщение</a></li>
+            <li><a href="#">Программа лояльности</a></li>
+        </ul>
+        <div class="dashboard bookings">
+            <div class="impetus">
+                <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a>, чтобы произвести благоприятное впечатление и стать желанным гостем</p>
+                <span class="onright to-close"></span>
+            </div>
+            <h1 class="title-l-1">Мои бронирования</h1>
+            <div class="no-info no-b-pad">
+                <p class="onleft">Отфильтровать брони:</p>
+                <div class="filter-js-wrap">
+                    <div class="filter-status onleft">
+                        <a class="js-dropdown link-blue is-dashed" href="#">Статус</a>
+                        <ul class="panel">
+                            <li><a href="#">Ожидает предоплаты</a></li>
+                            <li><a href="#">Забронировано</a></li>
+                            <li><a href="#">Ожидает подтверждения наличия от владельца</a></li>
+                            <li><a href="#">Отменена владельцем</a></li>
+                            <li><a href="#">Проживание завершено</a></li>
+                            <li><a href="#">Просрочено</a></li>
+                            <li><a href="#">Отменена мной</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-status onleft">
+                        <a class="js-dropdown link-blue is-dashed" href="#">Город</a>
+                        <ul class="panel">
+                            <li><a href="#">Киев</a></li>
+                            <li><a href="#">Харьков</a></li>
+                            <li><a href="#">Одесса</a></li>
+                            <li><a href="#">Полтава</a></li>
+                            <li><a href="#">Днепропетровск</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="onright">
+                    <a class="btn btn_s btn_gray js-dropdown" href="#">Добавить другие брони<i></i></a>
+                    <div class="panel with-id">
+                        <form>
+                           <p class="is-semibold">ID брони и код</p>
+                           <label class="panel__label">
+                               <span>ID брони:</span>
+                               <input type="text">
+                           </label>
+                           <label class="panel__label">
+                               <span>Код:</span>
+                               <input type="text">
+                           </label>
+                           <button type="submit" class="btn btn_green btn_pad" href="#">Добавить</button>
+                       </form>
+                    </div>
+                </div>
+            </div>
+            <div class="booking__ttl">
+                <h2 class="title-l-1">Текущие брони</h2>
+            </div>
+            <div class="addreviews">
+                <div class="details details__field">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_yellow text-col-green"><span>Статус: </span>Ожидает предоплаты</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                            <div class="details__info-row policy">
+                                <p>Политика отмены:</p>
+                                <p>предоплата не возвращается при отмене бронирования менее чем за 7 суток до даты заезда. Бронь может быть бесплатно отменена до <span class="is-bold">23 июля 2014</span></p>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                            <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                    <div class="details__prepay">
+                        <div class="onleft">
+                            <div class="details__book onleft">
+                                <p class="is-small">Бронь действительна ещё:</p>
+                                <p><span class="is-large">5</span> часов <span class="is-large">45</span>минут</p>
+                            </div>
+                            <div class="onleft">
+                                <p><span class="is-green">480 грн.</span> предоплата</p>
+                                <a class="btn btn_s btn_green btn_pad" href="#">оплатить</a>
+                                <a class="link-blue is-dashed js-dropdown" href="#">Дополнительно</a>
+                                <a class="link-blue is-dashed is-gray" href="#">Отменить бронь</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no-info">
+                        <label class="no-info-label">
+                            <input class="checkbox" type="checkbox"><span>Присылать мне письма с альтернативными вариантами</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="details details__field">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_booked">Статус: Забронировано</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                            <div class="details__info-row with-border">
+                                <p>внесена предоплата 480 грн.</p>
+                            </div>
+                            <div class="details__prepay status_yellow">
+                                <p class="is-green">Осталось оплатить: <span class="is-bold">480 грн.</span></p>
+                            </div>
+                            <div class="details__info-row links">
+                                <a class="link-blue is-dashed js-dropdown" href="#">Дополнительно</a>
+                                <a class="link-blue is-dashed is-gray" href="#">Отменить бронь</a>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <p class="details__info-title margin_bott">Контактное лицо</p>
+                            <p class="margin_bott">Черненко Иван Петрович</p>
+                            <p class="margin_bott">тел.: (063) 345-56-12</p>
+                            <p class="margin_bott">e-mail: i.chernenko@mail.ru</p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details details__field is-last">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <div class="status status_clear status_yellow">
+                            <p class="onleft">Статус:</p>
+                            <p class="onleft is-waiting is-semibold">Ожидает подтверждения наличия от владельца</div>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                            <div class="details__info-row with-border">
+                                <a class="link-blue is-gray is-dashed" href="#">Отменить бронь</a>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <p class="details__info-title margin_bott">Контактное лицо</p>
+                            <p class="margin_bott">Черненко Иван Петрович</p>
+                            <p class="margin_bott">тел.: (063) 345-56-12</p>
+                            <p class="margin_bott">e-mail: i.chernenko@mail.ru</p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="booking__ttl">
+                <h2 class="title-l-1">Прошедшие брони</h2>
+            </div>
+            <div class="addreviews">
+                <div class="details details__field">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_grey text-col-green"><span>Статус:</span> Проживание завершено</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left s-pad">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                            <div class="details__info-row is-last">
+                                <a class="btn btn_s btn_green btn_pad" href="#">Оставить отзыв</a>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details details__field">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_grey text-col-green"><span>Статус:</span> Проживание завершено</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left s-pad">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                            <div class="details__prepay status_yellow val s-pad">
+                                <p>
+                                    <span>Ваша оценка квартиры:</span> <span class="is-bold">8.3</span>
+                                    <a href="#" class="link-blue is-small">Читать мой отзыв</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details details__field">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_grey text-col-red"><span>Статус: </span>Отменена мной</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left s-pad">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row with-border">
+                                <span class="details__info-title">Стоимость отмены: </span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__prepay status_yellow">
+                                <p>Отменена мной <span class="is-bold is-small">18 июля</span></p>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details details__field">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_grey text-col-red"><span>Статус: </span>Отменена владельцем</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left s-pad">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__prepay status_yellow s-pad">
+                                <p>Отменена владельцем <span class="is-bold is-small">29 июля</span></p>
+                                <p>Квартире необходим срочный ремонт</p>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details details__field is-last">
+                    <div class="details__info-wrap">
+                        <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
+                        <p class="status status_grey text-col-red"><span>Статус: </span>Просрочено</p>
+                        <div class="details__img">
+                            <img alt="img" src="img/room.png">
+                            <div class="details__rev">
+                                <p class="is-bold">9,1</p>
+                                <p>12 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="details-info details-info_left">
+                            <a class="details-info__h details-info__h_blue" href="#">Двухуровневая квартира в центре</a>
+                            <span>ул. Саксаганского, 192</span>
+                            <a class="details__map" href="#">Карта</a>
+                            <p class="details-info__date">
+                                <strong>8 мая</strong>
+                                (пн) -
+                                <strong>11 мая</strong>
+                                (чт)
+                            </p>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Длительность:</span>
+                                <span class="details__info-val">3 дня</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Гостей:</span>
+                                <span class="details__info-val">2 чел</span>
+                            </div>
+                            <div class="details__info-row">
+                                <span class="details__info-title">Стоимость:</span>
+                                <span class="details__info-val">320 грн. / сутки</span>
+                            </div>
+                            <div class="details__info__all">
+                                <span class="details__info__t">Всего:</span>
+                                <strong class="details__info__font">2800 грн.</strong>
+                            </div>
+                        </div>
+                        <div class="details-info_right">
+                           <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
+                            <p class="title-l-1 margin_bott">Капитал Сервис
+                                <span class="title-l-1_grey margin_bott">(Киев)</span>
+                            </p>
+                            <a class="all-apartment" href="#">Все Квартиры владельца</a>
+                            <a class="btn btn_s btn_gray" href="#">Написать владельцу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="l-container">
+        <div class="footer__nav">
+            <div class="footer__title">Главная</div>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Партнерство</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Пресса и Добово</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__title">Города</div>
+            <ul>
+                <li><a href="#">Киев</a></li>
+                <li><a href="#">Львов</a></li>
+                <li><a href="#">Одесса</a></li>
+                <li><a href="#">Харьков</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Днепропетровск</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><button class="js-all-city"><span>Все города</span></button></li>
+            </ul>
+        </div>
+        <div class="footer__add">
+            <div class="footer__title">Для владельцев квартир</div>
+            <a class="btn btn_s btn_green btn_add" href="#">Добавить квартиру<i></i></a>
+            <p>Подключение к нашей системе бронирования бесплатное и простое.</p>
+            <p>Собственный сервис по предоставлению услуг он-лайн бронирования квартир без дополнительных затрат и вложений.</p>
+        </div>
+        <div class="footer__right">
+            <div class="search">
+                <input type="text" placeholder="Поиск квартиры по ID">
+                <i></i>
+            </div>
+            <a href="#" class="footer__logo"></a>
+            <p class="footer__copy">© 2010 - 2013 Dobovo.com  /  Все права защищены.</p>
+            <div class="soc">
+                <a href="#" class="soc__fb"></a>
+                <a href="#" class="soc__tw"></a>
+                <a href="#" class="soc__vk"></a>
+                <a href="#" class="soc__od"></a>
+                <a href="#" class="soc__gp"></a>
+            </div>
+            <a href="http://zeema.com/" target="_blanc" class="footer__create-by">Разработано в ZEEMA</a>
+        </div>
+    </div>
+    <div class="city-list js-city-list">
+        <div class="l-container">
+            <ul class="city-list__col">
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END footer -->
+<a class="chat-link" href="#">
+    <i></i>
+    <span>Консультация</span>
+</a>
+<a class="faq-link js-open-faq" href="#">
+    <span>?</span>Вопросы и ответы
+</a>
+<div class="sticker sticker_gray is-fixed js-faq-sticker">
+    <div class="sticker__title">Вопросы и ответы</div>
+    <button class="btn-del btn-del_dark js-close-sticker"></button>
+    <ul class="sticker__list">
+        <li><a href="#">Что включено в проживание?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+        <li><a href="#">Включены ли налоги в цену?</a></li>
+        <li><a href="#">Отличие квартир онлайн от офлайн?</a></li>
+        <li><a href="#">Могу ли я привезти животное?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+    </ul>
+    <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
+</div>
+<div class="tooltip js-tooltip"><span></span></div>
+</body>
+</html>

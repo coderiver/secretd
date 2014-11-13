@@ -9058,6 +9058,10 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.panel.with-id').click(function(event) {
+		return false;
+	});
+
 	$('html, body').click(function(event) {
 		if($('.acc').hasClass('is-active')){
 			$('.acc').removeClass('is-active');
@@ -9065,11 +9069,17 @@ $(document).ready(function() {
 		if($('.panel').hasClass('is-active')){
 			$('.panel').removeClass('is-active');
 		}
+		if($('.filter-status').hasClass('is-open')){
+			$('.filter-status').removeClass('is-open');
+		}
 	});
 
 	//dashboard dropdown menu
 	$('.js-dropdown').click(function(event) {
+		$('.filter-js-wrap').find('.panel').removeClass('is-active');
+		$('.filter-js-wrap').children().removeClass('is-open');
 		$(this).parent().find('.panel').toggleClass('is-active');
+		$(this).parent().toggleClass('is-open');
 		return false;
 	});
 
@@ -9080,6 +9090,31 @@ $(document).ready(function() {
 	$('.js-ask').click(function(event) {
 		$(this).parent().find('.hidden').toggleClass('is-not');
 		$(this).toggleText("Показать все вопросы", "Скрыть все вопросы");
+		return false;
+	});
+
+	$('.to-hide').click(function(event) {
+		$(this).parent().find('.hidden').toggleClass('is-not');
+		$(this).toggleText("Свернуть", "Показать");
+		return false;
+	});
+
+	//revirews tabs
+	var tabs = $('.js-tabs'),
+		tab = tabs.find('.js-tab'),
+		tabContent = tabs.find('.js-tabcontent').children(),
+		activeClass = 'is-active'
+
+	tabContent.not(':first-child').hide();
+
+	tab.click(function(event) {
+		var activeTabIndex = $(this).index();
+		// change active tab
+		tab.removeClass(activeClass);
+		$(this).addClass(activeClass);
+		// change active tabcontent
+		tabContent.hide();
+		tabContent.eq(activeTabIndex).show();
 		return false;
 	});
 
