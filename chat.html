@@ -1,0 +1,457 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="screen" href="css/screen.css" >
+    <script src="js/scripts.js"></script>
+    <script src="js/src/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+<div class="l-layout">
+    <!-- BEGIN Header -->
+    <header class="header">
+        <div class="header__top with-bg">
+            <div class="l-container">
+                <ul class="header__info">
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <strong>13 000</strong> полезных отзывов
+                    </li>
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <strong>900</strong> владельцев квартир
+                    </li>
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <strong>18</strong> способов оплаты
+                    </li>
+                </ul>
+                <div class="header__top-btn registered">
+                    <a href="#" class="onleft header__top-menu js-dropdown">
+                        <div class="onleft header__top-img ">
+                            <img src="img/irina.png" alt="irina">
+                            <span class="notification">2</span>
+                        </div>
+                        <span>Ирина</span>
+                        <i></i>
+                    </a>
+                    <a href="#" class="onleft btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
+                    <ul class="panel">
+                        <li><a href="#">Панель управления</a></li>
+                        <li><a href="#">Мои бронирования</a></li>
+                        <li><a href="#">Мой профиль</a></li>
+                        <li><a href="#">Отзывы<span class="notification">1</span></a></li>
+                        <li><a href="#">Сообщения<span class="notification">1</span></a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a class="is-last" href="#">Выйти<i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="l-container">
+                <h1 class="header__logo"><a href="#">dobovo.com</a></h1>
+                <div class="header__cont">
+                    <span class="header__phone">(+38 044) 221-55-11 </span>
+                    <a href="#" class="btn btn_s btn_gray">skype</a>
+                    <a href="#" class="btn btn_s btn_gray">Задать вопрос</a>
+                </div>
+                <div class="header__currency">
+                    Стоимость в:
+                    <div class="currency">
+                        <span class="currency__text js-select">грн ₴</span>
+                        <input type="hidden" value="1">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">грн ₴</li>
+                            <li data-id="2">EUR €</li>
+                            <li data-id="3">USD $</li>
+                            <li data-id="4">RUB ₱</li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <span class="currency__text js-select">RU</span>
+                        <input type="hidden" value="4">
+                        <ul class="currency__list js-select-list">
+                            <li data-id="1">RU</li>
+                            <li data-id="2">EN</li>
+                            <li data-id="3">UA</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Поиск квартиры по ID">
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <div class="container profile">
+        <ul class="dashboard__menu">
+            <li><a href="#">Панель управления</a></li>
+            <li><a href="#">Мои бронирования</a></li>
+            <li><a href="#">Мой профиль</a></li>
+            <li><a href="#">Отзывы</a><span class="notification">1</span></li>
+            <li class="is-active"><a href="#">Сообщение</a></li>
+            <li><a href="#">Программа лояльности</a></li>
+        </ul>
+        <div class="dashboard messages">
+            <div class="dashboard__ttl">
+                <h1 class="title-l-1">Переписка с Капитал Сервис (Киев)</h1>
+                <a class="onright btn btn_m btn_gray btn_arr" href="#"><i></i>Вернуться ко всем сообщениям</a>
+            </div>
+            <div class="chat">
+                <div class="chat__new">
+                    <form>
+                        <img class="onleft" src="img/irina2.png" alt="irina">
+                        <div class="chat__textarea onleft">
+                            <textarea class="textarea" placeholder="Напишите владельцу..."></textarea>
+                        </div>
+                        <a class="onright btn btn_yellow hidden is-not" href="#">Отправить</a>
+                    </form>
+                </div>
+                <div class="chat__old">
+                    <div class="chat__item">
+                        <div class="chat__who onright">
+                            <img src="img/capital.png" alt="Капитал Сервис (Киев)">
+                            <p class="chat__sender">Капитал Сервис (Киев)</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onright">
+                            <div class="chat__what_head">
+                                <span class="is-bold">Предложение по квартире:</span>
+                                <a class="link-blue" href="#">С панорамным видом из окна, 2х-комнатная</a>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Нет, к сожалению, парка рядом с домом нет, но я могу вам предложить другой вариант, чуть подороже, но рядом есть прекрасный парк.</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <div class="onleft">
+                                    <p><span>ул. Саксаганского, 192</span><a class="details__map" href="#">Карта</a></p>
+                                    <a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a>
+                                </div>
+                                <div class="onright">
+                                    <span class="chat__number txt-green onleft">320</span>
+                                    <div class="chat__perday onleft">
+                                       <p><span class="txt-green is-bold">грн.</span>/ сутки</p>
+                                       <p>960 грн. за 3 дня</p>
+                                    </div>
+                                    <div class="onleft">
+                                        <a class="btn btn_s btn_green" href="#">Забронировать</a>
+                                        <a class="btn btn_s btn_gray" href="#">Отменить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item-divider"></div>
+                    <div class="chat__item">
+                        <div class="chat__who onleft">
+                            <img src="img/irina2.png" alt="Ирина">
+                            <p class="chat__sender is-black">Вы</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onleft">
+                            <div class="chat__what_head">
+                                <div class="chat__what_head-in">
+                                    <div class="onleft">
+                                        <span class="is-bold">Вопрос:</span>
+                                        <a class="link-blue" href="#">Квартира со стеклянной стеной в ванной на Крещатике</a>
+                                    </div>
+                                    <p class="onright">c <span class="is-bold">10 июня</span> (сб) по <span class="is-bold">13 июня</span> (пн)</p>
+                                </div>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Здравствуйте, меня интресует есть ли парк рядом с домом? Я приеду с ребенком и мне хотелось бы вечером посидеть с дочерью в парке перед сном</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <div class="onleft">
+                                    <p><span>ул. Саксаганского, 192</span><a class="details__map" href="#">Карта</a></p>
+                                    <a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a>
+                                </div>
+                                <div class="onright">
+                                    <span class="chat__number txt-green onleft">320</span>
+                                    <div class="chat__perday onleft">
+                                       <p><span class="txt-green is-bold">грн.</span>/ сутки</p>
+                                       <p>960 грн. за 3 дня</p>
+                                    </div>
+                                    <div class="onleft">
+                                        <a class="btn btn_s btn_green" href="#">Забронировать</a>
+                                        <a class="btn btn_s btn_gray" href="#">Отменить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item-divider"></div>
+                    <div class="chat__item">
+                        <div class="chat__who onright">
+                            <img src="img/capital.png" alt="Капитал Сервис (Киев)">
+                            <p class="chat__sender">Капитал Сервис (Киев)</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onright">
+                            <div class="chat__what_head is-gray">
+                               <div class="chat__what_head-in">
+                                  <div class="onleft">
+                                      <span class="is-bold">Отменена:</span>
+                                      <a class="link-blue" href="#">Рядом Премьер Палац и Арена Сити, 2х-комнатная</a>
+                                  </div>
+                                  <p class="onright"><a class="link-blue" href="#">Бронь: №234</a>, c <span class="is-bold">1 авг 2014</span> по <span class="is-bold">3 авг 2014</span></p>
+                              </div>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Нет, к сожалению, мы не можем сдать эту квартиру на пол года. Если дело терпит, то ближе к вечеру, я смогу предложить вам альтернативный вариант</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <p><span>ул. Саксаганского, 192</span><a class="details__map lr-margin" href="#">Карта</a><a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item">
+                        <div class="chat__who onleft">
+                            <img src="img/irina2.png" alt="Ирина">
+                            <p class="chat__sender is-black">Вы</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onleft">
+                            <div class="chat__what_head is-green">
+                                <div class="chat__what_head-in">
+                                    <div class="onleft">
+                                        <span class="is-bold">Забронирована:</span>
+                                        <a class="link-blue" href="#">Рядом Премьер Палац и Арена Сити, 2х-комнатная</a>
+                                    </div>
+                                    <p class="onright"><a class="link-blue" href="#">Бронь: №234</a>, c <span class="is-bold">1 авг 2014</span> по <span class="is-bold">3 авг 2014</span></p>
+                                </div>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Здравствуйте, меня интресует возможно ли снять эту квартиру на по другой цене? На указанные даты за 400 грн в сутки</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <p><span>ул. Саксаганского, 192</span><a class="details__map lr-margin" href="#">Карта</a><a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item">
+                        <div class="chat__who onleft">
+                            <img src="img/irina2.png" alt="Ирина">
+                            <p class="chat__sender is-black">Вы</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onleft">
+                            <div class="chat__what_head">
+                                <div class="chat__what_head-in">
+                                    <div class="onleft">
+                                        <span class="is-bold">Забронирована:</span> Рядом Премьер Палац и Арена Сити, 2х-комнатная
+                                    </div>
+                                    <p class="onright">c <span class="is-bold">1 авг 2014</span> по <span class="is-bold">3 авг 2014</span></p>
+                                </div>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Здравствуйте, меня интресует возможно ли снять эту квартиру на по другой цене? На указанные даты за 400 грн в сутки</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <p><span>ул. Саксаганского, 192</span><a class="details__map lr-margin" href="#">Карта</a><a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item-divider"></div>
+                    <div class="chat__item">
+                        <div class="chat__who onleft">
+                            <img src="img/irina2.png" alt="Ирина">
+                            <p class="chat__sender is-black">Вы</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onleft">
+                            <div class="chat__what_head is-green">
+                                <div class="chat__what_head-in">
+                                    <div class="onleft">
+                                        <span class="is-bold">Забронирована:</span> Рядом Премьер Палац и Арена Сити, 2х-комнатная
+                                    </div>
+                                    <p class="onright">c <span class="is-bold">1 авг 2014</span> по <span class="is-bold">3 авг 2014</span></p>
+                                </div>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Здравствуйте, меня интресует возможно ли снять эту квартиру на по другой цене? На указанные даты за 400 грн в сутки</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <p><span>ул. Саксаганского, 192</span><a class="details__map lr-margin" href="#">Карта</a><a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item">
+                        <div class="chat__who onright">
+                            <img src="img/capital.png" alt="Капитал Сервис (Киев)">
+                            <p class="chat__sender">Капитал Сервис (Киев)</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onright">
+                            <div class="chat__what_head">
+                                <span class="is-bold">Отменена:</span> Рядом Премьер Палац и Арена Сити, 2х-комнатная
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Нет, к сожалению, мы не можем сдать эту квартиру на пол года. Если дело терпит, то ближе к вечеру, я смогу предложить вам альтернативный вариант</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <p><span>ул. Саксаганского, 192</span><a class="details__map lr-margin" href="#">Карта</a><a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__item">
+                        <div class="chat__who onleft">
+                            <img src="img/irina2.png" alt="Ирина">
+                            <p class="chat__sender is-black">Вы</p>
+                            <p>Сегодня 11:34</p>
+                        </div>
+                        <div class="chat__what onleft">
+                            <div class="chat__what_head">
+                                <div class="chat__what_head-in">
+                                    <div class="onleft">
+                                        <span class="is-bold">Забронирована:</span> Рядом Премьер Палац и Арена Сити, 2х-комнатная
+                                    </div>
+                                    <p class="onright">c <span class="is-bold">1 авг 2014</span> по <span class="is-bold">3 авг 2014</span></p>
+                                </div>
+                            </div>
+                            <div class="chat__what_body">
+                                <p>Здравствуйте, меня интресует возможно ли снять эту квартиру на по другой цене? На указанные даты за 400 грн в сутки</p>
+                            </div>
+                            <div class="chat__what_footer">
+                                <p><span>ул. Саксаганского, 192</span><a class="details__map lr-margin" href="#">Карта</a><a class="link-blue is-dashed" href="#">Смотреть фото квартиры</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="sclear"><i></i>Удалить переписку</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="l-container">
+        <div class="footer__nav">
+            <div class="footer__title">Главная</div>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Партнерство</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Пресса и Добово</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__title">Города</div>
+            <ul>
+                <li><a href="#">Киев</a></li>
+                <li><a href="#">Львов</a></li>
+                <li><a href="#">Одесса</a></li>
+                <li><a href="#">Харьков</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Днепропетровск</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><button class="js-all-city"><span>Все города</span></button></li>
+            </ul>
+        </div>
+        <div class="footer__add">
+            <div class="footer__title">Для владельцев квартир</div>
+            <a class="btn btn_s btn_green btn_add" href="#">Добавить квартиру<i></i></a>
+            <p>Подключение к нашей системе бронирования бесплатное и простое.</p>
+            <p>Собственный сервис по предоставлению услуг он-лайн бронирования квартир без дополнительных затрат и вложений.</p>
+        </div>
+        <div class="footer__right">
+            <div class="search">
+                <input type="text" placeholder="Поиск квартиры по ID">
+                <i></i>
+            </div>
+            <a href="#" class="footer__logo"></a>
+            <p class="footer__copy">© 2010 - 2013 Dobovo.com  /  Все права защищены.</p>
+            <div class="soc">
+                <a href="#" class="soc__fb"></a>
+                <a href="#" class="soc__tw"></a>
+                <a href="#" class="soc__vk"></a>
+                <a href="#" class="soc__od"></a>
+                <a href="#" class="soc__gp"></a>
+            </div>
+            <a href="http://zeema.com/" target="_blanc" class="footer__create-by">Разработано в ZEEMA</a>
+        </div>
+    </div>
+    <div class="city-list js-city-list">
+        <div class="l-container">
+            <ul class="city-list__col">
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алупка</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Алушта</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Белая Церковь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бердянск</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Берегово</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Борисполь</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Бровары</a><span>123 квартиры от 456 грн.</span></li>
+                <li><a href="#">Винница</a><span>123 квартиры от 456 грн.</span></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END footer -->
+<a class="chat-link" href="#">
+    <i></i>
+    <span>Консультация</span>
+</a>
+<a class="faq-link js-open-faq" href="#">
+    <span>?</span>Вопросы и ответы
+</a>
+<div class="sticker sticker_gray is-fixed js-faq-sticker">
+    <div class="sticker__title">Вопросы и ответы</div>
+    <button class="btn-del btn-del_dark js-close-sticker"></button>
+    <ul class="sticker__list">
+        <li><a href="#">Что включено в проживание?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+        <li><a href="#">Включены ли налоги в цену?</a></li>
+        <li><a href="#">Отличие квартир онлайн от офлайн?</a></li>
+        <li><a href="#">Могу ли я привезти животное?</a></li>
+        <li><a href="#">Как забронировать квартиру?</a></li>
+        <li><a href="#">Когда и как платить?</a></li>
+    </ul>
+    <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
+</div>
+<div class="tooltip js-tooltip"><span></span></div>
+</body>
+</html>

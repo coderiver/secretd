@@ -9058,19 +9058,9 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.panel.with-id').click(function(event) {
-		return false;
-	});
-
 	$('html, body').click(function(event) {
 		if($('.acc').hasClass('is-active')){
 			$('.acc').removeClass('is-active');
-		}
-		if($('.panel').hasClass('is-active')){
-			$('.panel').removeClass('is-active');
-		}
-		if($('.filter-status').hasClass('is-open')){
-			$('.filter-status').removeClass('is-open');
 		}
 	});
 
@@ -9099,7 +9089,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	//revirews tabs
+	//reviews tabs
 	var tabs = $('.js-tabs'),
 		tab = tabs.find('.js-tab'),
 		tabContent = tabs.find('.js-tabcontent').children(),
@@ -9116,6 +9106,23 @@ $(document).ready(function() {
 		tabContent.hide();
 		tabContent.eq(activeTabIndex).show();
 		return false;
+	});
+
+	//message textarea
+	$('.messages__in').on('focus', '.textarea', function(event) {
+		$(this).addClass('is-active');
+	});
+
+	$('.messages__in').on('blur', '.textarea', function(event) {
+		$(this).removeClass('is-active');
+	});
+
+	$('.messages__in').on('keyup', '.textarea', function(event) {
+		if($(this).val() == '') {
+			$(this).parent().find('.hidden').removeClass('is-not');
+		} else {
+			$(this).parent().find('.hidden').addClass('is-not');
+		}
 	});
 
 });

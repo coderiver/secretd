@@ -1,0 +1,281 @@
+.messages
+	padding-top: 23px
+	.messages__in
+		margin-top: 20px
+		+clr
+	.messages__left
+		width: 590px
+	.l-col2
+		margin-left: 18px
+	.respond.profile
+		margin-top: 0
+		.respond__body
+			padding-bottom: 23px
+	.respond__send
+		margin-top: 20px
+		+clr
+		.link-blue
+			margin-top: 8px
+	.textarea
+		height: 35px
+		margin-top: 15px
+		padding: 7px 15px
+		font-size: 14px
+		+placeholder-color(#adadad)
+		+seg_r
+		&.is-active
+			height: 90px
+	.btn_yellow
+		padding: 0 31.5px
+	.dashboard__ttl
+		.btn_gray
+			margin-right: 15px
+			padding: 0 15.5px
+
+.mblock
+	.is-bold
+		+seg_b
+	.is-green
+		background: #6DAE10
+	.is-orange
+		background: #fbad17
+		+box-shadow(0 1px 0 rgba(229,131,59,.75))
+	.is-gray
+		background: #B1B1B1
+		+box-shadow(0 1px 0 rgba(71,71,71,.75))
+	.txt-green
+		color: #6DAE10
+	.mblock__head
+		padding: 9px 0 9px 16px
+		font-size: 16px
+		color: #FFF
+		+border-box
+	.mblock__body
+		padding: 8px 15px 13px
+		background: #FCFAF9
+		+border-box
+		p
+			margin-bottom: 5px
+		.btn_green
+			margin: 0 12px 0 0
+			padding: 0 14px
+			font-size: 14px
+		.btn_gray
+			height: 23px
+			text-transform: none
+			font-size: 13px
+			color: #838689
+			line-height: 23px
+			+seg_sb
+	.mblock__ttl
+		display: block
+		margin-bottom: 8px
+		font-size: 16px
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	.mblock__price
+		margin-bottom: 13px
+		+seg_r
+		+clr
+	.mblock__perday
+		margin-top: 4px
+		p
+			margin-bottom: 2px
+			&:first-child
+				font-size: 16px
+	.mblock__number
+		margin-right: 5px
+		font-size: 36px
+	.mblock__link
+		max-width: 95px
+		margin: 6px 0 0 12px
+		line-height: 1.4
+
+
+//chat
+.chat
+	.sclear
+		display: inline-block
+		margin: 7px 13px 7px 30px
+
+.chat__new
+	margin: 34px 0
+	padding-left: 30px
+	+clr
+	img
+		margin-top: 15px
+	.chat__textarea
+		position: relative
+		width: 770px
+		height: 90px
+		margin-left: 30px
+		&:before,
+		&:after
+			content: " "
+			position: absolute
+			top: 50%
+			margin-top: -7.5px
+			border-style: solid
+		&:before
+			left: -9px
+			border-width: 7.5px 10px 7.5px 0
+			border-color: transparent #fff transparent transparent
+			z-index: 1
+		&:after
+			left: -11px
+			border-width: 7.5px 11px 7.5px 0
+			border-color: transparent #e2e3ea transparent transparent
+	.textarea
+		width: 100%
+		height: 100%
+		margin: 0
+		padding: 14px 10px
+		+placeholder-color(#4f4f4f)
+	.btn_yellow
+		margin: 20px 18px 0 0
+
+.chat__item
+	margin-bottom: 30px
+	+clr
+	.is-bold
+		+seg_b
+	.txt-green
+		color: #6DAE10
+	.chat__who
+		width: 108px
+		text-align: center
+		color: #838689
+		+border-box
+		+seg_r
+		&.onright
+			padding-left: 10px
+		&.onleft
+			padding-right: 10px
+	.chat__sender
+		color: #4F81BD
+		margin: 10px 0 12px 0
+		&.is-black
+			color: #000
+			margin-bottom: 5px
+	.chat__what
+		width: 770px
+		&.onleft
+			.chat__what_head
+				&:before
+					left: -11px
+					margin-top: -6px
+					border-style: solid
+					border-width: 7.5px 11px 7.5px 0
+					border-color: transparent #e39c68 transparent transparent
+				&:after
+					left: -10px
+					margin-top: -7.5px
+					border-style: solid
+					border-width: 7.5px 10px 7.5px 0
+					border-color: transparent #ffdb99 transparent transparent
+				&.is-gray
+					&:before
+						border-color: transparent #7c7c7c transparent transparent
+					&:after
+						border-color: transparent #dddfe1 transparent transparent
+				&.is-green
+					&:before
+						border-color: transparent #2e970e transparent transparent
+					&:after
+						border-color: transparent #ADD870 transparent transparent
+		&.onright
+			.chat__what_head
+				&:before
+					right: -11px
+					margin-top: -6px
+					border-width: 7.5px 0 7.5px 11px
+					border-color: transparent transparent transparent #e39c68
+				&:after
+					right: -10px
+					margin-top: -7.5px
+					border-width: 7.5px 0 7.5px 10px
+					border-color: transparent transparent transparent #ffdb99
+				&.is-gray
+					&:before
+						border-color: transparent transparent transparent #7c7c7c
+					&:after
+						border-color: transparent transparent transparent #dddfe1
+				&.is-green
+					&:before
+						border-color: transparent transparent transparent #2e970e
+					&:after
+						border-color: transparent transparent transparent #ADD870
+	.chat__what_head
+		position: relative
+		padding: 7.5px 8px 7.5px
+		font-size: 14px
+		background: #ffdb99
+		+box-shadow(0 1px 0 rgba(229,131,59,.75))
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			border-style: solid
+		.link-blue
+			font-size: 14px
+		&.is-gray
+			background: #dddfe1
+			+box-shadow(0 1px 0 rgba(86,86,86,.75))
+		&.is-green
+			background: #ADD870
+			+box-shadow(0 1px 0 #2e970e)
+		.is-bold
+			font-size: 16px
+	.chat__what_head-in
+		+clr
+		.onright
+			margin-top: 2px
+			.is-bold
+				font-size: 14px
+	.chat__what_body
+		padding: 20px 52px 20px 25px
+		background-color: #fcf9f9
+		+box-shadow(0 1px 1px #b7b3b1, inset 0 -1px 0 #fff)
+		+border-box
+	.chat__what_footer
+		padding: 10px 8px 5px 13px
+		background: #dddfe1
+		+box-shadow(0 1px 1px #b7b3b1)
+		+border-box
+		+clr
+		.btn_green
+			margin: 0 7px 0 12px
+			padding: 0 14px
+			line-height: 32px
+			height: 32px
+			font-size: 14px
+		.btn_gray
+			height: 32px
+			padding: 0 20px
+			text-transform: none
+			font-size: 13px
+			color: #838689
+			line-height: 32px
+			+seg_sb
+	.details__map
+		&.lr-margin
+			margin: 0 30px 0 45px
+	.chat__perday
+		line-height: 1
+		p
+			margin-bottom: 2px
+			&:first-child
+				font-size: 16px
+	.chat__number
+		margin-right: 5px
+		font-size: 36px
+		line-height: 1
+
+.chat__item-divider
+	display: block
+	width: 877px
+	height: 1px
+	margin: 50px auto 43px
+	background: #dde0e1
