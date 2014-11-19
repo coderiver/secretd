@@ -1050,23 +1050,6 @@
     padding-top: 10px
     cursor: default
     z-index: 100
-    &.client
-        span
-            max-width: 280px
-            padding: 33px 18px 33px 33px
-            font-size: 14px
-            +border-radius(0)
-            +seg_r
-            &:before, &:after
-                left: 50%
-                margin-left: -5px
-        .btn-del
-            position: absolute
-            top: 9px
-            right: 10px
-            background: #464541
-            &:hover
-                background: #f31a42
     span
         display: inline-block
         position: relative
@@ -1168,3 +1151,25 @@
     border-bottom: 1px solid
     &:hover
         border-bottom: 1px solid transparent
+
+
+.info-block
+    @extend .tooltip
+    &.is-open
+        display: block
+    span
+        max-width: 280px
+        padding: 33px 18px 33px 33px
+        font-size: 14px
+        +seg_r
+        &:before,
+        &:after
+            left: 50%
+            margin-left: -5px
+        .btn-del
+            position: absolute
+            top: 9px
+            right: 10px
+            background: #464541
+            &:hover
+                background: #f31a42

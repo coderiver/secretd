@@ -268,3 +268,26 @@
 	background: #c6c9ca
 	&.b-margin
 		margin-bottom: 25px
+
+.btn_gray
+	&.arr
+		position: relative
+		height: 27px
+		line-height: 27px
+		+box-shadow(0 1.7px 1px #b7b3b1)
+		+border-radius(5px 0 0 5px)
+		&:before
+			content: " "
+			position: absolute
+			top: 0
+			right: -13px
+			z-index: 2
+			+s(arr26)
+		&:hover
+			background-image: none
+			&:before
+				+s(arr26-h)
+		&:active
+			+box-shadow(none)
+			&:before
+				+s(arr26-active)

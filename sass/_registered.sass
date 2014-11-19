@@ -229,8 +229,11 @@
 			padding: 8px 5px 20px 20px
 			border: 1px solid #c6c9ca
 			z-index: 2
+		&.l-width
+			width: 710px
 	.title-l-2
 		padding-left: 10px
+		margin-bottom: 20px
 	.profile__photo
 		position: relative
 		height: 220px
@@ -455,6 +458,8 @@
 		&.is-waiting
 			color: #FCAD16
 			border-bottom-width: 0
+		&.js-with-info
+			cursor: pointer
 	.check_ico
 		margin-bottom: 3px
 		+s(confirmed)
@@ -560,6 +565,8 @@
 			.respond__body
 				background: #FFF
 				box-shadow: none
+	&.no-margin
+		margin-top: 0
 
 //profile settings
 .settings__in

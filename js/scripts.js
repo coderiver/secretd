@@ -8865,6 +8865,7 @@ $(document).ready(function() {
             $(this).hide()
         }
     );
+
     $(".js-with-tooltip").hover(
         function(){
             var left = $(this).offset().left;
@@ -8881,17 +8882,6 @@ $(document).ready(function() {
                     top: top
                 });
             }
-            if ($(this).parent().hasClass("profile__contact-item")) {
-               tooltip.addClass('client');
-               tooltip.css({
-                   left: left-100,
-                   top: top
-               });
-               tooltip.find('span').prepend('<button class="btn-del tooltip-close"></button>');
-            } else {
-            	tooltip.removeClass('client');
-            }
-
             //console.log(position);
             tooltip.fadeIn("fast");
         },
@@ -8900,8 +8890,24 @@ $(document).ready(function() {
         }
     );
 
-    $(".tooltip > span").on('click','.btn-del', function(){
-        $(this).parent().parent().hide();
+	$(".js-with-info").click(
+		function() {
+			var infob = $(".js-info")
+			var left = $(this).offset().left;
+			var top = $(this).offset().top + $(this).outerHeight();
+			var html = $(this).attr("data-click");
+
+			infob.children().html(html);
+			infob.addClass('is-open');
+			infob.css({
+			    left: left-100,
+			    top: top,
+			});
+			infob.find('span').prepend('<button class="btn-del tooltip-close"></button>');
+	});
+
+    $(".info-block > span").on('click','.btn-del', function(){
+        $(this).parent().parent().removeClass('is-open');
     });
 
     $(".js-to-map-popup").click(function(){
