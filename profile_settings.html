@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Messages empty</title>
+    <title>Profile settings</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -29,7 +29,7 @@
                             <img src="img/irina.png" alt="irina">
                             <span class="notification">2</span>
                         </div>
-                        <span class="header__name">Ирина</span>
+                        <span>Ирина</span>
                         <i></i>
                     </a>
                     <a href="#" class="onleft btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
@@ -87,15 +87,220 @@
         <ul class="dashboard__menu">
             <li><a href="#">Панель управления</a></li>
             <li><a href="#">Мои бронирования</a></li>
-            <li><a href="#">Мой профиль</a></li>
+            <li class="is-active"><a href="#">Мой профиль</a></li>
             <li><a href="#">Отзывы</a><span class="notification">1</span></li>
-            <li class="is-active"><a href="#">Сообщение</a></li>
+            <li><a href="#">Сообщение</a><span class="notification">1</span></li>
             <li><a href="#">Программа лояльности</a></li>
         </ul>
-        <div class="dashboard no-message">
-            <h1 class="title-l-1">Сообщения</h1>
-            <div class="no-info">
-                <p>Пока нет ни одного сообщения</p>
+        <div class="dashboard">
+            <div class="impetus">
+                <p class="onleft"><i class="checked"></i>Изменения сохранены</p>
+                <span class="onright to-close"></span>
+            </div>
+            <div class="dashboard__ttl">
+                <h1 class="title-l-1">Панель управления</h1>
+                <a href="#">Смотреть публичный профиль »</a>
+            </div>
+            <div class="impetus is-gray">
+                <div class="impetus__left onleft">
+                    <p>Ваш профиль заполнен на 70%</p>
+                    <div class="impetus__range">
+                        <p> 70%</p>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <span class="onright to-close"></span>
+                 <div class="impetus__right onright">
+                    <p class="impetus__confirm"><a class="link-blue is-dashed" href="#">Подтвердите свой профиль</a> и доверие арендодателей к вам повысится в разы</p>
+                </div>
+            </div>
+            <div class="l-col3 onleft">
+                 <div class="profile__photo">
+                    <a href="#" class="profile__change ontop">
+                        <i class="photo_ico"></i><span>Изменить фото</span>
+                    </a>
+                    <img src="img/irina2.jpg" alt="Ирина">
+                    <a href="#" class="profile__change onbottom">
+                        <span class="delete"><i class="delete_ico"></i></span><span>Удалить фото</span>
+                    </a>
+                 </div>
+                 <div class="profile__name">
+                     Ирина Васильева
+                 </div>
+                 <div class="profile__about with-menu">
+                    <p>3 отзыва обо мне (2 рекомендуют)</p>
+                    <ul class="profile__menu">
+                        <li><a href="#">Личные данные</a></li>
+                        <li class="is-active"><a href="#">Настройки</a></li>
+                    </ul>
+                 </div>
+                 <div class="profile__contact">
+                    <div class="profile__contact-item percent">
+                       <div class="profile__contact-inner percent">
+                        <p>Подтверждение профиля</p>
+                        <p class="is-small">70% - надежная съемщица квартиры</p>
+                       </div>
+                      <div class="fill"></div>
+                    </div>
+                    <div class="profile__contact-item">
+                        <div class="profile__contact-inner">
+                            <i class="onleft mail_ico"></i>
+                            <a class="onleft" href="mailto: mail@test.com">test@test.com</a>
+                            <i class="onright check_ico"></i>
+                        </div>
+                    </div>
+                    <div class="profile__contact-item">
+                       <div class="profile__contact-inner">
+                           <i class="onleft phone_ico"></i>
+                           <span class="onleft">+380123456789</span>
+                           <i class="onright check_ico"></i>
+                       </div>
+                    </div>
+                    <div class="profile__contact-item">
+                       <div class="profile__contact-inner">
+                           <i class="onleft fb_ico"></i>
+                           <span class="onleft">Facebook</span>
+                           <i class="onright check_ico"></i>
+                       </div>
+                    </div>
+                     <div class="profile__contact-item">
+                       <div class="profile__contact-inner recommend">
+                           <i class="onleft bubble_ico"></i>
+                           <span class="onleft">Положительные отзывы</span>
+                           <i class="onright check_ico"></i>
+                       </div>
+                    </div>
+                    <div class="profile__contact-item is-last">
+                       <div class="profile__contact-inner">
+                           <i class="onleft person_ico"></i>
+                           <span class="onleft">Оффлайн подтверждение</span>
+                           <a href="#"><i class="onright clock_ico"></i></a>
+                       </div>
+                       <a href="#" class="onright profile__confirmed is-waiting">ожидает проверки</a>
+                    </div>
+                 </div>
+            </div>
+            <div class="profile__right onright with-border">
+                <h2 class="title-l-2">Настройки</h2>
+                <div class="hr"></div>
+                <div class="settings">
+                    <div class="settings__in">
+                         <h3 class="settings__ttl">Уведомления</h3>
+                         <p>Временная зона (время, указываемое в уведомлениях)</p>
+                         <div class="settings__dropdown">
+                             <span class="js-select">GMT +2 (Киев, Афины)</span>
+                             <ul class="panel js-select-list">
+                                <li>1</li>
+                                <li>2</li>
+                             </ul>
+                         </div>
+                         <h3 class="settings__ttl is-small">Email:</h3>
+                         <div class="settings__dropdown">
+                             <span class="js-select">Русский язык</span>
+                             <ul class="js-select-list panel">
+                                <li>Английский язык</li>
+                                <li>Китайский язык</li>
+                             </ul>
+                         </div>
+                         <div class="settings__choice">
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Подтверждение брони</span>
+                             </label>
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Отклонение брони</span>
+                             </label>
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Ответ на ваш отзыв</span>
+                             </label>
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Новое сообщение от хозяина квартиры</span>
+                             </label>
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Отзыв о нас</span>
+                             </label>
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Новости сайта</span>
+                             </label>
+                         </div>
+                         <h3 class="settings__ttl is-small">SMS:</h3>
+                         <div class="settings__dropdown">
+                             <span class="js-select">Русский язык (латиница)</span>
+                             <ul class="panel js-select-list">
+                                <li>Английский язык</li>
+                                <li>Китайский язык</li>
+                             </ul>
+                         </div>
+                         <label class="label">
+                             <input type="checkbox">
+                             <span>Подтверждение / отклонение брони</span>
+                         </label>
+                         <a class="btn btn_green" href="#">Сохранить уведомления</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="settings__in">
+                         <h3 class="settings__ttl">Изменить пароль</h3>
+                    </div>
+                    <div class="settings__input">
+                        <p class="onleft">Текущий пароль</p>
+                        <input class="onleft input" type="text">
+                    </div>
+                      <div class="settings__input">
+                        <p class="onleft">Новый пароль</p>
+                        <input class="onleft input" type="text">
+                    </div>
+                    <div class="settings__in no-pad">
+                         <label class="label">
+                             <input type="checkbox">
+                             <span>Показать пароль</span>
+                         </label>
+                         <a class="btn btn_green no-margin" href="#">Сохранить пароль</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="settings__in">
+                         <h3 class="settings__ttl">Удалить аккаунт</h3>
+                         <p class="settings__p">Расскажите нам, пожалуйста, почему вы хотите уйти:</p>
+                         <div class="settings__choice">
+                             <label class="label radio">
+                                 <input type="radio" name="delete" val="1">
+                                 <span>Меня беспокоит безопасность</span>
+                             </label>
+                             <label class="label radio">
+                                 <input type="radio" name="delete" val="2">
+                                 <span>Я беспокоюсь о конфиденциальности</span>
+                             </label>
+                             <label class="label radio">
+                                 <input type="radio" name="delete" val="3">
+                                 <span>Я не нахожу сайт полезным</span>
+                             </label>
+                             <label class="label radio">
+                                 <input type="radio" name="delete" val="4">
+                                 <span>Я не понимаю, как пользоваться сайтом</span>
+                             </label>
+                             <label class="label radio">
+                                 <input type="radio" name="delete" val="5">
+                                 <span>Это временно: я ещё вернусь</span>
+                             </label>
+                             <label class="label radio">
+                                 <input type="radio" name="delete" val="6">
+                                 <span>Другая причина</span>
+                             </label>
+                         </div>
+                         <textarea class="textarea" placeholder="Напишите, пожалуйста, причину своего ухода..."></textarea>
+                         <p class="settings__p">Что произойдет, если вы удалите свой аккаунт:</p>
+                         <ul class="settings__list">
+                             <li>Ваши данные из профиля будут удалены навсегда</li>
+                             <li>Вся история переписок и бронировок исчезнет</li>
+                             <li>Мы будем по вам очень скучать :(</li>
+                         </ul>
+                         <a class="btn btn_m btn_gray" href="#">Всё равно удалите мой аккаунт</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

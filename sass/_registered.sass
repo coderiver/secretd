@@ -81,25 +81,138 @@
 				vertical-align: middle
 			.btn
 				margin-top: 10px
+			.panel
+				width: 260px
+			.header__name
+				width: 51px
+				overflow: hidden
+				white-space: nowrap
+				text-overflow: ellipsis
 	.header__top-menu
 		height: 44px
 		border-right: 1px solid #ded7d3
 		border-left: 1px solid #ded7d3
 		margin-right: 11px
-		padding: 0 20px 0 15px
+		padding: 0 15px
 		i
 			display: inline-block
 			vertical-align: middle
-			margin-left: 2px
 			+s(arr22)
 	.header__top-img
 		position: relative
 		margin: 4px 17px 0 0
 		line-height: 1
+		img
+			width: 35px
 		.notification
 			position: absolute
 			top: -2px
 			right: -10px
+	.popup_log
+		position: absolute
+		top: 53px
+		right: 108px
+		width: 345px
+		height: auto
+		background: #fff
+		border: 0
+		line-height: 1.4
+		z-index: 10
+		+box-shadow(0 0 5px rgba(10,5,6,.39))
+		&:before
+			content: ""
+			position: absolute
+			top: -10px
+			left: 50%
+			margin-left: -9px
+			border-style: solid
+			border-width: 0 9px 12px 9px
+			border-color: transparent transparent #f2f2f2 transparent
+			z-index: 2
+		&:after
+			content: ""
+			position: absolute
+			top: -12px
+			left: 50%
+			margin-left: -9px
+			border-style: solid
+			border-width: 0 9px 13px 9px
+			border-color: transparent transparent #d4d0cf transparent
+		&.mail_sent
+			right: 125px
+			width: 307px
+			padding: 35px 40px
+			text-align: center
+			color: #25292D
+			+border-box
+			+seg_r
+			&:before
+				top: -11px
+				border-color: transparent transparent #fff transparent
+			&:after
+				top: -13px
+			p
+				font-size: 14px
+				margin-bottom: 18px
+			.popup_log_ttl
+				margin-bottom: 15px
+				font-size: 24px
+				line-height: 1
+				+seg_sb
+
+		.popup__social
+			padding: 15px
+			p
+				text-align: center
+				font-size: 21px
+				line-height: 1.2
+		.fb_soc
+			margin-right: 5px
+			+s(fb_soc-l)
+		.g_soc
+			+s(g_soc-l)
+		.vk_soc
+			margin-right: 5px
+			+s(vk_soc-l)
+		.ok_soc
+			+s(ok_soc-l)
+		.popup__choose
+			padding: 0 15px
+			p
+				font-size: 16px
+			.is-small
+				font-size: 14px
+		.popup_or
+			margin: 10px 0 12px
+			font-size: 18px
+			text-transform: none
+			&:before,
+			&:after
+				width: 125px
+				left: 15px
+		.popup__input
+			label
+				margin-bottom: 10px
+			span
+				padding-top: 7px
+				font-size: 16px
+			.input
+				width: 250px
+				height: 35px
+		.popup__pass
+			margin: 0 0 0 65px
+			+user-select(none)
+			span
+				float: none
+				padding: 0 0 0 3px
+				font-size: 14px
+		.popup__sign_in
+			padding: 10px 0 14px
+			+border-box
+		.btn.btn_green
+			width: 100%
+			padding: 0
+			margin-top: 0
 
 .profile
 	&.bookings
@@ -109,6 +222,13 @@
 		margin-right: 20px
 	.profile__right
 		width: 678px
+		+border-box
+		&.with-border
+			position: relative
+			margin-top: 21px
+			padding: 8px 5px 20px 20px
+			border: 1px solid #c6c9ca
+			z-index: 2
 	.title-l-2
 		padding-left: 10px
 	.profile__photo
@@ -118,6 +238,19 @@
 		text-align: center
 		background: #DFE2E3
 		+seg_r
+		&.two-buttons
+			+clr
+			.no-photo
+				margin: 7px auto 5px
+			.profile__upload
+				position: relative
+				width: 95px
+				margin-left: 10px
+				.btn_blue
+					width: 95px
+					+seg_sb
+			.link-blue
+				margin: 7px 20px 0 0
 		p
 			padding-top: 18px
 			font-size: 16px
@@ -130,18 +263,28 @@
 			+s(profile)
 		.load-photo
 			display: block
-			margin: 12px auto 0
+			margin: 12px auto 20px
 			+s(load_photo)
 	.profile__upload
+		display: block
+		width: 190px
+		margin: 0 auto
+		overflow: hidden
 		input
-			+opacity(0)
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
 			visibility: hidden
 		.btn_blue
+			position: relative
 			width: 190px
 			font-size: 16px
 			background-color: #779dcb
 			cursor: pointer
 			+border-box
+			z-index: 2
 	.profile__change
 		position: absolute
 		display: block
@@ -208,6 +351,55 @@
 		font-size: 18px
 		+border-box
 		+seg_r
+		&.with-menu
+			padding: 10px 0 0 0
+			p
+				font-size: 13px
+				color: #4F81BD
+				letter-spacing: -0.1px
+				+seg_r
+		.profile__menu
+			margin-top: 8px
+			border-top: 1px solid #c6c9ca
+			li
+				&.is-active
+					a
+						background: #f6f6f6
+						+seg_b
+						&:before
+							content: " "
+							position: absolute
+							display: block
+							width: 3px
+							top: -0.5px
+							left: -0.5px
+							bottom: -0.5px
+							background: #4f81bd
+						&:after
+							background: #f6f6f6
+							border-right: 1px solid #f6f6f6
+							z-index: 3
+			a
+				position: relative
+				display: block
+				padding: 11px 0 11px 15px
+				font-size: 14px
+				background: #ececec
+				color: #5C6064
+				border-bottom: 1px solid #c6c9ca
+				border-left: 1px solid #c6c9ca
+				+border-box
+				&:after
+					content: " "
+					position: absolute
+					display: block
+					width: 11%
+					height: 100%
+					top: -1px
+					right: -10.2%
+					background: #ececec
+					border-top: 1px solid #c6c9ca
+					border-bottom: 1px solid #c6c9ca
 	.profile__contact
 		margin: 10px 0
 		background: #f6f6f6
@@ -259,6 +451,10 @@
 		border-bottom: 1px dashed #83c723
 		&.to-do
 			color: #4F81BD
+			border-bottom: 1px dashed #4F81BD
+		&.is-waiting
+			color: #FCAD16
+			border-bottom-width: 0
 	.check_ico
 		margin-bottom: 3px
 		+s(confirmed)
@@ -278,11 +474,16 @@
 		margin: 5px 10px 0 0
 		+s(person)
 	.ask_ico
-		margin: 7px 12px 0 0
+		margin: 5px 12px 0 0
 		+s(ask)
+		&.another-marg
+			margin: -3px 0 0 0
 	.arr_ico
 		margin: 3px 3px 0 0
 		+s(arr23)
+	.clock_ico
+		margin-top: 4px
+		+s(clock)
 	.btn_arr
 		margin-top: 2px
 		padding: 0 23px 0 20px
@@ -359,3 +560,176 @@
 			.respond__body
 				background: #FFF
 				box-shadow: none
+
+//profile settings
+.settings__in
+	padding: 30px 0 0 168px
+	&.no-pad
+		padding-top: 0
+		.btn_green
+			margin-left: 0
+			&.autowidth
+				width: auto
+	.settings__ttl
+		margin-bottom: 15px
+		font-size: 16px
+		color: #25292D
+		+seg_r
+		&.is-small
+			margin-bottom: 12px
+			font-size: 14px
+	.settings__p
+		margin-bottom: 10px
+	.settings__list
+		list-style-type: disc
+		li
+			margin: 0 0 10px 18px
+	.label
+		display: block
+		margin-bottom: 20px
+		&.radio
+			margin-bottom: 10px
+		input
+			display: inline-block
+			margin-top: 1px
+			vertical-align: top
+		span
+			padding-left: 10px
+			+user-select(none)
+	.textarea
+		width: 392px
+		margin: 10px 0 15px
+	.btn.btn_green
+		width: 235px
+		margin: 0 0 0 28px
+		&.no-margin
+			margin: 0
+	.btn_gray
+		margin-top: 5px
+	.settings__choice
+		width: 300px
+	.settings__note
+		margin-bottom: 5px
+		padding-left: 8px
+		font-size: 10px
+		+seg_r
+
+.settings__input
+	padding-left: 35px
+	margin-bottom: 15px
+	+clr
+	&.with-margin
+		margin-top: 40px
+	&.s-margin
+		margin-bottom: 5px
+	p
+		width: 132px
+		margin-top: 10px
+		font-size: 15px
+		+border-box
+		&.txt-on-right
+			text-align: right
+			padding-right: 9px
+	.input
+		width: 392px
+		height: 40px
+		&.s-width
+			width: 357px
+	.textarea
+		width: 357px
+		height: 140px
+		margin-top: 7px
+	.settings__ico
+		margin-right: 45px
+		p
+			width: auto
+	.icon
+		display: inline-block
+		margin: 0 10px 0 2px
+		vertical-align: middle
+	.fb_ico
+		+s(fb_i)
+	.vk_ico
+		+s(vk_i)
+	.g_ico
+		+s(g_i)
+	.ok_ico
+		+s(ok_i)
+	.ask_ico
+		margin: 11px 0 0 10px
+	.btn-del
+		margin-right: 7px
+	.settings__checked
+		margin-top: 10px
+		.check_ico
+			margin: 0 5px 0 7px
+		.link-blue
+			color: #7ebf22
+			border-bottom: 1px dashed #7EBF22
+	.settings__dropdown
+		margin: 0
+		span
+			line-height: 35px
+			+seg_i
+		.m-width
+			margin: 0 13px
+
+.settings__dropdown
+	position: relative
+	margin: 10px 0 17px 0
+	span
+		position: relative
+		display: block
+		width: 230px
+		height: 42px
+		padding-left: 13px
+		background-color: #fff
+		border: 2px solid #c6c1bf
+		line-height: 40px
+		cursor: pointer
+		+user-select(none)
+		+border-box
+		+border-radius(2px)
+		+box-shadow(0 1px 0 #fff)
+		+background-image(linear-gradient(bottom, #fff 0%, #fff 0.54%, #fdfbfb 76.64%, #e5dfdd 100%))
+		&:after
+			content: ""
+			position: absolute
+			top: 17px
+			right: 17px
+			+s(arr25)
+		&.s-width
+			width: 88px
+		&.m-width
+			width: 155px
+		&.l-width
+			width: 357px
+		&.another-arr
+			padding-left: 9px
+			font-family: Arial, sans-serif
+			color: #464541
+			background-image: none
+			border: 1px solid #e2e3ea
+			line-height: 42px
+			+box-shadow(inset 0 1px 0 #bfbfbf)
+			&:after
+				top: 9px
+				right: 10px
+				+s(arr5)
+	.panel
+		width: 230px
+		top: 47px
+		left: 0
+		+border-radius(0 0 5px 5px)
+		&.s-width
+			width: 88px
+		&.m-width
+			width: 155px
+		&.l-width
+			width: 357px
+		li
+			padding: 6px 10px
+			color: #25292d
+			border-bottom: 1px solid #dfdfdf
+			&:hover
+				background: #ff7e00

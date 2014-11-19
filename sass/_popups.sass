@@ -385,6 +385,14 @@
             width: 215px
         .btn-del
             background: #6DAE10
+    &.info_cell
+        height: 200px
+        .cellphone__row
+            margin-top: 8px
+        .btn_green
+            margin: 8px 0 0 105px
+    &.info_check
+        height: 106px
     p
         font-size: 14px
         color: #424242
@@ -419,3 +427,60 @@
     .btn-del
         top: -9px
         right: -9px
+    .is-checked
+        margin-left: 20px
+        font-size: 13px
+        color: #7EBF22
+        i
+            display: inline-block
+            margin-right: 5px
+            vertical-align: middle
+            +s(arr7-green)
+
+//profile info popups
+.photo_upload
+    width: 770px
+    height: 580px
+    padding-top: 8px
+    .btn-del
+        top: -9px
+        right: -9px
+    .photo_upload_here
+        margin-top: 20px
+        padding: 30px 0
+        text-align: center
+        font-size: 14px
+        border: 1px dashed #bab9b7
+        +border-box
+        i
+            display: block
+            margin: 0 auto 25px
+            +s(upload)
+    .photo_upload_choose
+        +clr
+    .photo_upload_item
+        margin-right: 15px
+        text-align: center
+    .photo_upload_img
+        width: 160px
+        height: 170px
+        margin-bottom: 15px
+        img
+            width: 100%
+            height: 100%
+        &.is-uploaded
+            position: relative
+            margin-bottom: 0
+    .photo_upload_but
+        margin-top: 17px
+        .btn_green
+            width: 230px
+            margin: 0 10px 0 0
+    .icon
+        display: inline-block
+        margin-right: 10px
+        vertical-align: middle
+    .fb_ico
+        +s(fb_i)
+    .vk_ico
+        +s(vk_i2)
