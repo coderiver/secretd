@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lte IE 8]><html class="lteie8"><![endif]-->
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
@@ -94,8 +95,20 @@
         </ul>
         <div class="dashboard">
             <div class="impetus">
-                <p class="onleft">Заполните свой профиль и доверие арендодателей повысится к вам в разы</p>
-                <span class="onright to-close"></span>
+              <div class="impetus__form onleft">
+                <h2 class="title-l-3_bold">Подтверждение мобильного телефона</h2>
+                   <p>На введенный вами номер прийдет сообщение с кодом подтверждения. Введите ниже код, полученный по sms</p>
+                   <form>
+                       <div class="mobile__in">
+                           <p>Мобильный телефон <strong>+380123456789</strong></p>
+                           <div class="cellphone__row">
+                               <p class="title-l-3 onleft">Код из SMS</p><input class="input code js-mask-pin onleft" type="text"><a class="onleft link-blue is-dashed" href="#">Выслать код повторно</a>
+                           </div>
+                           <button class="btn btn_green with-margin" type="submit">Подтвердить</button>
+                       </div>
+                    </form>
+              </div>
+              <span class="onright to-close"></span>
             </div>
             <div class="dashboard__ttl">
                 <h1 class="title-l-1">Профиль пользователя</h1>
@@ -270,7 +283,7 @@
                             <input class="onleft input s-width" type="text" onblur="if(!value)value=defaultValue" onfocus="if(value==defaultValue)value=''" value="test@test.com">
                             <div class="settings__checked onleft">
                                 <i class="check_ico icon"></i>
-                                <a class="link-blue is-dashed" href="#">подтверждено</a>
+                                <a href="#">подтверждено</a>
                             </div>
                         </div>
                         <div class="settings__in no-pad">
@@ -281,7 +294,7 @@
                             <input class="onleft input s-width" type="text" value="+380123456789">
                             <div class="settings__checked onleft">
                                 <i class="check_ico icon"></i>
-                                <a class="link-blue is-dashed" href="#">подтверждено</a>
+                                <a href="#">подтверждено</a>
                             </div>
                         </div>
                          <div class="settings__in no-pad">
@@ -445,20 +458,5 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
-<div class="popup popup_cellphone mobile info_cell js-popup" style="display:block">
-    <button class="btn-del js-close"></button>
-    <h2 class="title-l-3_bold">Подтверждение мобильного телефона</h2>
-    <p>На введенный вами номер прийдет сообщение с кодом подтверждения. Введите ниже код, полученный по sms</p>
-    <form>
-        <div class="mobile__in">
-            <p>Мобильный телефон <strong>+380123456789</strong></p>
-            <div class="cellphone__row">
-                <p class="title-l-3 onleft">Код из SMS</p><input class="input code js-mask-pin onleft" type="text"><a class="onleft link-blue" href="#">Выслать код повторно</a>
-            </div>
-            <button class="btn btn_green" type="submit">Подтвердить</button>
-        </div>
-    </form>
-</div>
-<div class="overlay js-overlay" style="display:block"></div>
 </body>
 </html>

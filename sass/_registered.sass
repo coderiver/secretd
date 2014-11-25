@@ -451,15 +451,13 @@
 	.profile__confirmed
 		margin-top: 3px
 		color: #83c723
-		border-bottom: 1px dashed #83c723
 		&.to-do
 			color: #4F81BD
-			border-bottom: 1px dashed #4F81BD
 		&.is-waiting
 			color: #FCAD16
-			border-bottom-width: 0
 		&.js-with-info
 			cursor: pointer
+			border-bottom: 1px dashed #83c723
 	.check_ico
 		margin-bottom: 3px
 		+s(confirmed)
@@ -574,7 +572,6 @@
 	&.no-pad
 		padding-top: 0
 		.btn_green
-			margin-left: 0
 			&.autowidth
 				width: auto
 	.settings__ttl
@@ -608,9 +605,7 @@
 		margin: 10px 0 15px
 	.btn.btn_green
 		width: 235px
-		margin: 0 0 0 28px
-		&.no-margin
-			margin: 0
+		margin: 0
 	.btn_gray
 		margin-top: 5px
 	.settings__choice
@@ -670,9 +665,11 @@
 		margin-top: 10px
 		.check_ico
 			margin: 0 5px 0 7px
-		.link-blue
+		a
 			color: #7ebf22
-			border-bottom: 1px dashed #7EBF22
+	.link-blue
+		&.with-margin
+			margin: 10px 0 0 13px
 	.settings__dropdown
 		margin: 0
 		span

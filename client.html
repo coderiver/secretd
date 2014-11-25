@@ -13,41 +13,25 @@
 <div class="l-layout">
     <!-- BEGIN Header -->
     <header class="header">
-        <div class="header__top with-bg">
+        <div class="header__top">
             <div class="l-container">
                 <ul class="header__info">
-                    <li class="js-with-tooltip" data-info="Отзывы м">Более <strong>13 000</strong> полезных отзывов
+                    <li class="js-with-tooltip" data-info="Отзывы м">Более <span class=b>13 000</span> полезных отзывов
                     </li>
-                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <strong>900</strong> владельцев квартир
+                    <li class="js-with-tooltip" data-info="Квартиры предоставляются прямыми владельцами либо компаниями, управляющими этими квартирами.">Более <span class=b>900</span> владельцев квартир
                     </li>
-                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <strong>18</strong> способов оплаты
+                    <li class="js-with-tooltip" data-info="Кредитные карты, наличные в любых терминалах пополнения счета страны, электронные деньги, платежи в кассе любого банка страны, и другие популярные в Украине системы оплаты">Более <span class=b>18</span> способов оплаты
                     </li>
                 </ul>
-                <div class="header__top-btn registered">
-                    <a href="#" class="onleft header__top-menu js-dropdown">
-                        <div class="onleft header__top-img ">
-                            <img src="img/irina.png" alt="irina">
-                            <span class="notification">2</span>
-                        </div>
-                        <span class="header__name">Ирина</span>
-                        <i></i>
-                    </a>
-                    <a href="#" class="onleft btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
-                    <ul class="panel">
-                        <li><a href="#">Панель управления</a></li>
-                        <li><a href="#">Мои бронирования</a></li>
-                        <li><a href="#">Мой профиль</a></li>
-                        <li><a href="#">Отзывы<span class="notification">1</span></a></li>
-                        <li><a href="#">Сообщения<span class="notification">1</span></a></li>
-                        <li><a href="#">Программа лояльности</a></li>
-                        <li><a class="is-last" href="#">Выйти<i></i></a></li>
-                    </ul>
+                <div class="header__top-btn">
+                    <a href="#" class="btn btn_s btn_blue">Войти или создать аккаунт</a>
+                    <a href="#" class="btn btn_s btn_green btn_add">Добавить квартиру <i></i></a>
                 </div>
             </div>
         </div>
         <div class="header__bottom">
             <div class="l-container">
-                <h1 class="header__logo"><a href="#">dobovo.com</a></h1>
+                <h2 class="header__logo"><a href="#">dobovo.com</a></h2>
                 <div class="header__cont">
                     <span class="header__phone">(+38 044) 221-55-11 </span>
                     <a href="#" class="btn btn_s btn_gray">skype</a>
@@ -59,7 +43,6 @@
                         <span class="currency__text js-select">грн ₴</span>
                         <input type="hidden" value="1">
                         <ul class="currency__list js-select-list">
-                            <li data-id="1">грн ₴</li>
                             <li data-id="2">EUR €</li>
                             <li data-id="3">USD $</li>
                             <li data-id="4">RUB ₱</li>
@@ -67,11 +50,10 @@
                     </div>
                     <div class="currency">
                         <span class="currency__text js-select">RU</span>
-                        <input type="hidden" value="4">
+                        <input type="hidden" value="1">
                         <ul class="currency__list js-select-list">
-                            <li data-id="1">RU</li>
-                            <li data-id="2">EN</li>
-                            <li data-id="3">UA</li>
+                            <li data-id="2"><a href="#">EN</a></li>
+                            <li data-id="3"><a href="#">UA</a></li>
                         </ul>
                     </div>
                     <div class="search">
