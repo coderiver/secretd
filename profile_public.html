@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Profile cellphone 2</title>
+    <title>Profile public</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -93,77 +93,34 @@
             <li><a href="#">Программа лояльности</a></li>
         </ul>
         <div class="dashboard">
-           <div class="impetus">
-             <div class="impetus__form onleft">
-                 <h2 class="title-l-3_bold">Подтверждение мобильного телефона</h2>
-                 <p>На введенный вами номер прийдет сообщение с кодом подтверждения. Введите ниже код, полученный по sms</p>
-                 <div class="mobile__in">
-                     <p class="onleft">Мобильный телефон <strong>+380123456789</strong></p>
-                     <p class="onleft is-checked"><i></i>подтверждено</p>
-                 </div>
-             </div>
-             <span class="onright to-close"></span>
-           </div>
-            <div class="dashboard__ttl">
-                <h1 class="title-l-1">Профиль пользователя</h1>
-                <a href="#">Смотреть публичный профиль »</a>
-            </div>
-            <div class="impetus is-gray">
-                <div class="impetus__left onleft">
-                    <p>Ваш профиль заполнен на 70%</p>
-                    <div class="impetus__range">
-                        <p> 70%</p>
-                        <div class="fill"></div>
-                    </div>
-                </div>
-                <span class="onright to-close"></span>
-                 <div class="impetus__right onright">
-                    <p class="impetus__confirm"><a class="link-blue is-dashed" href="#">Подключите социальную сеть </a> и вы сэкономите время на заполнение личных данных</p>
-                </div>
-            </div>
             <div class="l-col3 onleft">
-                  <div class="profile__photo">
-                    <a href="#" class="profile__change ontop">
-                        <i class="photo_ico"></i><span>Изменить фото</span>
-                    </a>
-                    <img src="img/irina2.jpg" alt="Ирина">
-                    <a href="#" class="profile__change onbottom">
-                        <span class="delete"><i class="delete_ico"></i></span><span>Удалить фото</span>
-                    </a>
+                 <h1 class="title-l-1">Профиль Ирина</h1>
+                 <div class="profile__photo">
+                     <img src="img/irina2.jpg" alt="Ирина">
                  </div>
                  <div class="profile__name">
                      Ирина Васильева
                  </div>
-                 <div class="profile__about with-menu">
-                    <p>3 отзыва обо мне (2 рекомендуют)</p>
-                    <ul class="profile__menu">
-                        <li><a href="#">Личные данные</a></li>
-                        <li class="is-active"><a href="#">Настройки</a></li>
-                    </ul>
+                 <div class="profile__about">
+                    <p>Украина, г. Киев</p>
+                    <p>23 года</p>
                  </div>
                  <div class="profile__contact">
-                    <div class="profile__contact-item percent">
-                       <div class="profile__contact-inner percent">
-                        <p>Подтверждение профиля</p>
-                        <p class="is-small">70% - надежная съемщица квартиры</p>
-                       </div>
-                      <div class="fill"></div>
-                    </div>
                     <div class="profile__contact-item">
                         <div class="profile__contact-inner">
                             <i class="onleft mail_ico"></i>
-                            <a class="onleft" href="mailto: mail@test.com">test@test.com</a>
-                            <a href="#"><i class="onright ask_ico another-marg"></i></a>
-                            <a href="#" class="onright profile__confirmed link-blue is-dashed">подтвердить</a>
+                            <a class="onleft" href="mailto: mail@test.com"><span class="is-hidden">test</span>@test.com</a>
+                            <i class="onright check_ico"></i>
                         </div>
+                        <span class="onright profile__confirmed js-with-info" data-click="Пользователь прошел проверку и подтвердил указанный email. В целях безопасности мы показываем email наших пользователей только арендодателям, у которых пользователь снимает квартиру" >подтверждено</span>
                     </div>
                     <div class="profile__contact-item">
                        <div class="profile__contact-inner">
                            <i class="onleft phone_ico"></i>
-                           <span class="onleft">+380123456789</span>
-                           <a href="#"><i class="onright ask_ico another-marg"></i></a>
-                           <a href="#" class="onright profile__confirmed link-blue is-dashed">подтвердить</a>
+                           <span class="onleft">+380<span class="is-hidden">12345678</span>9</span>
+                           <i class="onright check_ico"></i>
                        </div>
+                       <span class="onright profile__confirmed js-with-info" data-click="Пользователь прошел проверку и подтвердил указанный номер телефона. В целях безопасности мы показываем телефоны наших пользователей только арендодателям, у которых пользователь снимает квартиру">подтверждено</span>
                     </div>
                     <div class="profile__contact-item">
                        <div class="profile__contact-inner">
@@ -171,151 +128,58 @@
                            <span class="onleft">Facebook</span>
                            <i class="onright check_ico"></i>
                        </div>
+                       <span class="onright profile__confirmed js-with-info" data-click="Пользователь подключил реальный аккаунт на Facebook">подтверждено</span>
                     </div>
-                     <div class="profile__contact-item">
-                       <div class="profile__contact-inner recommend">
+                     <div class="profile__contact-item is-last">
+                       <div class="profile__contact-inner">
                            <i class="onleft bubble_ico"></i>
-                           <span class="onleft">Меня рекомендуют</span>
+                           <span class="onleft">Владельцы рекомендуют</span>
                            <i class="onright check_ico"></i>
                        </div>
-                    </div>
-                    <div class="profile__contact-item is-last">
-                       <div class="profile__contact-inner">
-                           <i class="onleft person_ico"></i>
-                           <span class="onleft">Оффлайн подтверждение</span>
-                           <a href="#"><i class="onright arr_ico"></i></a>
-                           <a href="#"><i class="onright ask_ico"></i></a>
-                       </div>
-                       <a href="#" class="onright profile__confirmed link-blue is-dashed">подтвердить</a>
+                       <span class="onright profile__confirmed js-with-info" data-click="У пользователя есть 5 отзывов с отметкой 'Рекомендую' от арендодателей. Их можно увидеть справа на странице">подтверждено</span>
                     </div>
                  </div>
             </div>
-            <div class="profile__right onright with-border">
-                <h2 class="title-l-2">Личные данные</h2>
-                <div class="hr"></div>
-                <div class="settings">
-                    <div class="settings__block">
-                        <div class="settings__input with-margin">
-                            <p class="onleft txt-on-right">Имя</p>
-                            <input class="onleft input s-width" type="text" value="Ирина">
-                            <i class="onleft ask_ico"></i>
-                        </div>
-                        <div class="settings__input">
-                            <p class="onleft txt-on-right">Фамилия</p>
-                            <input class="onleft input s-width" type="text" value="Васильева">
-                            <i class="onleft ask_ico"></i>
-                        </div>
-                         <div class="settings__input">
-                            <p class="onleft txt-on-right">Страна</p>
-                            <div class="onleft settings__dropdown">
-                               <span class="js-select another-arr l-width">Украина</span>
-                               <ul class="panel l-width js-select-list">
-                                  <li>Украина</li>
-                                  <li>Польша</li>
-                                  <li>Бельгия</li>
-                                  <li>Того</li>
-                                  <li>Зимбабве</li>
-                               </ul>
-                           </div>
-                            <i class="onleft ask_ico"></i>
-                        </div>
-                        <div class="settings__input">
-                            <p class="onleft txt-on-right">Город</p>
-                            <input class="onleft input s-width" type="text" value="Киев">
-                            <i class="onleft ask_ico"></i>
-                        </div>
-                         <div class="settings__input">
-                            <p class="onleft txt-on-right">Дата рождения</p>
-                            <div class="onleft settings__dropdown">
-                                <span class="js-select s-width">День</span>
-                                <ul class="panel s-width js-select-list">
-                                   <li>1</li>
-                                   <li>2</li>
-                                   <li>3</li>
-                                   <li>4</li>
-                                   <li>5</li>
-                                </ul>
+            <div class="profile__right onleft">
+                <a class="onright btn btn_m btn_gray btn_arr" href="#"><i></i>Выйти из публичного профиля</a>
+                <div class="flat-mark">Привет, меня зовут Ирина :)</div>
+                <div class="flat-mark no-shadow s-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <h2 class="title-l-2">Отзывы от арендодателей</h2>
+                <div class="respond profile no-margin">
+                    <div class="respond__top">
+                        <span class="respond__title" itemprop="name">Арендодатель <a class="link-blue" href="#">Капитал Сервис (Киев)</a></span>
+                        <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
+                    </div>
+                    <div class="respond__body">
+                        <p>Вазоны полила и даже пропылесосила. Очень вежливая и добрая</p>
+                    </div>
+                </div>
+                <div class="respond profile">
+                    <div class="respond__top">
+                        <span class="respond__title" itemprop="name">Арендодатель <a class="link-blue" href="#">Капитал Сервис (Киев)</a></span>
+                        <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
+                        <span class="respond__recom"><i></i>Рекомендует</span>
+                    </div>
+                    <div class="respond__body">
+                        <p>Очень милая тетя. Оставила мне вкусный чай</p>
+                        <div class="respond with-margin">
+                            <div class="respond__top">
+                                <span class="respond__title" itemprop="name">Ответ Ирины</span>
+                                <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
                             </div>
-                            <div class="onleft settings__dropdown">
-                                <span class="js-select m-width">Месяц</span>
-                                <ul class="panel m-width js-select-list">
-                                   <li>1</li>
-                                   <li>2</li>
-                                   <li>3</li>
-                                   <li>4</li>
-                                   <li>5</li>
-                                   <li>6</li>
-                                   <li>7</li>
-                                   <li>8</li>
-                                   <li>9</li>
-                                   <li>10</li>
-                                   <li>11</li>
-                                   <li>12</li>
-                                </ul>
-                            </div>
-                            <div class="onleft settings__dropdown">
-                                <span class="js-select s-width">Год</span>
-                                <ul class="panel s-width js-select-list">
-                                   <li>1986</li>
-                                   <li>1987</li>
-                                   <li>1988</li>
-                                   <li>1989</li>
-                                   <li>1990</li>
-                                   <li>1991</li>
-                                </ul>
-                            </div>
-                            <i class="onleft ask_ico"></i>
-                        </div>
-                        <div class="settings__in no-pad">
-                             <label class="label">
-                                 <input type="checkbox">
-                                 <span>Показывать другим пользователям</span>
-                             </label>
-                        </div>
-                        <div class="settings__input s-margin">
-                            <p class="onleft txt-on-right">Email</p>
-                            <input class="onleft input s-width" type="text" onblur="if(!value)value=defaultValue" onfocus="if(value==defaultValue)value=''" value="test@test.com">
-                            <div class="settings__checked onleft">
-                                <i class="check_ico icon"></i>
-                                <a href="#">подтверждено</a>
+                            <div class="respond__body">
+                                <p>Спасибо. Я рада, что вам понравился чай :) Приеду к вам обязательно еще.</p>
                             </div>
                         </div>
-                        <div class="settings__in no-pad">
-                            <p class="settings__note">После сохранения нового email, вам нужно будет подтвердить его заново</p>
-                        </div>
-                        <div class="settings__input s-margin">
-                            <p class="onleft txt-on-right">Моб. телефон</p>
-                            <input class="onleft input s-width" type="text" value="+380123456789">
-                            <div class="settings__checked onleft">
-                                <i class="check_ico icon"></i>
-                                <a href="#">подтверждено</a>
-                            </div>
-                        </div>
-                         <div class="settings__in no-pad">
-                            <p class="settings__note">После сохранения нового email, вам нужно будет подтвердить его заново</p>
-                        </div>
-                        <div class="settings__input">
-                            <p class="onleft txt-on-right">Социальные сети</p>
-                            <div class="onleft settings__ico">
-                                <p><i class="icon fb_ico"></i><a class="link-blue" href="#">Ирина Васильева</a></p>
-                                <p><i class="icon vk_ico"></i><a class="link-blue is-dashed" href="#">Подключить</a></p>
-                                <p><i class="icon g_ico"></i><a class="link-blue is-dashed" href="#">Подключить</a></p>
-                                <p><i class="icon ok_ico"></i><a class="link-blue is-dashed" href="#">Подключить</a></p>
-                            </div>
-                            <div class="onleft settings__ico">
-                                <p><button class="btn-del"></button><a class="link-blue is-dashed" href="#">отключить</a></p>
-                            </div>
-                        </div>
-                        <div class="settings__input">
-                            <p class="onleft txt-on-right">О себе</p>
-                            <textarea class="onleft textarea s-width" placeholder="Напишите немного о себе, чтобы произвести благоприятное впечатление..."></textarea>
-                            <i class="onleft ask_ico"></i>
-                        </div>
-                        <div class="settings__in no-pad">
-                            <a class="btn btn_green autowidth" href="#">Сохранить</a>
-                        </div>
-                        <div class="hr b-margin"></div>
-                        <p>Нажимая кнопку "Сохранить", вы соглашаетесь с <a class="link-blue is-dashed" href="#">правилами заполнения профиля</a></p>
+                    </div>
+                </div>
+                <div class="respond profile">
+                    <div class="respond__top">
+                        <span class="respond__title" itemprop="name">Арендодатель <a class="link-blue" href="#">Капитал Сервис (Киев)</a></span>
+                        <span class="respond__date"><meta itemprop="datePublished" content="14.05.2013">14.05.2013</span>
+                    </div>
+                    <div class="respond__body">
+                        <p>Вазоны полила и даже пропылесосила. Очень вежливая и добрая</p>
                     </div>
                 </div>
             </div>
@@ -452,5 +316,6 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
+<div class="info-block js-info"><span></span></div>
 </body>
 </html>

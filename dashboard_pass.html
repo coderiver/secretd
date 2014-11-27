@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Dashboard cellphone popup</title>
+    <title>Dashboard pass</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -93,18 +93,26 @@
             <li><a href="#">Программа лояльности</a></li>
         </ul>
         <div class="dashboard">
-            <div class="impetus is-white">
+            <div class="impetus">
                <div class="impetus__form onleft">
-                   <h2 class="title-l-2">Подтверждение мобильного телефона</h2>
-                   <p class="max-width">Для подтверждения вашего мобильного телефона, вам необходимо ввести свой номер, на который вам прийдет сообщение с кодом подтверждения вашего номера.</p>
-                   <h4>Мобильный телефон:</h4>
-                   <form>
-                       <input class="input" type="text">
-                       <p class="is-small">Например, +380634563458</p>
-                       <button class="btn btn_green another-marg" type="submit">Выслать код</button>
-                   </form>
-               </div>
-               <span class="onright to-close"></span>
+                   <h2 class="title-l-3_bold">Постоянный пароль</h2>
+                      <p>Создайте постоянный пароль для входа в личный кабинет</p>
+                      <form>
+                          <div class="mobile__in">
+                              <div class="onleft">
+                                   <p class="mobile__p">Пароль</p>
+                               </div>
+                               <div class="onleft">
+                                   <input class="input" type="text">
+                                   <label class='label'>
+                                       <input type="checkbox"><span>Показать пароль</span>
+                                   </label>
+                                   <button class="btn btn_green" type="submit">Сохранить пароль</button>
+                               </div>
+                          </div>
+                       </form>
+                 </div>
+                 <span class="onright to-close"></span>
             </div>
             <div class="dashboard__ttl">
                 <h1 class="title-l-1">Панель управления</h1>
@@ -302,7 +310,7 @@
                         <p class="travel__header">Городов</p>
                         <div class="travel__body">
                             <div class="travel__number"><span>4</span></div>
-                            <a class="link-blue city js-dropdown" href="#">Смотреть города</a>
+                            <a class="link-blue city is-dashed js-dropdown" href="#">Смотреть города</a>
                             <ul class="panel">
                                 <li><a href="#">Киев</a></li>
                                 <li><a href="#">Харьков</a></li>
