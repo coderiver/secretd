@@ -93,21 +93,9 @@
             <li><a href="#">Программа лояльности</a></li>
         </ul>
         <div class="dashboard">
-           <div class="impetus is-white">
-              <div class="impetus__form onleft">
-                  <h2 class="title-l-2">Подтверждение мобильного телефона</h2>
-                  <p class="max-width">На введенный вами номер мобильного телефона вам прийдет сообщение с кодом подтверждения вашего номера. Введите ниже код, полученный по sms</p>
-                  <form>
-                      <div class="cellphone__row">
-                          <p class="title-l-3 onleft">Ваш мобильный телефон: <strong>+380123456789</strong></p><a class="onleft link-blue is-dashed" href="#">Изменить</a></p>
-                      </div>
-                      <div class="cellphone__row">
-                          <p class="title-l-3 onleft">Код из SMS</p><input class="input code js-mask-pin onleft" type="text"><a class="onleft link-blue is-dashed" href="#">Выслать код повторно</a>
-                      </div>
-                      <button class="btn btn_green another-marg" type="submit">Подтвердить мобильный телефон</button>
-                  </form>
-              </div>
-              <span class="onright to-close"></span>
+           <div class="impetus">
+               <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a> и доверие арендодателей повысится к вам в разы</p>
+               <span class="onright to-close"></span>
            </div>
             <div class="dashboard__ttl">
                 <h1 class="title-l-1">Панель управления</h1>
@@ -591,5 +579,22 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
+<div class="popup popup_mobile s-height js-popup" style="display:block">
+    <button class="btn-del js-close"></button>
+    <h2 class="title-l-2">Подтверждение мобильного телефона</h2>
+    <p>На введенный вами номер мобильного телефона вам прийдет сообщение с кодом подтверждения вашего номера. Введите ниже код, полученный по sms</p>
+    <div class="mobile__in">
+       <form>
+           <div class="mobile__row">
+               <p class="onleft">Ваш мобильный телефон: <strong>+380123456789</strong><a class="link-blue is-dashed" href="#">Изменить</a></p>
+           </div>
+           <div class="mobile__row is-last">
+               <p class="onleft txt-on-right">Код из email</p><input class="input code js-mask-pin onleft" type="text"><a class="onleft link-blue is-dashed" href="#">Выслать код повторно</a>
+           </div>
+           <button class="btn btn_green" type="submit">Подтвердить мобильный телефон</button>
+       </form>
+    </div>
+</div>
+<div class="overlay js-overlay" style="display:block"></div>
 </body>
 </html>

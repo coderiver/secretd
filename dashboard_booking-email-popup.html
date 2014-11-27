@@ -93,21 +93,9 @@
             <li><a href="#">Программа лояльности</a></li>
         </ul>
         <div class="dashboard">
-            <div class="impetus is-white">
-               <div class="impetus__form onleft">
-                   <h2 class="title-l-2">Подтверждение email адреса</h2>
-                   <p class="max-width">На введенный вами email вам прийдет сообщение с кодом подтверждения вашего электронного адреса. Введите ниже код, полученный по email или перейдите по ссылке из письма</p>
-                   <form>
-                       <div class="cellphone__row">
-                           <p class="onleft txt-on-right">Ваш email: <p class="onleft mail"><strong>i.martemjanova@gmail.com</strong></p><a class="onleft link-blue is-dashed" href="#">Изменить</a></p>
-                       </div>
-                       <div class="cellphone__row">
-                           <p class="onleft txt-on-right">Код из email</p><input class="input code js-mask-pin onleft" type="text"><a class="onleft link-blue is-dashed" href="#">Выслать код повторно</a>
-                       </div>
-                       <button class="btn btn_green another-marg" type="submit">Подтвердить email</button>
-                   </form>
-               </div>
-               <span class="onright to-close"></span>
+            <div class="impetus">
+                <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a> и доверие арендодателей повысится к вам в разы</p>
+                <span class="onright to-close"></span>
             </div>
             <div class="dashboard__ttl">
                 <h1 class="title-l-1">Панель управления</h1>
@@ -591,5 +579,22 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
+<div class="popup popup_mobile m-height js-popup" style="display:block">
+    <button class="btn-del js-close"></button>
+    <h2 class="title-l-2">Подтверждение email адреса</h2>
+    <p>На введенный вами email вам прийдет сообщение с кодом подтверждения вашего электронного адреса. Введите ниже код, полученный по email или перейдите по ссылке из письма</p>
+    <div class="mobile__in">
+       <form>
+           <div class="mobile__row">
+               <p class="onleft txt-on-right">Ваш email: <p class="onleft mail"><strong>i.martemjanova@gmail.com</strong><a class="link-blue is-dashed" href="#">Изменить</a></p>
+           </div>
+           <div class="mobile__row is-last">
+               <p class="onleft txt-on-right">Код из email</p><input class="input code js-mask-pin onleft" type="text"><a class="onleft link-blue is-dashed" href="#">Выслать код повторно</a>
+           </div>
+           <button class="btn btn_green" type="submit">Подтвердить email</button>
+       </form>
+    </div>
+</div>
+<div class="overlay js-overlay" style="display:block"></div>
 </body>
 </html>

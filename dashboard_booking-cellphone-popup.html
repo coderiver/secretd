@@ -93,18 +93,9 @@
             <li><a href="#">Программа лояльности</a></li>
         </ul>
         <div class="dashboard">
-            <div class="impetus is-white">
-               <div class="impetus__form onleft">
-                   <h2 class="title-l-2">Подтверждение мобильного телефона</h2>
-                   <p class="max-width">Для подтверждения вашего мобильного телефона, вам необходимо ввести свой номер, на который вам прийдет сообщение с кодом подтверждения вашего номера.</p>
-                   <h4>Мобильный телефон:</h4>
-                   <form>
-                       <input class="input" type="text">
-                       <p class="is-small">Например, +380634563458</p>
-                       <button class="btn btn_green another-marg" type="submit">Выслать код</button>
-                   </form>
-               </div>
-               <span class="onright to-close"></span>
+            <div class="impetus">
+                <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a> и доверие арендодателей повысится к вам в разы</p>
+                <span class="onright to-close"></span>
             </div>
             <div class="dashboard__ttl">
                 <h1 class="title-l-1">Панель управления</h1>
@@ -588,5 +579,19 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
+<div class="popup popup_mobile js-popup" style="display:block">
+    <button class="btn-del js-close"></button>
+    <h2 class="title-l-2">Подтверждение мобильного телефона</h2>
+    <p>Для подтверждения вашего мобильного телефона, вам необходимо ввести свой номер, на который вам прийдет сообщение с кодом подтверждения вашего номера.</p>
+    <div class="mobile__in">
+        <h4>Мобильный телефон:</h4>
+        <form>
+            <input class="input" type="text">
+            <p class="is-small">Например, +380634563458</p>
+            <button class="btn btn_green" type="submit">Выслать код</button>
+        </form>
+    </div>
+</div>
+<div class="overlay js-overlay" style="display:block"></div>
 </body>
 </html>

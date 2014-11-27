@@ -9068,6 +9068,14 @@ $(document).ready(function() {
 		if($('.acc').hasClass('is-active')){
 			$('.acc').removeClass('is-active');
 		}
+		if($('.filter-status').hasClass('is-open')){
+			$('.filter-status').removeClass('is-open');
+			$('.filter-js-wrap').find('.panel').removeClass('is-active');
+		}
+		if($('.details__addition').hasClass('is-open')){
+			$('.details__addition').removeClass('is-open');
+			$('.details__addition').find('.panel').removeClass('is-active');
+		}
 	});
 
 	//dashboard dropdown menu
