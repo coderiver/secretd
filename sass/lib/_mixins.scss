@@ -44,6 +44,14 @@ $break-large: 1180px;
 	zoom: 1;
 }
 
+@mixin border-radius($what) {
+	-moz-border-radius:    $what;
+	-o-border-radius:      $what;
+	-webkit-border-radius: $what;
+	border-radius:         $what;
+}
+
+
 // TRANSITION
 @mixin transition($what) {
 	-moz-transition:    $what;

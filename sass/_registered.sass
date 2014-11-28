@@ -88,6 +88,10 @@
 				overflow: hidden
 				white-space: nowrap
 				text-overflow: ellipsis
+		&.to-log
+			position: relative
+			.popup_log
+				right: 80px
 	.header__top-menu
 		height: 44px
 		border-right: 1px solid #ded7d3
@@ -159,13 +163,16 @@
 				font-size: 24px
 				line-height: 1
 				+seg_sb
-
 		.popup__social
 			padding: 15px
 			p
 				text-align: center
 				font-size: 21px
 				line-height: 1.2
+			.is-black
+				color: #25292D
+				font-size: 16px  
+				text-align: left   	
 		.fb_soc
 			margin-right: 5px
 			+s(fb_soc-l)
@@ -177,7 +184,7 @@
 		.ok_soc
 			+s(ok_soc-l)
 		.popup__choose
-			padding: 0 15px
+			padding: 0 15px 10px
 			p
 				font-size: 16px
 			.is-small
@@ -199,6 +206,17 @@
 			.input
 				width: 250px
 				height: 35px
+			&.mail,
+			&.id		
+				.input
+					width: 230px
+			&.hidden-bl
+				p
+					margin-bottom: 10px		
+			.checkbox_mod		
+				span
+					padding-top: 0
+					font-size: 14px			
 		.popup__pass
 			margin: 0 0 0 65px
 			+user-select(none)

@@ -455,6 +455,17 @@
                 width: 227px
             .details__rev
                 bottom: 4px
+                &:hover
+                    .details__rev-in
+                        display: block   
+                        &:first-child
+                            display: none
+            .details__rev-in
+                span
+                    +seg_r
+                a
+                    text-decoration: underline
+                    color: #fff                                                             
             .details-info_left
                 width: 371px
                 &.s-pad
