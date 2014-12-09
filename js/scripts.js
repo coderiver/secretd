@@ -9029,7 +9029,7 @@ $(document).ready(function() {
 	    }
 	});
 
-	$('.popup__choose').on('click', 'a', function(event) {
+	$('.popup__asking').on('click', 'a', function(event) {
 
 		var parent = $(this).closest('.popup__choose')
 		parent.children().removeClass('is-active');
@@ -9155,6 +9155,12 @@ $(document).ready(function() {
 		}
 	});
 
+	//addreview choice button
+	$('.choice').on('click', '.js-btn', function(event) {
+		$(this).parent().hide();
+		$(this).parents('.addreviews').find('.impetus').show();
+		$(this).parents('.addreviews').find('.details__field').hide();
+	});
 });
 
 

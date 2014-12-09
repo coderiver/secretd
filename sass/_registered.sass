@@ -169,10 +169,6 @@
 				text-align: center
 				font-size: 21px
 				line-height: 1.2
-			.is-black
-				color: #25292D
-				font-size: 16px  
-				text-align: left   	
 		.fb_soc
 			margin-right: 5px
 			+s(fb_soc-l)
@@ -184,7 +180,9 @@
 		.ok_soc
 			+s(ok_soc-l)
 		.popup__choose
-			padding: 0 15px 10px
+			padding: 0 15px
+			label
+				font-size: 15px
 			p
 				font-size: 16px
 			.is-small
@@ -203,16 +201,15 @@
 			span
 				padding-top: 7px
 				font-size: 16px
+			p
+				margin-bottom: 10px	
 			.input
 				width: 250px
 				height: 35px
 			&.mail,
 			&.id		
 				.input
-					width: 230px
-			&.hidden-bl
-				p
-					margin-bottom: 10px		
+					width: 230px	
 			.checkbox_mod		
 				span
 					padding-top: 0
