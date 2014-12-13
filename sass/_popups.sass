@@ -392,6 +392,127 @@
     .vk_ico
         +s(vk_i2)
 
+//profile offline confirm
+.offline
+    width: 705px
+    height: 290px
+    font-size: 14px
+    &.m-height
+        height: 735px
+    .title-l-2
+        margin-top: 0
+    .title-l-3
+        margin: 20px 0 17px
+        padding: 8px 10px
+        font-size: 18px
+        background: #ECECEC         
+        box-shadow: 0 1px 1px #b7b3b1
+        border-radius: 2px
+        +seg_sb    
+    .offline__confirm
+        margin-top: 20px
+        +clr
+    .offline__range
+        position: relative
+        width: 350px
+        height: 52px
+        color: #fff
+        background: #C6C9CA
+        &:after
+            content: ""
+            position: absolute
+            top: -16px
+            right: -24px
+            +s(hours)
+        p
+            position: relative
+            padding: 15px 0 0 10px
+            text-align: left
+            font-size: 18px            
+            z-index: 2
+            +seg_b
+        .fill
+            right: 90px
+            background: url(../img/fill2.png) repeat-x  
+    .offline__text
+        width: 39%
+        margin: 7px 0 0 38px
+        line-height: 1.4    
+    .offline__fb
+        margin: 25px 0 5px 0
+        padding: 15px
+        background: #ECECEC
+        box-sizing: border-box
+        p
+            width: 90% 
+            margin-bottom: 5px
+            line-height: 1.4 
+    .offline__choose
+        +clr       
+    .offline__item
+        width: 160px
+        height: 160px
+        text-align: center
+        margin-right: 30px
+        border: 1px solid #e2e2e2   
+        cursor: pointer
+        &:hover
+            box-shadow: 0 1px 1px #b7b3b1
+        p
+            margin: 12px 0  
+            line-height: 1  
+    .offline__about
+        width: 88%         
+    .offline__info
+        width: 33%
+        margin-top: 10px      
+    .offline__search
+        position: relative
+        width: 262px
+        input
+            width: 100%
+            height: 35px
+            padding: 0 33px 0 10px
+            border: 1px solid #e2e3ea
+            box-sizing: border-box
+            box-shadow: inset 0 1px 0 #bfbfbf
+        .search_ico
+            position: absolute
+            top: 9px
+            right: 10px
+            display: block 
+            +s(glass)   
+    .offline__upload
+        padding: 12px 0
+        text-align: center 
+        border: 1px dashed #bab9b7  
+        button
+            margin-left: 5px
+            padding: 0 45px
+            height: 35px  
+            background: #EBEBEB 
+            color: #424242 
+            border-radius: 2px  
+            +seg_r  
+    .btn-del
+        top: -9px
+        right: -10px  
+    .btn_green
+        margin: 22px 0 0
+        padding: 0 28px        
+    .fb_ico
+        display: inline-block
+        margin: 0 5px 
+        vertical-align: sub
+        +s(fb_i)   
+    .upload_ico
+        display: inline-block 
+        +s(upload2)    
+    .link-blue.is-big
+        &:hover
+            text-decoration: none                            
+          
+
 //dashboard popup
 .popup_mobile
     width: 580px

@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Add reviews with question</title>
+    <title>Profile photo upload</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/scripts.js"></script>
@@ -87,211 +87,229 @@
         <ul class="dashboard__menu">
             <li><a href="#">Панель управления</a></li>
             <li><a href="#">Мои бронирования</a></li>
-            <li><a href="#">Мой профиль</a></li>
-            <li class="is-active"><a href="#">Отзывы</a><span class="notification">1</span></li>
+            <li class="is-active"><a href="#">Мой профиль</a></li>
+            <li><a href="#">Отзывы</a><span class="notification">1</span></li>
             <li><a href="#">Сообщение</a><span class="notification">1</span></li>
             <li><a href="#">Программа лояльности</a></li>
         </ul>
         <div class="dashboard">
-            <div class="dashboard__ttl addrev">
-                <h1 class="title-l-1 onleft">Оставьте отзыв о квартире</h1>
-                <a class="onright btn btn_m btn_gray btn_arr" href="#"><i></i>Вернуться ко всем отзывам</a>
+            <div class="impetus">
+                <p class="onleft">Заполните свой <a class="link-blue" href="#">профиль</a> и доверие арендодателей повысится к вам в разы</p>
+                <span class="onright to-close"></span>
             </div>
-            <div class="addreviews">
-                <div class="impetus" style="display: none">
-                    <span class="onright to-close"></span>
-                    <p class="onleft">В таком случае оцените, пожалуйста, квартиру, в которой вы проживали. 
-                    <p class="onleft">Мы надеемся, что альтернативный вариант удовлетворил ваши требования. Поделитесь своими впечатлениями.</p>
-                    <a class="link-blue is-dashed with-marg" href="#">Я не воспользовался услугами сервиса dobovo.com</a>
-                </div>
-                <div class="details details__field">
-                    <h2 class="title-l-1 details__title">Бронь № 1635665 <span>от 21.03.04</span></h2>
-                    <p class="status status_grey text-col-green"><span>Статус: </span>Проживание завершено</p>
-                    <div class="details__img">
-                        <img alt="img" src="img/room.png">
-                        <div class="details__rev">
-                            <p class="is-bold">9,1</p>
-                            <p>12 отзывов</p>
-                        </div>
-                    </div>
-                    <div class="details-info details-info_left">
-                        <a class="details-info__h details-info__h_blue" href="#">Киев, ул. Саксаганского, 192</a>
-                        <span>ул. Саксаганского, 192</span>
-                        <a class="details__map" href="#">Карта</a>
-                        <p class="details-info__date">
-                            <strong>8 мая</strong>
-                            (пн) -
-                            <strong>11 мая</strong>
-                            (чт)
-                        </p>
-                        <div class="details__info-row">
-                            <span class="details__info-title">Длительность:</span>
-                            <span class="details__info-val">3 дня</span>
-                        </div>
-                        <div class="details__info-row">
-                            <span class="details__info-title">Гостей:</span>
-                            <span class="details__info-val">2 чел</span>
-                        </div>
-                        <div class="details__info-row">
-                            <span class="details__info-title">Стоимость:</span>
-                            <span class="details__info-val">320 грн. / сутки</span>
-                        </div>
-                        <div class="details__info__all">
-                            <span class="details__info__t">Всего:</span>
-                            <strong class="details__info__font">2800 грн.</strong>
-                        </div>
-                    </div>
-                    <div class="details-info_right">
-                        <h4 class="title-l-3 title-l-3_bold margin_bott">Владелец</h4>
-                        <p class="title-l-1 margin_bott">Капитал Сервис
-                            <span class="title-l-1_grey margin_bott">(Киев)</span>
-                        </p>
-                        <a class="all-apartment" href="#">Все Квартиры владельца</a>
-                        <a class="btn btn_s btn_gray arr" href="#">Написать владельцу</a>
+            <div class="dashboard__ttl">
+                <h1 class="title-l-1">Профиль пользователя</h1>
+                <a href="#">Смотреть публичный профиль »</a>
+            </div>
+            <div class="impetus is-gray">
+                <div class="impetus__left onleft">
+                    <p>Ваш профиль заполнен на 70%</p>
+                    <div class="impetus__range">
+                        <p> 70%</p>
+                        <div class="fill"></div>
                     </div>
                 </div>
-                <div class="choice">
-                    <p>Вы останавливались в квартире "Двухуровневая квартира в центре" в Киеве?</p>
-                    <button class="btn btn_green" type="submit">Да, я останавливался</button>
-                    <button class="btn btn_dark_grey js-btn" type="submit">Нет, я не останавливался</button>
+                <span class="onright to-close"></span>
+                 <div class="impetus__right onright">
+                    <p class="impetus__confirm"><a class="link-blue is-dashed" href="#">Подключите социальную сеть </a> и вы сэкономите время на заполнение личных данных</p>
                 </div>
-                <div class="flat-mark flat-mark_top">
-                   1. Общая оценка квартиры<span>обязательный ответ на вопрос</span>
-                </div>
-                <div class="addreviews__item">
-                    <p class="addreviews__ttl ">Как вы оцениваете квартиру по следующим критериям?</p>
-                    <div class="addreviews__table">
-                        <div class="table__row">
-                            <p class="table__name onleft">Персонал:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft mark-good">Хорошо</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Услуги и удобства:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft mark-ok">Средне</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Чистота квартиры:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft mark-bad">Плохо</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Комфорт:</p>
-                            <div class="onleft table__stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                            </div>
-                            <p class="onleft mark-excellent">Отлично</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Соотношение цена / качество:</p>
-                            <div class="onleft table__stars">
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft">Выберите нужное количество звезд для оценки</p>
-                        </div>
-                        <div class="table__row">
-                            <p class="table__name onleft">Месторасположение:</p>
-                            <div class="onleft table__stars">
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                                <i class="star star_empty"></i>
-                            </div>
-                            <p class="onleft">Выберите нужное количество звезд для оценки</p>
+            </div>
+            <div class="l-col3 onleft">
+                  <div class="profile__photo">
+                    <a href="#" class="profile__change ontop">
+                        <i class="photo_ico"></i><span>Изменить фото</span>
+                    </a>
+                    <img src="img/irina2.jpg" alt="Ирина">
+                    <a href="#" class="profile__change onbottom">
+                        <span class="delete"><i class="delete_ico"></i></span><span>Удалить фото</span>
+                    </a>
+                 </div>
+                 <div class="profile__name">
+                     Ирина Васильева
+                 </div>
+                 <div class="profile__about with-menu">
+                    <p>3 отзыва обо мне (2 рекомендуют)</p>
+                    <ul class="profile__menu">
+                        <li><a href="#">Личные данные</a></li>
+                        <li class="is-active"><a href="#">Настройки</a></li>
+                    </ul>
+                 </div>
+                 <div class="profile__contact">
+                    <div class="profile__contact-item percent">
+                       <div class="profile__contact-inner percent">
+                        <p>Подтверждение профиля</p>
+                        <p class="is-small">70% - надежная съемщица квартиры</p>
+                       </div>
+                      <div class="fill"></div>
+                    </div>
+                    <div class="profile__contact-item">
+                        <div class="profile__contact-inner">
+                            <i class="onleft mail_ico"></i>
+                            <a class="onleft" href="mailto: mail@test.com">test@test.com</a>
+                            <a href="#"><i class="onright ask_ico another-marg"></i></a>
+                            <a href="#" class="onright profile__confirmed link-blue is-dashed">подтвердить</a>
                         </div>
                     </div>
-                    <p class="addreviews__ttl">Как вы оцениваете квартиру по следующим критериям?</p>
-                    <label class="addreviews__expect">
-                        <input value="yes" name="expect" type="radio" checked>
-                        <span>Точно, как в действительности</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="no" name="expect" type="radio">
-                        <span>Не совпадает с действительностью</span>
-                    </label>
-                </div>
-                <div class="flat-mark flat-mark_top">
-                   2. Преимущества и недостатки во время проживания в квартире
-                </div>
-                <div class="addreviews__item">
-                    <p class="addreviews__ttl yes-no"><span class="yes">+</span> Что вам <strong>понравилось</strong> больше всего?</p>
-                    <textarea class="textarea" placeholder="Например, мне очень понравилась мебель в квартире..."></textarea>
-                    <p class="addreviews__ttl yes-no"><span class="no">-</span> Что вам <strong>не понравилось</strong> больше всего?</p>
-                    <textarea class="textarea" placeholder="Например, мне очень понравилась мебель в квартире..."></textarea>
-                    <p class="addreviews__ttl">Порекомендовали бы вы эту квартиру?</p>
-                    <label class="addreviews__expect">
-                        <input value="yes" name="recommend" type="radio" checked>
-                        <span>Да, я порекомендовал бы</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="no" name="recommend" type="radio">
-                        <span>Нет, не рекомендовал бы</span>
-                    </label>
-                </div>
-                 <div class="flat-mark flat-mark_top">
-                   3. Преимущества и недостатки во время проживания в квартире
-                </div>
-                <div class="addreviews__item">
-                    <p class="addreviews__ttl">Что заставило вас остановить свой выбор на этой квартире?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="why" type="radio" checked>
-                        <span>Цена</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="why" type="radio">
-                        <span>Местоположение</span>
-                    </label>
-                    <p class="addreviews__ttl">Какова была цель вашего пребывания?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="reason" type="radio" checked>
-                        <span>Туризм</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="reason" type="radio">
-                        <span>Работа</span>
-                    </label>
-                    <p class="addreviews__ttl">В каком статусе вы останавливались в квартире?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="who" type="radio" checked>
-                        <span>Индивидуальный путешественник</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="who" type="radio">
-                        <span>Молодая пара</span>
-                    </label>
-                    <p class="addreviews__ttl with-border">Как показать информацию об авторе этого отзыва?</p>
-                    <label class="addreviews__expect">
-                        <input value="price" name="author" type="radio" checked>
-                        <span>Ирина</span>
-                    </label>
-                    <label class="addreviews__expect">
-                        <input value="place" name="author" type="radio">
-                        <span>Аноним</span>
-                    </label>
-                    <button class="btn btn_green" type="submit">Отправить отзыв</button>
-                    <p>Вся информация по вашему бронированию есть у принимающей стороны,<br> которая может связаться с вами по поводу данного отзываa</p>
+                    <div class="profile__contact-item">
+                       <div class="profile__contact-inner">
+                           <i class="onleft phone_ico"></i>
+                           <span class="onleft">+380123456789</span>
+                           <a href="#"><i class="onright ask_ico another-marg"></i></a>
+                           <a href="#" class="onright profile__confirmed link-blue is-dashed">подтвердить</a>
+                       </div>
+                    </div>
+                    <div class="profile__contact-item">
+                       <div class="profile__contact-inner">
+                           <i class="onleft fb_ico"></i>
+                           <span class="onleft">Facebook</span>
+                           <i class="onright check_ico"></i>
+                       </div>
+                    </div>
+                     <div class="profile__contact-item">
+                       <div class="profile__contact-inner recommend">
+                           <i class="onleft bubble_ico"></i>
+                           <span class="onleft">Меня рекомендуют</span>
+                           <i class="onright check_ico"></i>
+                       </div>
+                    </div>
+                    <div class="profile__contact-item is-last">
+                       <div class="profile__contact-inner">
+                           <i class="onleft person_ico"></i>
+                           <span class="onleft">Оффлайн подтверждение</span>
+                           <a href="#"><i class="onright arr_ico"></i></a>
+                           <a href="#"><i class="onright ask_ico"></i></a>
+                       </div>
+                       <a href="#" class="onright profile__confirmed link-blue is-dashed">подтвердить</a>
+                    </div>
+                 </div>
+            </div>
+            <div class="profile__right onright with-border">
+                <h2 class="title-l-2">Личные данные</h2>
+                <div class="hr"></div>
+                <div class="settings">
+                    <div class="settings__block">
+                        <div class="settings__input with-margin">
+                            <p class="onleft txt-on-right">Имя</p>
+                            <input class="onleft input s-width" type="text" value="Ирина">
+                            <i class="onleft ask_ico"></i>
+                        </div>
+                        <div class="settings__input">
+                            <p class="onleft txt-on-right">Фамилия</p>
+                            <input class="onleft input s-width" type="text" value="Васильева">
+                            <i class="onleft ask_ico"></i>
+                        </div>
+                         <div class="settings__input">
+                            <p class="onleft txt-on-right">Страна</p>
+                            <div class="onleft settings__dropdown">
+                               <span class="js-select another-arr l-width">Украина</span>
+                               <ul class="panel l-width js-select-list">
+                                  <li>Украина</li>
+                                  <li>Польша</li>
+                                  <li>Бельгия</li>
+                                  <li>Того</li>
+                                  <li>Зимбабве</li>
+                               </ul>
+                           </div>
+                            <i class="onleft ask_ico"></i>
+                        </div>
+                        <div class="settings__input">
+                            <p class="onleft txt-on-right">Город</p>
+                            <input class="onleft input s-width" type="text" value="Киев">
+                            <i class="onleft ask_ico"></i>
+                        </div>
+                         <div class="settings__input">
+                            <p class="onleft txt-on-right">Дата рождения</p>
+                            <div class="onleft settings__dropdown">
+                                <span class="js-select s-width">День</span>
+                                <ul class="panel s-width js-select-list">
+                                   <li>1</li>
+                                   <li>2</li>
+                                   <li>3</li>
+                                   <li>4</li>
+                                   <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="onleft settings__dropdown">
+                                <span class="js-select m-width">Месяц</span>
+                                <ul class="panel m-width js-select-list">
+                                   <li>1</li>
+                                   <li>2</li>
+                                   <li>3</li>
+                                   <li>4</li>
+                                   <li>5</li>
+                                   <li>6</li>
+                                   <li>7</li>
+                                   <li>8</li>
+                                   <li>9</li>
+                                   <li>10</li>
+                                   <li>11</li>
+                                   <li>12</li>
+                                </ul>
+                            </div>
+                            <div class="onleft settings__dropdown">
+                                <span class="js-select s-width">Год</span>
+                                <ul class="panel s-width js-select-list">
+                                   <li>1986</li>
+                                   <li>1987</li>
+                                   <li>1988</li>
+                                   <li>1989</li>
+                                   <li>1990</li>
+                                   <li>1991</li>
+                                </ul>
+                            </div>
+                            <i class="onleft ask_ico"></i>
+                        </div>
+                        <div class="settings__in no-pad">
+                             <label class="label">
+                                 <input type="checkbox">
+                                 <span>Показывать другим пользователям</span>
+                             </label>
+                        </div>
+                        <div class="settings__input s-margin">
+                            <p class="onleft txt-on-right">Email</p>
+                            <input class="onleft input s-width" type="text" onblur="if(!value)value=defaultValue" onfocus="if(value==defaultValue)value=''" value="test@test.com">
+                            <div class="settings__checked onleft">
+                                <i class="check_ico icon"></i>
+                                <a class="link-blue is-dashed" href="#">подтверждено</a>
+                            </div>
+                        </div>
+                        <div class="settings__in no-pad">
+                            <p class="settings__note">После сохранения нового email, вам нужно будет подтвердить его заново</p>
+                        </div>
+                        <div class="settings__input s-margin">
+                            <p class="onleft txt-on-right">Моб. телефон</p>
+                            <input class="onleft input s-width" type="text" value="+380123456789">
+                            <div class="settings__checked onleft">
+                                <i class="check_ico icon"></i>
+                                <a class="link-blue is-dashed" href="#">подтверждено</a>
+                            </div>
+                        </div>
+                         <div class="settings__in no-pad">
+                            <p class="settings__note">После сохранения нового email, вам нужно будет подтвердить его заново</p>
+                        </div>
+                        <div class="settings__input">
+                            <p class="onleft txt-on-right">Социальные сети</p>
+                            <div class="onleft settings__ico">
+                                <p><i class="icon fb_ico"></i><a class="link-blue" href="#">Ирина Васильева</a></p>
+                                <p><i class="icon vk_ico"></i><a class="link-blue is-dashed" href="#">Подключить</a></p>
+                                <p><i class="icon g_ico"></i><a class="link-blue is-dashed" href="#">Подключить</a></p>
+                                <p><i class="icon ok_ico"></i><a class="link-blue is-dashed" href="#">Подключить</a></p>
+                            </div>
+                            <div class="onleft settings__ico">
+                                <p><button class="btn-del"></button><a class="link-blue is-dashed" href="#">отключить</a></p>
+                            </div>
+                        </div>
+                        <div class="settings__input">
+                            <p class="onleft txt-on-right">О себе</p>
+                            <textarea class="onleft textarea s-width" placeholder="Напишите немного о себе, чтобы произвести благоприятное впечатление..."></textarea>
+                            <i class="onleft ask_ico"></i>
+                        </div>
+                        <div class="settings__in no-pad">
+                            <a class="btn btn_green autowidth" href="#">Сохранить</a>
+                        </div>
+                        <div class="hr b-margin"></div>
+                        <p>Нажимая кнопку "Сохранить", вы соглашаетесь с <a class="link-blue is-dashed" href="#">правилами заполнения профиля</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,5 +445,31 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
+<div class="popup offline m-height js-popup" style="display:block">
+    <button class="btn-del js-close"></button>
+    <h2 class="title-l-2">Оффлайн подтверждение профиля</h2>
+    <p class="offline__about">Мы сравним ваш отсканированный документ с официальными образцами на наличие подлинности и подтвердим ваш профиль. Это установит доверие между вами и арендодателем</p>
+    <p class="title-l-3">1. Выберите тип документа</p>
+    <div class="offline__choose">
+        <div class="offline__item onleft">
+            <p>Паспорт</p>
+            <img src="img/passport.jpg" alt="Паспорт">
+        </div>
+        <div class="offline__item onleft">
+            <p>Водительское удостоверение</p>
+            <img src="img/license.jpg" alt="Водительское удостоверение">
+        </div>
+        <p class="offline__info onleft">Информация из ваших официальных документов не будет передаваться 3-м лицам.</p>
+    </div>
+    <p class="title-l-3">2. Укажите страну, где получали документ</p>
+    <div class="offline__search"><input type="text"><i class="search_ico"></i></div>
+    <p class="title-l-3">3. Загрузите изображение документа</p>
+    <div class="offline__upload">
+        <i class="upload_ico"></i>
+        <p>Перетащите сюда изображение или <button class="btn btn_m btn_gray" type="button">Загрузите</button></p>
+    </div>
+    <button class="btn btn_green" type="button">Подтвердить профиль</button>
+</div>
+<div class="overlay js-overlay" style="display:block"></div>
 </body>
 </html>
