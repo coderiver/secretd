@@ -8824,6 +8824,7 @@ $(document).ready(function() {
     $(".js-close").bind("click", function(){
         $(this).parent().hide();
         $(".js-overlay").hide();
+        $('body').removeClass('is-fixed');
     });
     $('.js-popup').click(function(event){
         event.stopPropagation();
@@ -8832,7 +8833,11 @@ $(document).ready(function() {
         $(this).hide();
         $('.js-popup').hide();
     });
-
+     $(".popup_wrap").bind("click", function(){
+        $('.js-popup').hide();
+        $(".js-overlay").hide();
+        $('body').removeClass('is-fixed');
+     });
 
     function tab() {
         $(".js-tab-key").bind("click",function(event){

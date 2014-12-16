@@ -9,7 +9,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/src/jquery.maskedinput.min.js"></script>
 </head>
-<body>
+<body class="is-fixed">
 <div class="l-layout">
     <!-- BEGIN Header -->
     <header class="header">
@@ -445,30 +445,32 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
-<div class="popup offline m-height js-popup" style="display:block">
-    <button class="btn-del js-close"></button>
-    <h2 class="title-l-2">Оффлайн подтверждение профиля</h2>
-    <p class="offline__about">Мы сравним ваш отсканированный документ с официальными образцами на наличие подлинности и подтвердим ваш профиль. Это установит доверие между вами и арендодателем</p>
-    <p class="title-l-3">1. Выберите тип документа</p>
-    <div class="offline__choose">
-        <div class="offline__item onleft">
-            <p>Паспорт</p>
-            <img src="img/passport.jpg" alt="Паспорт">
+<div class="popup_wrap">
+    <div class="popup offline m-height js-popup">
+        <button class="btn-del js-close"></button>
+        <h2 class="title-l-2">Оффлайн подтверждение профиля</h2>
+        <p class="offline__about">Мы сравним ваш отсканированный документ с официальными образцами на наличие подлинности и подтвердим ваш профиль. Это установит доверие между вами и арендодателем</p>
+        <p class="title-l-3">1. Выберите тип документа</p>
+        <div class="offline__choose">
+            <div class="offline__item onleft">
+                <p>Паспорт</p>
+                <img src="img/passport.jpg" alt="Паспорт">
+            </div>
+            <div class="offline__item onleft">
+                <p>Водительское удостоверение</p>
+                <img src="img/license.jpg" alt="Водительское удостоверение">
+            </div>
+            <p class="offline__info onleft">Информация из ваших официальных документов не будет передаваться 3-м лицам.</p>
         </div>
-        <div class="offline__item onleft">
-            <p>Водительское удостоверение</p>
-            <img src="img/license.jpg" alt="Водительское удостоверение">
+        <p class="title-l-3">2. Укажите страну, где получали документ</p>
+        <div class="offline__search"><input type="text"><i class="search_ico"></i></div>
+        <p class="title-l-3">3. Загрузите изображение документа</p>
+        <div class="offline__upload">
+            <i class="upload_ico"></i>
+            <p>Перетащите сюда изображение или <button class="btn btn_m btn_gray" type="button">Загрузите</button></p>
         </div>
-        <p class="offline__info onleft">Информация из ваших официальных документов не будет передаваться 3-м лицам.</p>
+        <button class="btn btn_green" type="button">Подтвердить профиль</button>
     </div>
-    <p class="title-l-3">2. Укажите страну, где получали документ</p>
-    <div class="offline__search"><input type="text"><i class="search_ico"></i></div>
-    <p class="title-l-3">3. Загрузите изображение документа</p>
-    <div class="offline__upload">
-        <i class="upload_ico"></i>
-        <p>Перетащите сюда изображение или <button class="btn btn_m btn_gray" type="button">Загрузите</button></p>
-    </div>
-    <button class="btn btn_green" type="button">Подтвердить профиль</button>
 </div>
 <div class="overlay js-overlay" style="display:block"></div>
 </body>

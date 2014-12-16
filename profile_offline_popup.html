@@ -9,7 +9,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/src/jquery.maskedinput.min.js"></script>
 </head>
-<body>
+<body class="is-fixed">
 <div class="l-layout">
     <!-- BEGIN Header -->
     <header class="header">
@@ -445,20 +445,22 @@
     <a href="#" class="sticker__all">Читать все вопросы и ответы</a>
 </div>
 <div class="tooltip js-tooltip"><span></span></div>
-<div class="popup offline js-popup" style="display:block">
-    <button class="btn-del js-close"></button>
-    <h2 class="title-l-2">Оффлайн подтверждение профиля</h2>
-    <p>Изображение успешно отправлено. Спасибо</p>
-    <div class="offline__confirm">
-      <div class="offline__range onleft">
-          <p>Подтверждение профиля</p>
-          <div class="fill"></div>
-      </div>
-      <p class="offline__text onleft">В течение суток вы получите уведомление о результате проверки</p>
-    </div>
-    <div class="offline__fb">
-      <p>Подтвердите свой профиль в Facebook<i class="fb_ico"></i>, чтобы поддерживать доверительные отношения с арендодателями</p>
-      <a class="link-blue is-dashed is-big" href="#">Подтвердить</a>
+<div class="popup_wrap">
+    <div class="popup offline js-popup">
+        <button class="btn-del js-close"></button>
+        <h2 class="title-l-2">Оффлайн подтверждение профиля</h2>
+        <p>Изображение успешно отправлено. Спасибо</p>
+        <div class="offline__confirm">
+          <div class="offline__range onleft">
+              <p>Подтверждение профиля</p>
+              <div class="fill"></div>
+          </div>
+          <p class="offline__text onleft">В течение суток вы получите уведомление о результате проверки</p>
+        </div>
+        <div class="offline__fb">
+          <p>Подтвердите свой профиль в Facebook<i class="fb_ico"></i>, чтобы поддерживать доверительные отношения с арендодателями</p>
+          <a class="link-blue is-dashed is-big" href="#">Подтвердить</a>
+        </div>
     </div>
 </div>
 <div class="overlay js-overlay" style="display:block"></div>
