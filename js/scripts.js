@@ -9048,6 +9048,40 @@ $(document).ready(function() {
 		}
 		
 	});
+
+	//login1
+	$('.logn__choose').find('.radio').on('change', function(event) {
+
+		var parent = $(this).closest('.logn__choose');
+
+		parent.children().removeClass('is-active');
+		parent.find('.btn').text("Войти");
+
+	    if($(this).val() === '1') {
+	       parent.children('.mail').addClass('is-active');
+	       parent.children('.id').removeClass('is-active');
+
+	    }
+	    if ($(this).val() === '2') {
+	        parent.children('.id').addClass('is-active');
+	        parent.children('.mail').removeClass('is-active');
+	    }
+	});
+
+	$('.logn__input').on('click', 'a', function(event) {
+
+		var parent = $(this).closest('.logn__choose')
+		parent.children().removeClass('is-active');
+
+		if($(this).hasClass('forgot-code')) {
+			parent.children('.hidden-bl').addClass('is-active');
+			parent.find('.btn').text('Получить код');
+		} else {
+			parent.children('.hidden-bl2').addClass('is-active');
+			parent.find('.btn').text('Получить ссылку');
+		}
+		
+	});
 	//blocks on main
 	var wrap = $('.sblock__wrap'),
 		toShow = $('.sblock__hidden');

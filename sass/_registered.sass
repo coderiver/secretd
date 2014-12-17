@@ -1,3 +1,8 @@
+input[type="checkbox"],
+input[type="radio"]
+	&:hover
+		cursor: pointer
+
 //order_new
 .logfast
 	margin-top: 10px
@@ -684,7 +689,7 @@
 		margin-top: 10px
 		.check_ico
 			margin: 0 5px 0 7px
-		a
+		span
 			color: #7ebf22
 	.link-blue
 		&.with-margin
@@ -756,3 +761,125 @@
 			border-bottom: 1px solid #dfdfdf
 			&:hover
 				background: #ff7e00
+				
+//login page
+.logn
+	.l-col-1
+		margin-bottom: 30px 
+	.title-l-3
+		margin: 20px 0
+	.soc__buttons
+		margin-bottom: 25px	
+	.logn__list
+		padding-left: 20px 
+		font-size: 14px
+		list-style: disc		 
+		li
+			padding: 7px 0		
+	.logn__bl
+		padding: 16px 18px
+		box-sizing: border-box
+		.title-l-2
+			margin: 0 0 15px 0
+	.logn__choose
+		label
+			display: block
+			margin-bottom: 5px
+		input
+			display: inline-block
+			vertical-align: middle
+			&:checked
+				+ span
+					font-weight: bold 
+		span
+			padding-left: 10px
+			font-size: 16px 
+			color: #000 
+	.logn__input
+		display: none
+		margin-top: 20px
+		font-size: 16px	
+		&.is-active
+			display: block
+		label
+			margin-bottom: 10px
+			+clr
+		a
+			display: inline-block
+			margin-left: 10px
+			padding-top: 8px
+			color: #4F81BD	
+		.input
+			display: block
+			float: left
+			width: 250px
+			height: 35px
+			padding: 0 10px
+			font-size: 15px 
+			border: 1px solid #e2e3ea
+			&:focus
+				box-shadow: 0 0 3px 1px #8bcdfb
+		.text-right
+			min-width: 105px 
+			margin-right: 15px 
+			padding-top: 8px 
+			text-align: right
+			color: #4F4F4F 
+		.logn__txt
+			margin-bottom: 10px	
+	.logn__asking
+		margin: 10px 0 0 120px
+		+clr
+		span
+			display: inline-block
+			padding-left: 10px
+			font-size: 14px	
+	.btn_green
+		min-width: 245px
+		margin: 10px 0 20px 0 
+		box-sizing: border-box			
+			
+.thnx
+	font-size: 15px 
+	.l-col-1
+		margin-bottom: 70px 
+	.title-l-1
+		margin: 5px 0 15px 0 
+	.title-l-3
+		margin-top: 20px
+		font-size: 18px 
+	.thnx__contacts
+		margin-top: 20px 
+		font-size: 0 
+		a, span
+			display: inline-block
+			vertical-align: middle 	
+	.thnx__call
+		margin-right: 5px 
+		padding: 8px 15px
+		font-size: 24px
+		background: #f1b15f 
+		color: #fff 
+		border-radius: 5px
+		line-height: 1 			
+	.thnx__bl
+		padding: 16px 18px
+		box-sizing: border-box
+		.title-l-2
+			margin: 0 0 15px 0
+	.thnx__list
+		padding-left: 20px 
+		font-size: 14px
+		list-style: disc		 
+		li
+			padding: 7px 0	
+	.btn_gray
+		margin-left: 10px
+		min-width: 150px
+		height: 40px	
+		text-transform: none
+		font-size: 13px 
+		color: #838689 
+		line-height: 40px 
+		box-sizing: border-box
+		+seg_sb			
