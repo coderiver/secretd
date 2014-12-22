@@ -218,6 +218,7 @@
 				margin: 4px 10px 0 0
 			.input
 				width: 215px
+				font-size: 15px 
 			.btn_green
 				display: block
 				margin: 10px 0
@@ -228,6 +229,7 @@
 					display: inline-block
 					vertical-align: middle
 					margin-left: 5px
+					cursor: pointer
 		.max-width
 			max-width: 600px
 			font-size: 14px
@@ -299,14 +301,17 @@
 	width: 550px
 	height: 90px
 	padding: 15px
-	font-size: 14px
+	font-size: 15px
 	background-color: #fff
 	border: 1px solid #e2e3ea
 	resize: none
-	+seg_i
+	+seg_r
 	+border-radius(2px)
 	+border-box
 	+box-shadow(inset 0px 1px 0 0px rgba(0,0,0,.2))
+	+placeholder
+		font-size: 14px 
+		+seg_i
 
 .hidden
 	display: none

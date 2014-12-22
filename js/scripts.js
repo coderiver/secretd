@@ -8834,6 +8834,7 @@ $(document).ready(function() {
         $('.js-popup').hide();
     });
      $(".popup_wrap").bind("click", function(){
+     	$(this).hide();
         $('.js-popup').hide();
         $(".js-overlay").hide();
         $('body').removeClass('is-fixed');
